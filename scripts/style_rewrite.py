@@ -221,7 +221,7 @@ def main():
         "generationConfig": {"maxOutputTokens": 2000},
     }
 
-        resp = None
+    resp = None
     max_attempts = 4
     for attempt in range(1, max_attempts + 1):
         try:
