@@ -5,9 +5,9 @@ config/style_samples.md 의 말투를 참고해서
 내 어투로 쓴 콘텐츠 초안(digest)을 만든다.
 
 Gemini에게 자유 텍스트가 아니라 "각 소식당 문단 하나"의 구조화된 JSON을
-받아서, 우리가 직접 각 문단에 그 소식의 이미지를 붙이고 참고 링크를
-접이식(아코디언)으로 정리한다. 이렇게 하면 이미지/링크가 모델이 텍스트로
-지어내는 것에 의존하지 않고 항상 실제 데이터와 정확히 매칭된다.
+받아서, 우리가 직접 각 문단에 그 소식의 이미지/링크를 붙인다.
+메인 매거진 페이지와 동일한 비주얼(피처드 1개 + 리스트)을 그대로 사용해서
+일관된 인터페이스를 유지한다.
 
 GEMINI_API_KEY 환경변수가 없으면 조용히 건너뛴다.
 (Google Gemini API 무료 티어 사용 - https://aistudio.google.com/apikey 에서 발급)
@@ -45,6 +45,29 @@ SYSTEM_PROMPT = """당신은 사용자의 개인 패션 매거진 에디터입�
 """
 
 
+FEATURED_ITEM_TEMPLATE = """
+<a class="featured" href="{link}" target="_blank" rel="noopener">
+  {image_html}
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">{title}</h2>
+    <p class="featured-summary">{paragraph}</p>
+    <div class="item-meta">{source} · {published}</div>
+  </div>
+</a>
+"""
+
+LIST_ITEM_TEMPLATE = """
+<a class="item" href="{link}" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">{title}</h2>
+    <p class="item-summary">{paragraph}</p>
+    <div class="item-meta">{source} · {published}</div>
+  </div>
+  {image_html}
+</a>
+"""
+
 DRAFT_PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -52,47 +75,36 @@ DRAFT_PAGE_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silver Information · {date} 초안</title>
 <style>
+  @font-face {{ font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }}
   @font-face {{ font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }}
-  :root {{ --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --accent:#f2f2f0; --card-bg:#0a0a0a; --line:#2a2a2a; }}
+  :root {{ --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }}
   * {{ box-sizing: border-box; }}
-  body {{ margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; }}
-  .wrap {{ max-width:720px; margin:0 auto; padding:32px 20px 64px; }}
-  .topbar {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:20px; }}
+  body {{ margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }}
+  .wrap {{ max-width:760px; margin:0 auto; padding:32px 20px 80px; }}
+  .topbar {{ display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }}
   .topbar a {{ color:var(--muted); font-size:13px; text-decoration:none; }}
-  h1 {{ font-family:"Noto Serif KR", serif; font-size:26px; margin:0 0 4px; font-weight:700; }}
-  .date {{ color:var(--muted); font-size:13px; margin-bottom:24px; }}
+  h1.page-title {{ font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }}
+  .date {{ color:var(--muted); font-size:12px; margin-bottom:20px; }}
   #copy-btn {{
     display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
-    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:32px; font-weight:600;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
   }}
   #copy-btn:active {{ transform: scale(0.98); }}
   #copy-status {{ font-size:12px; color:var(--muted); margin-left:10px; }}
-  #draft-content {{
-    background:var(--card-bg);
-    line-height:1.8; font-size:15px;
-  }}
-  .draft-section {{ margin-bottom:32px; }}
-  .draft-thumb {{
-    width:100%; aspect-ratio:16/9; object-fit:cover; display:block;
-    background:#161616; margin-bottom:14px;
-  }}
-  #draft-content p {{ margin:0; color:#d8d8d3; }}
-  details.references {{
-    margin-top:12px; border-top:1px solid var(--line); padding-top:20px;
-  }}
-  details.references summary {{
-    cursor:pointer; font-size:13px; color:var(--muted);
-    text-transform:uppercase; letter-spacing:0.06em; list-style:none;
-  }}
-  details.references summary::-webkit-details-marker {{ display:none; }}
-  details.references summary::before {{ content:"▸ "; }}
-  details.references[open] summary::before {{ content:"▾ "; }}
-  details.references ul {{ list-style:none; padding:0; margin:16px 0 0; }}
-  details.references li {{ padding:10px 0; border-top:1px solid var(--line); }}
-  details.references li:first-child {{ border-top:none; }}
-  details.references a {{ color:#c8c8c3; font-size:13px; text-decoration:none; }}
-  details.references a:hover {{ color:var(--ink); }}
-  details.references .ref-source {{ color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-left:8px; }}
+
+  .featured {{ display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }}
+  .featured-thumb {{ width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }}
+  .featured-tag {{ font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }}
+  .featured-title {{ font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }}
+  .featured-summary {{ font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }}
+
+  .item {{ display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }}
+  #draft-content .item:last-child {{ border-bottom:none; }}
+  .item-text {{ flex:1; min-width:0; }}
+  .item-title {{ font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }}
+  .item-summary {{ font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }}
+  .item-meta {{ font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }}
+  .item-thumb {{ width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }}
 </style>
 </head>
 <body>
@@ -101,18 +113,12 @@ DRAFT_PAGE_TEMPLATE = """<!DOCTYPE html>
     <a href="../index.html">← 매거진으로</a>
     <a href="index.html">전체 초안 목록</a>
   </div>
-  <h1>오늘의 매거진 초안</h1>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
   <div class="date">{date}</div>
   <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
   <span id="copy-status"></span>
   <div id="draft-content">
 {content_html}
-    <details class="references">
-      <summary>참고 링크 ({ref_count})</summary>
-      <ul>
-{references_html}
-      </ul>
-    </details>
   </div>
 </div>
 <script>
@@ -143,12 +149,11 @@ DRAFTS_INDEX_TEMPLATE = """<!DOCTYPE html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silver Information · 초안 목록</title>
 <style>
-  @font-face {{ font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }}
   :root {{ --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; }}
   body {{ margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; }}
   .wrap {{ max-width:720px; margin:0 auto; padding:32px 20px 64px; }}
   a.back {{ color:var(--muted); font-size:13px; text-decoration:none; }}
-  h1 {{ font-family:"Noto Serif KR", serif; font-size:26px; margin:20px 0; font-weight:700; }}
+  h1 {{ font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:20px 0; font-weight:700; }}
   ul {{ list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:14px; }}
   li a {{ display:block; padding:4px; color:var(--ink); text-decoration:none; font-size:15px; }}
   li a:hover {{ color:var(--muted); }}
@@ -172,35 +177,38 @@ def esc(s):
 
 
 def build_content_html(items, paragraphs):
-    sections = []
-    for item, para in zip(items, paragraphs):
+    blocks = []
+    for idx, (item, para) in enumerate(zip(items, paragraphs)):
         image_html = ""
         if item.get("image"):
-            image_html = f'<img class="draft-thumb" src="{esc(item["image"])}" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
-        sections.append(
-            f'    <div class="draft-section">\n{image_html}\n      <p>{esc(para)}</p>\n    </div>'
-        )
-    return "\n".join(sections)
+            thumb_class = "featured-thumb" if idx == 0 else "item-thumb"
+            image_html = (
+                f'<img class="{thumb_class}" src="{esc(item["image"])}" alt="" '
+                f'loading="lazy" onerror="this.style.display=\'none\'">'
+            )
 
-
-def build_references_html(items):
-    lines = []
-    for item in items:
-        lines.append(
-            f'        <li><a href="{item.get("link", "#")}" target="_blank" rel="noopener">'
-            f'{esc(item.get("title", ""))}</a><span class="ref-source">{esc(item.get("source", ""))}</span></li>'
+        common = dict(
+            link=item.get("link", "#"),
+            title=esc(item.get("title", "")),
+            paragraph=esc(para),
+            source=esc(item.get("source", "")),
+            published=esc(item.get("published", ""))[:16],
+            image_html=image_html,
         )
-    return "\n".join(lines)
+
+        if idx == 0:
+            blocks.append(FEATURED_ITEM_TEMPLATE.format(**common))
+        else:
+            blocks.append(LIST_ITEM_TEMPLATE.format(**common))
+
+    return "\n".join(blocks)
 
 
 def write_draft_html(date_str, items, paragraphs):
     content_html = build_content_html(items, paragraphs)
-    references_html = build_references_html(items)
     page = DRAFT_PAGE_TEMPLATE.format(
         date=date_str,
         content_html=content_html,
-        references_html=references_html,
-        ref_count=len(items),
     )
     DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
     html_path = DRAFTS_DIR / f"{date_str}.html"
