@@ -221,13 +221,29 @@ def main():
         "generationConfig": {"maxOutputTokens": 2000},
     }
 
-    resp = requests.post(
-        GEMINI_URL,
-        params={"key": api_key},
-        json=payload,
-        timeout=60,
-    )
-    resp.raise_for_status()
+        resp = None
+    max_attempts = 4
+    for attempt in range(1, max_attempts + 1):
+        try:
+            resp = requests.post(
+                GEMINI_URL,
+                params={"key": api_key},
+                json=payload,
+                timeout=60,
+            )
+            if resp.status_code >= 500 or resp.status_code == 429:
+                raise requests.exceptions.HTTPError(
+                    f"{resp.status_code} from Gemini", response=resp
+                )
+            resp.raise_for_status()
+            break
+        except requests.exceptions.RequestException as e:
+            print(f"Gemini 호출 실패 (시도 {attempt}/{max_attempts}): {e}")
+            if attempt == max_attempts:
+                print("여러 번 재시도했지만 실패해서 이번 실행은 초안 생성을 건너뜁니다.")
+                return
+            time.sleep(5 * attempt)
+
     data = resp.json()
 
     try:
