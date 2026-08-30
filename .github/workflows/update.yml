@@ -30,7 +30,7 @@ jobs:
       - name: Generate magazine site
         run: python scripts/generate_site.py
 
-            - name: Generate style-matched draft (optional)
+      - name: Generate style-matched draft (optional)
         continue-on-error: true
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
