@@ -229,7 +229,7 @@ def main():
                 GEMINI_URL,
                 params={"key": api_key},
                 json=payload,
-                timeout=60,
+                timeout=110,
             )
             if resp.status_code >= 500 or resp.status_code == 429:
                 raise requests.exceptions.HTTPError(
