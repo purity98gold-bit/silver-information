@@ -4,13 +4,17 @@ data/articles.json 중 최근 수집된 기사들을 골라
 config/style_samples.md 의 말투를 참고해서
 내 어투로 쓴 콘텐츠 초안(digest)을 만든다.
 
+Gemini에게 자유 텍스트가 아니라 "각 소식당 문단 하나"의 구조화된 JSON을
+받아서, 우리가 직접 각 문단에 그 소식의 이미지를 붙이고 참고 링크를
+접이식(아코디언)으로 정리한다. 이렇게 하면 이미지/링크가 모델이 텍스트로
+지어내는 것에 의존하지 않고 항상 실제 데이터와 정확히 매칭된다.
+
 GEMINI_API_KEY 환경변수가 없으면 조용히 건너뛴다.
 (Google Gemini API 무료 티어 사용 - https://aistudio.google.com/apikey 에서 발급)
 """
 import html
 import json
 import os
-import re
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
@@ -30,14 +34,14 @@ MAX_ITEMS_FOR_DRAFT = 12
 
 SYSTEM_PROMPT = """당신은 사용자의 개인 패션 매거진 에디터입니다.
 아래에 사용자의 예전 블로그 글 샘플이 주어집니다. 그 문체, 어미, 호흡, 자주 쓰는 표현을
-최대한 그대로 살려서, 오늘 수집된 패션 뉴스 목록을 바탕으로 짧은 매거진 디제스트 글을 씁니다.
+최대한 그대로 살려서, 오늘 수집된 패션 뉴스 목록을 바탕으로 소식마다 짧은 문단을 씁니다.
 
 규칙:
 - 원문 기사를 그대로 베끼지 말고 반드시 자기 말로 재구성할 것
 - 각 소식은 2~4문장 정도로 짧게, 사용자의 취향/시선이 드러나게 코멘트를 곁들일 것
-- 전체 글은 소제목 없이 자연스러운 매거진 에디토리얼 톤으로 이어질 것
-- 마지막에 각 소식의 출처와 링크를 목록으로 정리할 것
+- 소제목이나 번호를 문단 안에 적지 말 것 (구조는 별도로 처리됨)
 - 과장된 홍보 문구나 상투적인 트렌드 기사체는 피할 것
+- 응답은 반드시 지정된 JSON 스키마 형식으로만 출력할 것
 """
 
 
@@ -59,15 +63,36 @@ DRAFT_PAGE_TEMPLATE = """<!DOCTYPE html>
   .date {{ color:var(--muted); font-size:13px; margin-bottom:24px; }}
   #copy-btn {{
     display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
-    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:24px; font-weight:600;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:32px; font-weight:600;
   }}
   #copy-btn:active {{ transform: scale(0.98); }}
   #copy-status {{ font-size:12px; color:var(--muted); margin-left:10px; }}
   #draft-content {{
     background:var(--card-bg);
-    padding:28px 0; line-height:1.8; font-size:15px;
+    line-height:1.8; font-size:15px;
   }}
-  #draft-content p {{ margin:0 0 16px; color:#d8d8d3; }}
+  .draft-section {{ margin-bottom:32px; }}
+  .draft-thumb {{
+    width:100%; aspect-ratio:16/9; object-fit:cover; display:block;
+    background:#161616; margin-bottom:14px;
+  }}
+  #draft-content p {{ margin:0; color:#d8d8d3; }}
+  details.references {{
+    margin-top:12px; border-top:1px solid var(--line); padding-top:20px;
+  }}
+  details.references summary {{
+    cursor:pointer; font-size:13px; color:var(--muted);
+    text-transform:uppercase; letter-spacing:0.06em; list-style:none;
+  }}
+  details.references summary::-webkit-details-marker {{ display:none; }}
+  details.references summary::before {{ content:"▸ "; }}
+  details.references[open] summary::before {{ content:"▾ "; }}
+  details.references ul {{ list-style:none; padding:0; margin:16px 0 0; }}
+  details.references li {{ padding:10px 0; border-top:1px solid var(--line); }}
+  details.references li:first-child {{ border-top:none; }}
+  details.references a {{ color:#c8c8c3; font-size:13px; text-decoration:none; }}
+  details.references a:hover {{ color:var(--ink); }}
+  details.references .ref-source {{ color:var(--muted); font-size:11px; text-transform:uppercase; letter-spacing:0.05em; margin-left:8px; }}
 </style>
 </head>
 <body>
@@ -82,6 +107,12 @@ DRAFT_PAGE_TEMPLATE = """<!DOCTYPE html>
   <span id="copy-status"></span>
   <div id="draft-content">
 {content_html}
+    <details class="references">
+      <summary>참고 링크 ({ref_count})</summary>
+      <ul>
+{references_html}
+      </ul>
+    </details>
   </div>
 </div>
 <script>
@@ -140,14 +171,37 @@ def esc(s):
     return html.escape(s or "", quote=False)
 
 
-def draft_text_to_html(draft_text):
-    paragraphs = [p.strip() for p in re.split(r"\n\s*\n", draft_text.strip()) if p.strip()]
-    return "\n".join(f"    <p>{esc(p)}</p>" for p in paragraphs)
+def build_content_html(items, paragraphs):
+    sections = []
+    for item, para in zip(items, paragraphs):
+        image_html = ""
+        if item.get("image"):
+            image_html = f'<img class="draft-thumb" src="{esc(item["image"])}" alt="" loading="lazy" onerror="this.style.display=\'none\'">'
+        sections.append(
+            f'    <div class="draft-section">\n{image_html}\n      <p>{esc(para)}</p>\n    </div>'
+        )
+    return "\n".join(sections)
 
 
-def write_draft_html(date_str, draft_text):
-    content_html = draft_text_to_html(draft_text)
-    page = DRAFT_PAGE_TEMPLATE.format(date=date_str, content_html=content_html)
+def build_references_html(items):
+    lines = []
+    for item in items:
+        lines.append(
+            f'        <li><a href="{item.get("link", "#")}" target="_blank" rel="noopener">'
+            f'{esc(item.get("title", ""))}</a><span class="ref-source">{esc(item.get("source", ""))}</span></li>'
+        )
+    return "\n".join(lines)
+
+
+def write_draft_html(date_str, items, paragraphs):
+    content_html = build_content_html(items, paragraphs)
+    references_html = build_references_html(items)
+    page = DRAFT_PAGE_TEMPLATE.format(
+        date=date_str,
+        content_html=content_html,
+        references_html=references_html,
+        ref_count=len(items),
+    )
     DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
     html_path = DRAFTS_DIR / f"{date_str}.html"
     html_path.write_text(page, encoding="utf-8")
@@ -170,17 +224,18 @@ def build_user_prompt(style_text, items):
     lines = []
     for i, a in enumerate(items, 1):
         lines.append(
-            f"{i}. [{a.get('source')}] {a.get('title')}\n   요약: {a.get('summary')}\n   링크: {a.get('link')}"
+            f"{i}. [{a.get('source')}] {a.get('title')}\n   요약: {a.get('summary')}"
         )
     items_block = "\n".join(lines)
 
     return f"""[내 문체 샘플]
 {style_text}
 
-[오늘 수집된 소식 목록]
+[오늘 수집된 소식 목록 - 총 {len(items)}개]
 {items_block}
 
-위 문체를 참고해서 오늘자 매거진 디제스트 글을 작성해줘."""
+위 문체를 참고해서, paragraphs 배열에 정확히 {len(items)}개의 문단을 이 목록과 같은 순서로 채워줘.
+paragraphs[0]은 1번 소식, paragraphs[1]은 2번 소식... 이런 식으로 1:1로 대응해야 해."""
 
 
 def main():
@@ -218,7 +273,22 @@ def main():
         "contents": [
             {"role": "user", "parts": [{"text": build_user_prompt(style_text, recent)}]}
         ],
-        "generationConfig": {"maxOutputTokens": 2000},
+        "generationConfig": {
+            "maxOutputTokens": 2000,
+            "responseMimeType": "application/json",
+            "responseSchema": {
+                "type": "OBJECT",
+                "properties": {
+                    "paragraphs": {
+                        "type": "ARRAY",
+                        "items": {"type": "STRING"},
+                        "minItems": len(recent),
+                        "maxItems": len(recent),
+                    }
+                },
+                "required": ["paragraphs"],
+            },
+        },
     }
 
     resp = None
@@ -247,24 +317,32 @@ def main():
     data = resp.json()
 
     try:
-        draft_text = "".join(
+        raw_text = "".join(
             part.get("text", "")
             for part in data["candidates"][0]["content"]["parts"]
         )
-    except (KeyError, IndexError):
-        print("Gemini 응답에서 텍스트를 찾지 못했습니다:", data)
+        parsed = json.loads(raw_text)
+        paragraphs = parsed["paragraphs"]
+    except (KeyError, IndexError, json.JSONDecodeError) as e:
+        print("Gemini 응답을 파싱하지 못했습니다:", e, data)
         return
 
-    if not draft_text.strip():
-        print("Gemini가 빈 응답을 반환했습니다:", data)
+    if len(paragraphs) != len(recent):
+        print(f"문단 수({len(paragraphs)})와 소식 수({len(recent)})가 안 맞아 안전하게 짧은 쪽에 맞춥니다.")
+        n = min(len(paragraphs), len(recent))
+        paragraphs, recent = paragraphs[:n], recent[:n]
+
+    if not paragraphs:
+        print("Gemini가 빈 응답을 반환했습니다.")
         return
+
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     DRAFTS_DIR.mkdir(parents=True, exist_ok=True)
-    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     out_path = DRAFTS_DIR / f"{today}.md"
-    out_path.write_text(draft_text, encoding="utf-8")
+    out_path.write_text("\n\n".join(paragraphs), encoding="utf-8")
 
-    html_path = write_draft_html(today, draft_text)
+    html_path = write_draft_html(today, recent, paragraphs)
     rebuild_drafts_index()
 
     print(f"초안 생성 완료 -> {out_path}")
