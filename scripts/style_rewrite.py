@@ -22,7 +22,7 @@ DATA_FILE = ROOT / "data" / "articles.json"
 STYLE_FILE = ROOT / "config" / "style_samples.md"
 DRAFTS_DIR = ROOT / "docs" / "drafts"
 
-GEMINI_MODEL = "gemini-flash-latest"
+GEMINI_MODEL = "gemini-flash-lite-latest"
 GEMINI_URL = f"https://generativelanguage.googleapis.com/v1beta/models/{GEMINI_MODEL}:generateContent"
 
 RECENT_HOURS = 30  # 이 시간 내에 수집된 기사만 오늘의 초안 대상으로 삼음
