@@ -1,10 +1,10 @@
 # 관심 브랜드/키워드 (초안 - 취향 기반 추측, 확인 후 수정 필요)
 # 미니멀/다크/아크로매틱, 해체주의 계열 위주로 초안 작성함
 
-Maison Margiela
-Yohji Yamamoto
-Comme des Garcons
-Rick Owens
-Jil Sander
-MUJI
-Hermes
+#Maison Margiela
+#Yohji Yamamoto
+#Comme des Garcons
+#Rick Owens
+#Jil Sander
+#MUJI
+#Hermes
