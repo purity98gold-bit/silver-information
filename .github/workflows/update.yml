@@ -1,0 +1,50 @@
+name: Update Fashion Magazine
+
+on:
+  schedule:
+    # 매일 UTC 22:00 = 한국시간 오전 7시
+    - cron: "0 22 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch & filter articles
+        run: python scripts/fetch_and_filter.py
+
+      - name: Generate magazine site
+        run: python scripts/generate_site.py
+
+      - name: Generate style-matched draft (optional)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/style_rewrite.py
+
+      - name: Generate Instagram cards
+        run: python scripts/instagram_card.py
+
+      - name: Generate Instagram gallery page
+        run: python scripts/generate_instagram_gallery.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "fashion-mag-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/articles.json docs/
+          git diff --cached --quiet || git commit -m "chore: update magazine $(date -u +'%Y-%m-%d')"
+          git push
