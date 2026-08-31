@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-08-31 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-08-31</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://www.highsnobiety.com/p/nike-zoom-skylon-11-black-light-magenta/" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788104277-nike-zoom-skylon-11-blacklight-magenta-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">Nike's Steezy Sleeper Sneaker Is Anything But a Snooze</h2>
+    <p class="featured-summary">나이키의 줌 스카이론 11이 요즘 눈에 띄더라고. 클래식한 레트로 테크 감성에 블랙이랑 라이트 마젠타 조합이라니, 대놓고 튀지 않으면서도 은근한 멋을 내기 딱 좋은 스니커즈야.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/vans-mountain-mules/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Vans’ Finest Winter Slipper Is a Whole Moo(d)</h2>
+    <p class="item-summary">반스에서 이번에 내놓은 마운틴 뮬은 송아지 무늬 털을 얹어서 아주 독특한 분위기를 내. 겨울철에 가볍게 신기 좋으면서도 룩에 확실한 포인트를 줄 수 있는 아이템이지.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788105127-vans-mountain-mules.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/kith-adidas-samba-denim/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">This Crisp adidas Samba Dresses in Kith Denim</h2>
+    <p class="item-summary">키스랑 아디다스가 손잡고 데님 소재로 삼바를 만들었어. 깔끔하면서도 데님 특유의 빈티지한 결이 더해져서 가을 코디에 활용하기 정말 괜찮아 보이더라.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788104562-kith-adidas-samba-denim-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/salomon-xt-evo-grey/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Salomon Might Have You Looking at the Heir to the Trail Throne With This One</h2>
+    <p class="item-summary">살로몬이 새로 선보인 XT-EVO는 트레일 러닝화의 새로운 강자가 될 것 같은 예감이 들어. 기술적인 디테일도 멋스럽고 실루엣 자체가 묘하게 시선을 사로잡는 매력이 있어.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1787904492-salomon.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/beams-fire-king/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Why Does This Mug Have More Collabs Than Most Streetwear Labels?</h2>
+    <p class="item-summary">파이어킹 머그컵이 빔즈부터 뱅스, 베이프, 카우스까지 온갖 브랜드랑 협업하는 걸 보면 웬만한 스트리트웨어 레이블보다 더 핫한 것 같아. 주방 용품도 이렇게 힙할 수 있다는 게 새삼 놀라워.</p>
+    <div class="item-meta">Highsnobiety · Tue, 18 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1786980627-fire-king-beams-01-11.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-superstar-lo-pro-brown/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Even at Its Lowest, adidas’ Superstar Is Absurdly Luxurious</h2>
+    <p class="item-summary">아디다스 슈퍼스타 로 프로는 브라운 가죽 소재를 써서 그동안 보던 모델 중에서도 손꼽히게 고급스러워. 캐주얼한 스니커즈인데도 은근히 차분하고 클래식한 무드가 느껴져서 자꾸 눈이 가네.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788104449-adidas-superstar-lo-pro-brown-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-cryoshot-tiempo-94-sneakers/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike Rethinks a Soccer Legend as a Slick Street Flex</h2>
+    <p class="item-summary">나이키가 크라이오샷 티엠포 94를 통해 축구화의 아이코닉한 디자인을 스트리트 감성으로 잘 풀어냈어. 향수를 자극하면서도 지금 신기 전혀 어색하지 않은 날렵한 실루엣이 마음에 들어.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788104119-nike-cryoshot-tiempo-94-sneakers-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://wwd.com/footwear-news/sneaker-news/crocs-tembo-ii-ro-release-date-1239175086/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Crocs’ Newest Shoe Is Designed to Feel Like a Sneaker With All-day Comfort — but It’s Not Totally New</h2>
+    <p class="item-summary">크록스의 템보 II RO는 스니커즈처럼 편안하면서도 하루 종일 신기 좋아서 벌써 반응이 뜨겁더라고. 품절 대란이 일어날 정도로 인기가 많았던 만큼 다음 발매 때도 눈여겨봐야겠어.</p>
+    <div class="item-meta">WWD · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://wwd.com/wp-content/uploads/2026/08/crocs-tembo-ii-ro-2.jpg?w=1000&amp;h=563&amp;crop=1" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/on-cloudmonster-3-mule-cacao-fka-twigs/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Your Cozy Morning Espresso, Brewed By FKA Twigs</h2>
+    <p class="item-summary">온의 클라우드몬스터 3 뮬 카카오 에스프레소는 러닝화의 기능성과 겨울철 방한 유틸리티를 아주 세련되게 엮어냈어. 아침에 커피 한 잔 마시러 나갈 때 신으면 딱 어울릴 것 같은 포근함이야.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1787905202-fka-on-mule.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/vans-skate-loafer-brown-tassle/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Vans' Leather Loafer Heads to the (Skate) Boardroom</h2>
+    <p class="item-summary">반스가 내놓은 브라운 컬러의 스케이트 로퍼는 스케이트보드 감성과 포멀함을 오묘하게 섞어놨어. 클래식한 로퍼의 틀을 유지하면서도 은근히 스트리트한 맛을 살린 점이 재미있어.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1787895892-vans-braided-loafer.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-put-the-superstar-on-ozempic/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">adidas Put the Superstar On Ozempic</h2>
+    <p class="item-summary">아디다스가 슈퍼스타의 클래식한 컵솔을 덜어내고 초슬림 로우 프로파일로 변신시켰어. 오로라 커피와 크림 화이트 컬러 조합도 차분해서 가벼운 차림에 무심하게 신기 딱 좋아.</p>
+    <div class="item-meta">Highsnobiety · Sun, 30 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1787904793-adidasbrown.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/billys-adidas-handball-spezial-loafer/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">adidas Made Its Best Loafer Even Better</h2>
+    <p class="item-summary">아디다스가 빌리스와 협업해 선보인 핸드볼 스페지알 로퍼는 드레스 슈즈와 스니커즈의 경계를 아주 멋지게 무너뜨렸어. 클래식하면서도 고급스러운 디테일이 살아 있어서 손이 자주 갈 것 같아.</p>
+    <div class="item-meta">Highsnobiety · Sat, 29 Aug 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788016087-billys-adidas-handball-spezial-loafer-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
