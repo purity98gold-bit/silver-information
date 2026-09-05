@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-05 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-05</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/nike-sp-100-removal-september-2026" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://hypebeast.kr/feed" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">나이키, 9월 21일 S&amp;P 100에서 제외</h2>
+    <p class="featured-summary">나이키가 오는 9월 미국 증시의 S&amp;P 100 지수에서 제외된다는 소식이 들려왔습니다. 이번 조치는 분기별 리밸런싱에 따른 자연스러운 구성 종목 변경일 뿐 주식 거래 중단과는 무관하다고 합니다. 여전히 시장에서 탄탄한 입지를 자랑하는 브랜드인 만큼 큰 동요는 없어 보입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-khoki-2" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: KHOKI</h2>
+    <p class="item-summary">도쿄를 기반으로 활동하는 크리에이티브 팀 코키가 선보이는 신상품을 이제 HBX에서 만날 수 있습니다. 전통적인 기법과 현대적인 패턴을 절묘하게 엮어내어 독특한 무드를 자아내는 캐주얼웨어들이 눈길을 사로잡습니다. 가격대는 다소 높지만 장인 정신이 깃든 완성도를 보면 충분히 소장 가치가 있어 보입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fvintage-finished-work-jacket-blue-product-1-ab899e41_1788625681.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/deana-lawson-solo-exhibition-gagosian-new-york-city-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">디아나 로슨, 가고시안과 함께 뉴욕 첫 개인전 개최</h2>
+    <p class="item-summary">뉴욕 가고시안 갤러리에서 디아나 로슨의 첫 개인전이 화려한 막을 올렸습니다. 뷰티 서플라이 매장의 감시 카메라 화면을 재해석한 엣지 컨트롤 연작은 후기 자본주의 속 정체성과 감시의 문제를 날카롭게 파고듭니다. 거울 프레임과 홀로그램을 활용한 독창적인 시각적 연출이 깊은 인상을 남깁니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fdeana-lawson-solo-exhibition-gagosian-new-york-city-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nike-air-force-1-low-gore-tex-baroque-brown-hv5953-200-official-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키, GORE-TEX와 Vibram으로 겨울 대비한 에어 포스 1 ‘바로크 브라운’ 공개</h2>
+    <p class="item-summary">나이키가 다가오는 추운 계절을 겨냥해 고어텍스와 비브람을 탑재한 에어 포스 1 바로크 브라운을 공개했습니다. 묵직한 브라운 컬러와 방수 기능이 더해져 비와 눈이 내리는 날에도 끄덕없는 든든한 스니커즈로 완성되었습니다. 투박한 매력 속에서도 옐로 컬러 태그로 은은한 포인트를 준 센스가 돋보입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FftNike-Air-Force-1-Low-GORE-TEX-Baroque-Brown-HV5953-200-Official-Images.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/pas-normal-studios-fall-winter-fw-2026-cycling-collections-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">파스 노멀 스튜디오, 2026 가을·겨울 사이클링 컬렉션으로 제안하는 세 가지 겨울 라이딩 방식</h2>
+    <p class="item-summary">파스 노멀 스튜디오가 라이딩 목적에 따라 세 가지로 세분화된 2026 가을 및 겨울 사이클링 컬렉션을 제안합니다. 레이싱부터 그래블 어드벤처, 일상적인 퍼포먼스까지 각자의 동기에 맞춘 테크니컬 구조가 인상적입니다. 산악 지역 커뮤니티의 텍스타일 전통에서 영감을 받은 컬러 팔레트 역시 겨울 라이딩의 멋을 더해줍니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fft-Pas-Normal-Studios-fall-winter-fw-2026-Cycling-Collections-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nonnative-paraboot-moccasin-briac-cow-leather-shoes-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">nonnative, 프리미엄 스웨이드로 재해석한 Paraboot 아카이브 Briac 실루엣</h2>
+    <p class="item-summary">논내틱과 파라부트가 손을 잡고 1990년대 사랑받았던 브리아크 실루엣을 프리미엄 스웨이드로 재해석했습니다. 은은한 차콜 그레이 컬러와 볼륨감 있는 솔의 조화가 클래식하면서도 세련된 무드를 완성해 줍니다. 외부 브랜딩을 최소화하고 풋베드에만 로고를 새겨 그들만의 은은한 멋을 강조한 점이 마음에 듭니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnonnative-paraboot-moccasin-briac-cow-leather-shoes-collaboration-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/lepee-1839-novelty-the-football-clock-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">L’Épée 1839, 축구공을 8일 파워리저브 키네틱 클록 조형물로 재해석하다</h2>
+    <p class="item-summary">제네바 워치 데이즈에서 공개된 L’Épée 1839의 키네틱 테이블 클록은 정말 눈을 뗄 수 없는 예술품입니다. 실제 축구공 비율과 동일한 기하학적 구조 안에 882개의 정교한 부품과 8일 파워리저브 무브먼트를 담아냈습니다. 스포츠와 하이엔드 시계 제조 기술이 만나 탄생한 대단한 역작이라는 생각이 듭니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Flepee-1839-novelty-the-football-clock-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/daniel-arsham-balvenie-kelsey-mckechnie-frieze-seoul-collaboration-interview" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">88년 숙성 위스키가 다니엘 아샴의 신작에 영감을 준 이유</h2>
+    <p class="item-summary">다니엘 아샴과 발베니가 손잡고 선보인 88년 숙성 위스키 협업 프로젝트는 그야말로 장인 정신의 정수입니다. 서울 성수동에서 펼쳐진 명상적인 퍼포먼스와 조각적 케이스는 자연과 시간에 대한 깊은 경외를 담아내고 있습니다. 세대를 뛰어넘는 전통과 현대 예술의 만남이 어떤 감동을 주는지 온몸으로 느끼게 해줍니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 04 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fdaniel-arsham-balvenie-kelsey-mckechnie-frieze-seoul-collaboration-interview-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nordic-knots-grand-open-collection-makes-a-racket-in-soho/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nordic Knots’ Grand Open Collection Makes A Racket in SoHo</h2>
+    <p class="item-summary">뉴욕 소호 거리에서는 계절의 변화와 함께 테니스 코트의 열기가 패션으로 자연스럽게 스며들고 있습니다. 한여름의 가벼운 차림새를 벗어던지고 새로운 협업 아이템과 선글라스로 무장한 거리의 풍경이 활기찹니다. 도시의 일상과 스포츠가 어우러지는 이 시즌 특유의 공기가 참 매력적으로 다가옵니다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788468714-nordicknotsfeature.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-y-3-predator-precision/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Y-3's Predator Is Field-Meets-Fashion</h2>
+    <p class="item-summary">와이투원과 아디다스의 프레데터 프리시전 만남은 언제나 필드와 패션의 경계를 멋지게 허물어줍니다. 축구화의 날렵한 정체성을 스커트나 일상복에 녹여내는 방식은 늘 트렌드에 민감한 이들의 시선을 사로잡습니다. 스터드를 덜어내고 도심 속 스니커즈로 재탄생한 모습이 상당히 유니크합니다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788499297-adidas-y-3-predator-precision.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/carnan-x-asics-gel-cumulus-16/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">ASICS’ Blackberry Flavored Dad Shoe Has Fashion on the Brain</h2>
+    <p class="item-summary">아식스와 카르난이 손을 잡고 Y2K 감성이 물씬 풍기는 젤 큐뮬러스 16 신제품을 선보였습니다. 딥한 블랙베리와 퍼플 컬러 조합이 과감하면서도 독특한 무드를 풍겨 패션 피플들의 마음을 흔들고 있습니다. 일명 아빠 신발이라 불리는 청키한 실루엣을 세련되게 풀어낸 감각이 돋보입니다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788352594-asics-purple.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/vans-authentic-sneaker-green/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Vans’ Mossy Authentic Sneaker Shines from the Swamp</h2>
+    <p class="item-summary">반스가 오스카 더 그라우치 캐릭터에서 영감을 받아 늪지대를 연상시키는 이끼빛 그린 컬러의 어센틱 스니커즈를 내놓았습니다. 쓰레기통 시크라는 독특한 컨셉 아래 자연스럽고 빈티지한 매력이 살아있는 유쾌한 아이템입니다. 평범한 스타일링에 신기만 해도 확실한 위트 있는 포인트를 더해줄 것 같습니다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 05 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788409663-vans-authentic-sneaker-green.jpeg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
