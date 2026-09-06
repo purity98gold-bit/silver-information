@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-06 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-06</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-district-vision-2" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fcalifornia-cotton-tee-run-with-heart-vintage-black-product-1-80327387_1788704761.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">HBX 신상품: District Vision</h2>
+    <p class="featured-summary">디스트릭트 비전이 선보인 이번 HBX 셀렉션은 역시 기대를 저버리지 않는 고기능성 아웃도어 룩을 보여주고 있어요. 아웃도어 활동을 진심으로 즐기는 이들이라면 눈여겨볼 만한 아이웨어와 플리스 셸이 가득하네요. 운동 능력을 높여주는 디테일 덕분에 이번 시즌 스타일과 실용성을 동시에 챙길 수 있을 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/kith-celebrates-the-1996-yankees-with-collectibles-and-home-goods" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">키스, 1996년 양키스 월드 시리즈 우승 기념 컬렉터블·홈 굿즈 공개</h2>
+    <p class="item-summary">키스가 뉴욕 양키스의 1996년 월드 시리즈 우승 30주년을 기념해 또 한 번 소장 가치 높은 굿즈들을 풀어냈어요. 미니 유니폼을 차려입은 테디 베어부터 다채로운 컬러의 캡까지 팬들의 마음을 흔들 요소가 한가득이네요. 특히 아카이브 레퍼런스를 녹여낸 디테일들이 이번 컬렉션을 더욱 특별하게 만들어 주는 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fkith-yankees-homepage-3x2-1.png?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;format=png&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/gta-vi-launch-day-off-1-5-million-americans-estimate" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">'GTA VI' 출시일, 미국인 150만 명이 휴가를 낼 수도</h2>
+    <p class="item-summary">GTA VI 출시일에 미국인 15만 명이 아니라 무려 150만 명이 연차를 낼 수도 있다는 예측이 나와서 웃음을 자아내요. 정확한 통계는 아니라고 하지만 그만큼 전 세계가 기다려온 대작이라는 방증이 아닐까 싶어요. 2026년 말 출시까지 과연 얼마나 더 많은 해프닝이 벌어질지 은근히 기대가 되네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Feverything-you-need-to-know-grand-theft-auto-gta-6-vi-pre-order-information-announcement-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/hiroshi-fujiwara-announces-fragment-university-second-term-enrollment-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">후지와라 히로시, FRAGMENT UNIVERSITY 2기 모집 발표</h2>
+    <p class="item-summary">후지와라 히로시가 수장으로 있는 프래그먼트 유니버시티가 벌써 2기 모집을 시작했더라고요. 음악부터 인간 본성까지 기존의 틀을 깨는 게스트 교수진의 라인업을 보니 정말 듣고 싶은 강의들뿐이에요. 오직 오프라인 대면으로만 진행된다고 하니 스트리트 컬처에 관심 있는 분들이라면 치열한 경쟁이 예상되네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fhiroshi-fujiwara-announces-fragment-university-second-term-enrollment-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/christopher-nolan-the-odyssey-extends-historic-imax-70mm-run-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">크리스토퍼 놀란의 ‘오디세이’, 역사적인 IMAX 70mm 상영 11주 차까지 연장</h2>
+    <p class="item-summary">크리스토퍼 놀란의 오디세이가 IMAX 70mm 상영을 11주 차까지 연장한다는 반가운 소식이에요. 놀란 감독이 전편을 IMAX 카메라로 담아낸 만큼 극장에서 꼭 봐야 할 시각적 예술품 같은 영화죠. 전 세계적인 흥행 기록을 갈아치우고 있는 이 대작을 스크린에서 놓치셨던 분들께는 절호의 기회가 될 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fchristopher-nolan-the-odyssey-extends-historic-imax-70mm-run-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/garage-italia-hot-lab-yacht-inspired-fiat-500-jolly-collab" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Garage Italia와 Hot Lab, 피아트 500 졸리를 슈퍼요트의 럭셔리 토이로 재해석하다</h2>
+    <p class="item-summary">가라지 이탈리아와 핫 랩이 손잡고 피아트 500 졸리를 슈퍼요트의 럭셔리 텐더로 멋지게 재해석했어요. 1950년대 스피드보트에서 영감을 받은 투톤 선체와 물결무늬 패브릭까지 디테일이 정말 감탄을 자아내네요. 요트 오너들을 위한 장난감이라니 클래식카와 해양 감성의 만남이 아주 신선하게 다가와요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fgarage-italia-hot-lab-yacht-inspired-fiat-500-jolly-collab-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/prime-video-spider-noir-nicolas-cage-series-canceled-after-one-season-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">프라임 비디오, 니콜라스 케이지 주연 ‘Spider-Noir’ 한 시즌 만에 취소</h2>
+    <p class="item-summary">니콜라스 케이지가 주연을 맡아 기대를 모았던 스파이더 느와르 실사 시리즈가 안타깝게도 한 시즌 만에 취소되었어요. 대공황기 뉴욕을 배경으로 사설탐정으로 변신한 그의 독보적인 분위기를 더 볼 수 없다는 점이 참 아쉽네요. 마블 팬들과 케이지의 연기를 사랑했던 시청자들에게는 꽤나 씁쓸한 소식이 될 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fprime-video-spider-noir-nicolas-cage-series-canceled-after-one-season-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/rolex-auction-four-unique-gem-set-cosmograph-daytonas-inspired-by-the-seasons-phillips-london" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">롤렉스, 사계절에서 영감 받은 유일무이한 젬 세팅 코스모그래프 데이토나 4점 경매</h2>
+    <p class="item-summary">롤렉스가 사계절의 아름다움을 담아낸 단 하나뿐인 코스모그래프 데이토나 4점을 경매에 내놓았어요. 계절마다 다른 젬스톤과 다이얼 컬러를 적용해 시계라기보다는 하나의 예술 작품에 가까운 비주얼을 자랑하네요. 게다가 의미 있는 환경 및 자선 재단에 수익금이 기부된다니 그 가치가 더욱 빛나는 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Frolex-auction-four-unique-gem-set-cosmograph-daytonas-inspired-by-the-seasons-phillips-london-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/beyonce-drops-1000-usd-empty-vinyl-crate-some-fans-call-it-highway-robbery" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">비욘세, 1000달러 빈 바이닐 상자 출시…팬들 “너무 비싸다”</h2>
+    <p class="item-summary">비욘세가 앨범 발매 20주년을 기념해 선보인 원목 바이닐 수납 박스가 가격 때문에 소소한 화제를 모으고 있어요. 실물 음반도 포함되지 않은 순수 보관함인데도 만만치 않은 가격표가 붙어 팬들의 입방아에 오르는 모습이네요. 꿀벌 상자에서 영감을 받은 독특한 감성과 한정판이라는 타이틀이 과연 그 값을 할지 궁금해져요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fbeyonce-drops-1000-usd-empty-vinyl-crate-some-fans-call-it-highway-robbery-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/kojima-productions-announces-beyond-the-strand-10th-anniversary-beyond-the-strand-exhibition" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">코지마 프로덕션, 10주년 전시 ‘BEYOND THE STRAND’ 개최</h2>
+    <p class="item-summary">코지마 프로덕션의 지난 10년의 여정을 돌아볼 수 있는 기념전시가 도쿄에서 화려하게 막을 올릴 예정이에요. 그동안 공개되지 않았던 개발 아카이브부터 스튜디오를 그대로 재현한 공간까지 팬들에게는 잊지 못할 선물이 되겠네요. 게임과 예술의 경계를 넘나드는 코지마 히데오의 세계관을 직접 마주할 수 있는 좋은 기회인 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fkojima-productions-announces-beyond-the-strand-10th-anniversary-beyond-the-strand-exhibition-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/fc-barcelona-nike-kobe-3-protro-electric-purple-io6257-001-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">FC Barcelona x Nike Kobe 3 Low Protro ‘일렉트로 퍼플’, 지금 만나보세요</h2>
+    <p class="item-summary">나이키와 FC 바르셀로나가 다시 한번 손을 잡고 코비 3 로우 프로트로 일렉트로 퍼플 컬러를 선보였어요. 강렬한 퍼플 컬러웨이에 클럽 엠블럼과 메탈릭 골드 디테일이 더해져 농구화와 축구 아카이브의 멋진 조화를 보여주네요. 코비 브라이언트의 발자취를 기리는 의미까지 담겨 있어 스니커즈 팬들의 마음을 흔들기 충분해 보여요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Ffc-barcelona-nike-kobe-3-protro-electric-purple-IO6257-001-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/yoon-ahn-mattel-barbie-cyberpunk-robot-toy-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">YOON과 Mattel, 사이버펑크 미학과 로봇 반려묘로 재해석한 바비</h2>
+    <p class="item-summary">앰부시의 디자이너 YOON과 마텔이 만나 사이버펑크 미학으로 재해석한 바비를 공개했어요. 미래지향적인 패널 디자인부터 시크한 로봇 반려묘까지 기존 바비의 틀을 완전히 깨부순 비주얼이 정말 압권이네요. 하이테크 감성을 한껏 머금은 이번 콜라보 에디션은 수집가들의 소장 욕구를 자극하기에 부족함이 없어 보여요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 06 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fyoon-ahn-mattel-barbie-cyberpunk-robot-toy-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
