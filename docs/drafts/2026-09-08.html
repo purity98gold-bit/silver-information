@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-08 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-08</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/palace-skateboards-fall-2026-drop-6-release-info" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fpalace-skateboards-fall-2026-drop-6-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">이번 주 Palace에서 출시되는 모든 아이템</h2>
+    <p class="featured-summary">이번 주 팔라스의 가을 드롭은 그래픽에만 기대지 않고 묵직한 소재감을 전면에 내세운 점이 눈에 띕니다. 10온스 후드 캔버스 재킷부터 폴라텍 라이닝까지, 입었을 때의 탄탄한 구조감이 벌써부터 기대되는 라인업이에요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/a-presse-supreme-fall-2026-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">A.PRESSE와 Supreme, 송아지 가죽·실크 코튼 수트·핸드 페인팅 카모로 완성한 2026 가을 컬렉션</h2>
+    <p class="item-summary">슈프림과 아프레세의 만남은 역시 기대를 저버리지 않는 깊이감이 느껴집니다. 세심하게 고른 원단과 빈티지한 피니싱, 그리고 두 브랜드가 함께 다듬어낸 실루엣까지 옷을 좋아하는 이들의 마음을 제대로 저격하네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Ffta-presse-supreme-fall-2026-collaboration-collection-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nike-first-sight-shadow-light-crimson-metallic-silver-hq2410-600-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키 퍼스트 사이트 섀도우, ‘라이트 크림슨/메탈릭 실버’ 조형적 슬립온으로 3부작의 대미를 장식하다</h2>
+    <p class="item-summary">나이키가 선보인 이번 슬립온은 2000년대 감성을 미래적으로 잘 풀어낸 것 같아요. 끈을 없앤 대담한 조형미와 코트에서 영감받은 아웃솔까지, 신발 하나로 전체 룩에 확실한 포인트를 주기 좋겠습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FftNike-First-Sight-Shadow-Light-Crimson-Metallic-Silver-HQ2410-600-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/bunney-teddy-bear-t-shirt-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">BUNNEY, 조시 하이트의 흑백 테디베어 사진을 담은 티셔츠 출시</h2>
+    <p class="item-summary">번니가 선보인 흑백 테디베어 티셔츠는 심플한 코튼 바디 위에 담긴 사진 한 장으로 여운을 남깁니다. 추억을 자극하는 낡은 인형의 표면과 위트 있는 문구가 어우러져 은근한 매력을 풍기네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FBUNNEY-Teddy-Bear-T-Shirt-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/etro-birkenstock-boston-gizeh-fall-winter-2026-fw-26-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">에트로, 페이즐리 아웃솔과 페가소 리벳 더한 버켄스탁 보스턴·지제 선보여</h2>
+    <p class="item-summary">에트로와 버켄스탁의 콜라보레이션은 클래식한 풋베드 위에 화려한 페이즐리와 웨스턴 버클을 더해 색다른 무드를 완성했습니다. 편안함은 그대로 챙기면서도 브랜드의 독보적인 장식 언어를 느낄 수 있는 흥미로운 조합이에요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FEtro-Birkenstock-Boston-Gizeh-fall-winter-2026-fw-26-collaboration-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/anbernic-rg-ds-plus-dual-screen-linux-retro-handheld" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Anbernic, 100달러 이하 듀얼 스크린 휴대용 게임기 RG DS Plus 공개</h2>
+    <p class="item-summary">안베르닉이 내놓은 새로운 듀얼 스크린 휴대용 기기는 레트로 게임 팬들에게 반가운 소식이 아닐 수 없습니다. 커진 화면과 정교해진 에뮬레이션 덕분에 클래식 타이틀을 즐기는 재미가 한층 더 깊어질 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fanbernic-rg-ds-plus-dual-screen-linux-retro-handheld-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/naughty-dog-exits-hbos-the-last-of-us-show" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">닐 드럭만, 너티 독에서 ‘더 라스트 오브 어스’ 신작 여러 편 개발 중이라고 확인</h2>
+    <p class="item-summary">너티 독의 신작 개발 소식과 함께 한발 물러선 제작진의 행보는 앞으로의 방향성을 다시 생각해보게 만듭니다. 화려한 스포트라이트 뒤에서 본업인 게임에 집중하는 모습이 오히려 팬들에게는 더 든든하게 다가오네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnaughty-dog-exits-hbos-the-last-of-us-show-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/lamborghini-temerario-polizia-hybrid-joins-italian-fleet" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이탈리아 국가경찰, 장기 긴급 이송용 907마력 람보르기니 테메라리오 도입</h2>
+    <p class="item-summary">이탈리아 경찰이 도입한 907마력의 람보르기니 테메라리오는 그야말로 압도적인 스펙을 자랑합니다. 생명을 살리기 위해 초고속으로 달리는 특수 목적의 하이퍼카라는 점에서 더욱 멋지게 느껴지는 차네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Flamborghini-temerario-polizia-hybrid-joins-italian-fleet-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/kimi-antonelli-wins-2026-italian-grand-prix-f1-first-italian-since-1996" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">키미 안토넬리, 몬차에서 60년 만에 이탈리아인 우승…홈 이탈리아 그랑프리 제패</h2>
+    <p class="item-summary">키미 안토넬리의 홈 그란프리 우승은 올 시즌 가장 드라마틱한 순간 중 하나로 기억될 것 같습니다. 최하위권에서 시작해 60년 만의 이탈리아인 홈 우승을 이뤄낸 저력이 대단하네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FKimi-Antonelli-Wins-2026-Italian-Grand-Prix-f1-first-italian-since-1996-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/bad-bunny-super-bowl-halftime-show-7-emmy-awards-win-new-record" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">배드 버니, 슈퍼볼 하프타임 쇼로 역사적인 에미상 7관왕</h2>
+    <p class="item-summary">배드 버니의 슈퍼볼 하프타임 쇼가 에미상까지 휩쓸며 역사를 새로 쓰고 있습니다. 스페인어 프로그램 최초라는 타이틀에 걸맞게 시각과 청각을 모두 압도하는 최고의 무대였음을 다시 한번 증명해 냈네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FBad-Bunny-Super-Bowl-Halftime-Show-7-Emmy-awards-win-new-record-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/halloween-saw-crocs-classic-clog-michael-myers-jigsaw-213831-90h-213832-90h-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">크록스, ‘할로윈’·‘쏘우’ 소품과 피 얼룩 더한 2026 호러 팩 클래식 클로그 공개</h2>
+    <p class="item-summary">크록스가 할로윈과 쏘우를 테마로 내놓은 호러 팩은 디테일에서 오는 섬뜩한 재미가 가득합니다. 피 붉은 얼룩과 독특한 지비츠 장식 덕분에 개성 있는 스타일링을 완성하기에 이만한 아이템도 없겠어요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FHalloween-Saw-Crocs-Classic-Clog-michael-myers-jigsaw-213831-90H-213832-90H-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/cd-sales-surge-45-7-as-gen-z-fuels-2026-revival" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">2026년 상반기 CD 판매 1,750만 장 돌파…다시 호황 맞은 컴팩트디스크</h2>
+    <p class="item-summary">씨디 판매량이 다시 늘어나고 있다는 소식은 물리적 매체가 주는 아기자기한 수집의 즐거움을 일깨워줍니다. 디지털 음원과는 또 다른 결로 음악을 소장하고 소비하는 요즘 세대의 문화가 제법 신선하게 다가오네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 07 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fcd-sales-surge-45-7-as-gen-z-fuels-2026-revival-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
