@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-09 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-09</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/heres-everything-to-know-about-the-new-iphone" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FApple-iPhone-Duo-colors-260909-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">새로운 iPhone, 알아야 할 모든 것</h2>
+    <p class="featured-summary">애플의 이번 신제품 발표는 언제나 그렇듯 기대를 저버리지 않네요. 특히 티타늄 소재에 분할 화면과 펜까지 품은 폴더블폰의 등장이라니, 과연 손에 쥐었을 때 어떤 느낌일지 사뭇 궁금해집니다. 새롭게 다듬어진 카메라와 마감까지 더해져 이번 세대 프로 모델은 확실히 눈길을 사로잡는 구석이 있어요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/apple-officially-unveils-airpods-5-apple-watch-series-12-and-the-ultra-4-and-we-got-early-details" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애플, AirPods 5·Apple Watch Series 12·Ultra 4 공식 공개… 먼저 확인한 세부 정보</h2>
+    <p class="item-summary">애플파크에서 날아온 웨어러블과 오디오 소식도 놓칠 수 없죠. 오픈형 노이즈 캔슬링을 더한 에어팟부터 프리미엄 스트랩을 두른 새로운 워치까지, 일상의 소소한 디테일을 채워주는 아이템들이 돋보입니다. 매번 시즌 컬러를 바꿔가며 지갑을 열게 만드는 솜씨는 여전히 대단해요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FApple-Watch-Ultra-4-hero-main.-00jpg.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/alicia-keys-swizz-beatz-deans-choice-bonhams-auction-artist-royalty-program" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">앨리샤 키스·스위즈 비츠, 본햄스와 함께 경매 로열티 프로그램 출범</h2>
+    <p class="item-summary">예술가들이 작품 재판매 과정에서도 정당한 몫을 챙기게 만든다는 시도가 참 신선합니다. 음원 로처럼 시각예술 분야에도 이런 선순환 구조가 자리 잡는다면 훨씬 건강한 판이 만들어지겠죠. 유명 아티스트 부부가 직접 팔을 걷어붙이고 나선 만큼 앞으로의 변화가 더욱 기대되는 대목이에요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Falicia-keys-swizz-beatz-deans-choice-bonhams-auction-artist-royalty-program-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/the-north-face-engineered-garments-vectiv-forward-sneaker-release-date-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">The North Face x Engineered Garments, 끈을 빼도 완성되는 VECTIV Forward 공개</h2>
+    <p class="item-summary">러닝화의 기능성과 슬립온의 편안함을 이렇게 영리하게 버무려내다니 역시 믿고 보는 조합입니다. 스즈키 다이키의 손길이 닿은 유틸리티 디자인은 언제나 위트와 실용성을 동시에 챙기게 만들죠. 끈을 풀고 텅 커버를 얹는 그 소소한 변형 재미만으로도 신는 즐거움이 배가될 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fthe-north-face-engineered-garments-vectiv-forward-sneaker-release-date-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/seth-rogen-houseplant-droplet-the-house-scent-reed-diffuser-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">세스 로건의 Houseplant by Droplet, 그라스에서 탄생한 향을 담은 ‘더 하우스 센트’ 리드 디퓨저</h2>
+    <p class="item-summary">세스 로건이 프랑스 그라스에서 직접 조향에 참여했다고 하니 향에 대한 호기심이 저절로 피어오릅니다. 핑크 페퍼의 톡 쏘는 첫인상에 부드러운 우디와 플로럴이 포개지는 조화라니 공간에 은은한 숲의 온기를 더하기에 딱이겠어요. 핸드 블로운 글라스 보틀의 생김새마저 인테리어 오브제로 손색이 없습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fseth-rogen-Houseplant-Droplet-The-House-Scent-Reed-Diffuser-Release-Info-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/best-drops-september-week-2-supreme-apresse-palace-skateboards" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이번 주 놓치지 말아야 할 8가지 드롭</h2>
+    <p class="item-summary">이번 주 드롭 리스트는 그야말로 눈이 바빠지는 아이템들로 꽉 차 있네요. 슈프림과 아프레쎄의 세련된 테일러링부터 바버와 리바이스의 업사이클링까지, 각자의 영역에서 내공을 다진 브랜드들의 만남이 흥미롭습니다. 지갑을 지키기 힘든 요즘이지만 이런 굵직한 협업 소식은 언제나 환영이에요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fbest-drops-september-week-2-supreme-apresse-palace-skateboards-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/blackeyepatch-gives-the-g-shock-dw-5600-a-gold-tone-finish" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">BlackEyePatch, G-SHOCK DW-5600에 골드 톤 피니시를 입히다</h2>
+    <p class="item-summary">블랙아이패치와 지쇼크의 세 번째 만남은 역시나 기대를 저버리지 않는 반짝임을 보여줍니다. 익숙한 스퀘어 실루엣에 화려한 골드 톤을 입히니 스트리트 감성이 한층 더 묵직하게 살아나네요. 묵직한 메탈릭 비주얼과 달리 가벼운 레진 소재를 써서 실용성까지 놓치지 않은 점이 마음에 듭니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fblackeyepatch-gshock.jpeg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/om-system-brings-the-pen-back-with-a-viewfinder-and-splash-resistance" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">OM SYSTEM, 뷰파인더와 생활 방진·방적을 갖춘 PEN 공개</h2>
+    <p class="item-summary">OM 시스템이 내놓은 새로운 펜 카메라는 클래식한 레인지파인더 디자인에 실속 있는 방진 방적까지 제대로 챙겼네요. 군더더기 없는 플랫한 상단 라인과 가벼운 무게 덕분에 언제 어디서나 가방에 툭 넣어 다니기 좋을 것 같습니다. 필름 감성을 자극하는 전면 스위치 조작감도 직접 만져보고 싶어져요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fom-system-pen-hero.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/aston-martin-and-brough-superior-take-the-amb-002-roadster-to-the-street" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애스턴마틴과 브로 슈페리어, AMB 002 로드스터로 공도에 나서다</h2>
+    <p class="item-summary">애스턴마틴의 웅장한 디자인 언어가 두 바퀴 위에 그대로 옮겨진다면 이런 모습일 겁니다. 서킷을 벗어나 공도를 달릴 수 있는 첫 양산형 로드스터라니 그 존재감만으로도 도로 위를 압도하기 충분하겠어요. 장인들의 손길로 빚어낸 카본 바디와 고성능 V트윈 엔진의 조화가 남자의 마음을 설레게 만듭니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://hypebeast.kr/feed" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/tomoo-gokita-imagines-over-100-record-sleeves-for-agnes-b" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">토모오 고키타, agnès b.를 위해 100여 장의 가상 레코드 슬리브를 그리다</h2>
+    <p class="item-summary">도쿄의 갤러리에서 펼쳐지는 100여 장의 가상 레코드 슬리브 전시는 상상력의 폭을 넓혀주는 멋진 볼거리입니다. 실존하는 음반이라는 제약에서 벗어나 작가 특유의 유머와 드로잉을 마음껏 풀어놓은 커버들이라니 하나하나 들여다보는 재미가 깊을 것 같아요. 기념으로 선보이는 스크린 프린트 티셔츠까지 소장 욕구를 제대로 자극합니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fgokita-records.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/fashion-asia-hong-kong-10-asian-designers-to-watch-roundtable-interview" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">상하이에서 마닐라까지, 아시아 패션의 지형을 새로 그리는 세대</h2>
+    <p class="item-summary">아시아 패션의 흐름을 이끄는 신진 디자이너들의 무대가 이제 런웨이로 본격적으로 확장되었네요. 공예와 기억을 각자의 방식으로 해석해내는 이들의 대담한 실루엣을 보고 있으면 앞으로의 아시아 신이 훨씬 더 기대됩니다. 묵묵히 자신만의 언어를 다져온 이들이 세계 무대에서 더 크게 빛을 발하길 응원하게 돼요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Ffashion-asia-hong-kong-10-asian-designers-to-watch-roundtable-interview-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/pokemon-tcg-30th-celebration-new-special-illustration-rare-cards-reveal-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">‘Pokémon TCG: 30th Celebration’, 일러스트 레어와 스페셜 일러스트 레어 신규 카드 공개</h2>
+    <p class="item-summary">포켓몬 TCG 30주년 기념 확장팩은 카드 게임을 넘어 하나의 아름다운 아트북을 보는 듯한 기분이 듭니다. 낮과 밤의 콘셉트에 맞춰 몽환적으로 펼쳐지는 일러스트 레어 카드들을 마주하고 있으면 수집가들이 왜 열광하는지 저절로 고개가 끄덕여져요. 어릴 적 추억과 현대적인 일러스트의 만남은 언제나 마음을 흔드는 법입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 09 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://hypebeast.kr/feed" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
