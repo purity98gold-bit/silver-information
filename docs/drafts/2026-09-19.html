@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-19 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-19</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-roa-2" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Flogo-t-shirt-washed-black-product-1-31d6a7ee_1789828801.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">HBX 신상품: ROA</h2>
+    <p class="featured-summary">이탈리아의 아웃도어 감성을 독창적으로 풀어내는 ROA가 HBX를 통해 새로운 신상품을 선보였어. 테크니컬한 기능성과 아방가르드한 디자인이 적절히 섞여 있어서 평소 아웃도어 룩을 좋아하는 이들이라면 그냥 지나치기 힘들 것 같아. 가벼운 플리스부터 하이브리드 스니커즈까지 선택지도 꽤 넓더라고.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/new-balance-990v4-made-in-usa-navy-meteorite-u990bg4-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">뉴발란스, 990v4 Made in USA ‘네이비/메테오라이트’에 스웨이드 대신 가죽·누벅 적용</h2>
+    <p class="item-summary">뉴발란스의 990v4 Made in USA 라인이 조금 색다른 모습으로 찾아온다는 소식이야. 이번엔 늘 보던 부드러운 스웨이드 대신 묵직한 가죽과 누벅 조합을 택했더라고. 짙은 네이비 컬러 베이스에 다크 그린 언더레이가 살짝 스쳐 지나가는 게 가을 시즌에 딱 신기 좋은 무드야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnew-balance-990v4-made-in-usa-navy-meteorite-U990BG4-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/lil-wayne-reveals-new-york-yankees-forced-redesign-original-young-money-logo" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">릴 웨인, 뉴욕 양키스의 요구로 오리지널 영 머니 로고 교체한 사연 공개</h2>
+    <p class="item-summary">릴 웨인이 과거 자신의 레이블 영 머니 로고를 바꿀 수밖에 없었던 재미있는 비하인드를 공개했어. 뉴욕 양키스 측에서 기존 로고가 자사 인터로킹 엠블럼과 너무 닮았다고 지적했기 때문이래. 오랜 레거시를 존중하는 차원에서 법적 공방 대신 군말 없이 로고를 교체했다니 의외의 쿨한 면모가 돋보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Flil-wayne-reveals-new-york-yankees-forced-redesign-original-young-money-logo-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/sansan-gears-activewear-brand-toji-opens-its-first-flagship-store-in-jeju" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">산산기어의 액티브웨어 브랜드 토지, 제주 첫 플래그십 오픈</h2>
+    <p class="item-summary">산산기어의 액티브웨어 라인인 토지가 제주 코난해변 근처에 첫 플래그십 스토어를 열었어. 단순히 옷만 파는 게 아니라 현무암 같은 자연석을 써서 공간을 꾸미고 러닝 전후로 쉴 수 있는 캐비닛과 라운지까지 마련해 뒀더라고. 제주의 자연 속에서 브랜드가 말하는 러닝 라이프스타일을 오롯이 느껴볼 수 있는 좋은 거점이 될 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2F15%2Fsansan-gears-activewear-brand-toji-opens-its-first-flagship-store-in-jeju-ft.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/bad-bunny-adidas-badbo-1-0-puerto-rican-night-lb5996-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">배드 버니와 아디다스, 블루 스웨이드로 완성한 배드보 1.0 ‘푸에르토리칸 나이트’ 공개</h2>
+    <p class="item-summary">배드 버니와 아디다스가 다시 한번 손을 잡고 새로운 배드보 1.0 푸에르토리칸 나이트 컬러를 공개했어. 다양한 톤의 블루 스웨이드 패널에 힐 부분의 작은 별 자수 디테일이 은근한 포인트를 더해주지. 푸에르토리코를 향한 애정이 담긴 스니커즈라 그런지 특유의 독보적인 무드가 고스란히 느껴져.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fbad-bunny-adidas-badbo-1-0-puerto-rican-night-LB5996-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/adidas-originals-tobacco-koyo-atmos-sneakers-kz6431-kz6432-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">atmos x adidas Tobacco ‘KOYO’, 가을빛 두 컬러웨이로 출시</h2>
+    <p class="item-summary">아디다스 오리지널스와 아토모스가 가을빛을 가득 담은 토바코 코요 에디션을 선보였어. 일본의 단풍 풍경에서 영감을 받아 짙은 네이비와 따뜻한 브라운 가죽 베이스에 강렬한 벨루어 스트라이프를 더했더라고. 레트로한 실루엣 위에 내려앉은 가을의 색감이 요즘 날씨에 신기 딱 좋아 보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fadidas-originals-tobacco-koyo-atmos-sneakers-kz6431-kz6432-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/sothebys-maison-hong-kong-psycho-identity-alienation-shadow-duality-exhibition-auction-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나라 요시토모와 마크 로스코가 이끄는 소더비 ‘PSYCHO’ 전시</h2>
+    <p class="item-summary">홍콩 소더비 메이슨에서 인간 정신의 내면을 깊게 들여다보는 사이코 전시가 한창이야. 마크 로스코와 나라 요시토모를 비롯해 현대 미술계의 굵직한 작가들이 대거 참여해서 정체성과 소외 같은 무거운 주제를 시각적으로 풀어냈지. 예술을 통해 복잡한 심리적 긴장감을 마주하고 싶다면 한 번쯤 눈여겨볼 만한 전시야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fsothebys-maison-hong-kong-psycho-identity-alienation-shadow-duality-exhibition-auction-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-structure-plus-sp/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike’s Running Sneaker Has No Business Looking This Fast</h2>
+    <p class="item-summary">나이키가 러닝 스니커즈의 성능과 패션을 동시에 잡는 멋진 모델을 준비하고 있어. 줌X와 렉트X 쿠셔닝을 탑재해서 퍼포먼스 면에서는 두말할 것도 없고 디자인까지 슬림하게 잘 빠졌더라고. 러닝화 특유의 투박함 없이 일상복에도 자연스럽게 스며드는 실루엣이라 은근히 손이 자주 갈 것 같아.</p>
+    <div class="item-meta">Highsnobiety · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789741387-nike-structure-plus-sp-png-4.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-stella-mccartney-76-teddy-grey/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Stella McCartney's Latest adidas Runner Is a Fluffy Winter Wonder</h2>
+    <p class="item-summary">스텔라 맥카트니와 아디다스의 협업 라인에서 이번엔 포근한 겨울 감성의 스니커즈를 내놓았어. 1976년 몬트리올 올림픽의 헤리티지를 현대적인 시선으로 재해석해서 특유의 독특한 무드가 완성되었지. 추운 계절에 발끝까지 확실하게 포인트를 줄 수 있는 유니크한 아이템이야.</p>
+    <div class="item-meta">Highsnobiety · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789547276-adidas_by_stella_mccartney_sportswear_76_shoes_grey_ki9323_41_detail.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-book-2-halloween-2026/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Oogie Boogie Just Got His Own Nike Court Shoe</h2>
+    <p class="item-summary">할로윈 시즌을 맞아 피닉스의 스타 가드 데빈 부커의 두 번째 시그니처 슈즈인 나이키 북 2 할로윈 에디션이 공개됐어. 코트 위에서의 활약만큼이나 스니커즈 디자인에도 개성 있는 스토리텔링이 담겨서 팬들의 기대를 모으고 있지. 계절감에 딱 맞는 묵직한 컬러웨이가 벌써부터 소장 욕구를 자극해.</p>
+    <div class="item-meta">Highsnobiety · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1788882384-1-2.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nikeskims-rift-mesh-cave-stone/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">SKIMS' Latest Split-Toe Sneakers Are a Slimline Chocolate Treat</h2>
+    <p class="item-summary">스킴스가 이번 가을 컬렉션을 통해 또 한 번 과감한 스니커즈 라인업을 확장했어. 독특한 스플릿 토 디자인에 초콜릿 톤의 부드러운 케이브 스톤 컬러를 더해서 슬림하면서도 세련된 무드를 완성했더라고. 평소 미니멀하면서도 유니크한 풋웨어 실루엣을 좋아했다면 분명 마음에 쏙 들 거야.</p>
+    <div class="item-meta">Highsnobiety · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789722239-7-12.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/new-balance-204l-sneaker-sea-salt/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">New Balance’s Retro Dad Shoe Is Serving Something Salty</h2>
+    <p class="item-summary">뉴발란스의 클래식한 대디 슈즈 실루엣이 씨 쏠트 컬러를 입고 한층 더 부드럽고 차분하게 돌아왔어. 러닝화에서 영감을 받은 편안한 착화감은 그대로 가져가면서 전체적으로 은은한 마감을 더했더라고. 과하게 튀지 않으면서도 은근한 멋을 내기 좋은 데일리 슈즈로 제격이야.</p>
+    <div class="item-meta">Highsnobiety · Sat, 19 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789651517-new-balance-204l.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
