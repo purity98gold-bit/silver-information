@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-20 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-20</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-district-vision-3" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fultralight-nylon-wind-jacket-mist-product-1-5fa33aaf_1789913041.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">HBX 신상품: District Vision</h2>
+    <p class="featured-summary">디스트릭트 비전이 선보이는 고기능성 아이웨어와 아웃도어 의류가 HBX에 입고되었다는 소식이야. 톰 데일리와 맥스 발롯이 만든 브랜드답게 운동 능력을 끌어올려 주는 디테일이 살아있지. 보온 플리스 셸부터 트랙 쇼츠까지, 아웃도어 활동을 즐기는 이들에게 꽤나 매력적인 선택지가 될 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/10-anime-releases-to-look-out-for-in-fall-2026" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">2026년 가을, 주목해야 할 애니메이션 신작 10편</h2>
+    <p class="item-summary">2026년 가을 애니메이션 라인업은 정말 오랜만에 돌아오는 반가운 속편들이 눈에 띄어. 블리치나 블랙 클로버 같은 굵직한 작품들이 다시 이야기를 이어간다고 하니 벌써부터 기대가 돼. 전통적인 속편뿐만 아니라 완전히 새로운 오리지널 시리즈까지 풍성해서 가을 내내 볼거리가 넘쳐날 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fanime-releases-to-look-out-for-fall-autum-2026-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/awake-ny-fall-winter-2026-collection-lookbook-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Awake NY, FW26 ‘Cold World’로 뉴욕 스트리트 스타일에 경의를 표하다</h2>
+    <p class="item-summary">어웨이크 뉴욕이 가을, 겨울 컬렉션 '콜드 월'을 통해 고향인 뉴욕의 무드를 진하게 풀어냈어. 트랙수트와 페이크 퍼, 풋볼 저지까지 레이어드하기 좋은 아이템들로 꽉 채워졌지. 특히 밴슨 레더와의 협업 스켈레톤 재킷은 이번 시즌 가장 눈여겨봐야 할 포인트가 아닐까 싶어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fawake-ny-fall-winter-2026-collection-lookbook-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nn-07-fracap-third-collaboration-m127-boots-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">NN.07과 Fracap, 세 번째 M127 부츠 협업 공개</h2>
+    <p class="item-summary">NN.07이 프라캅과 손잡고 세 번째 M127 부츠를 공개했어. 비브람 솔을 장착해 아웃도어의 튼튼함을 갖췄으면서도 테일러드 슈즈처럼 간결한 라인이 돋보여. 브라운과 블랙 레더 외에도 독특한 다크 그레이 포니헤어 소재까지 더해져 도심과 산길을 모두 아우르기 좋겠어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnn-07-fracap-third-collaboration-boots-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/pokemon-horizons-season-3-rising-hope-part-4-netflix-us-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">‘포켓몬스터: 리코와 로드의 모험’ 시즌 3 ‘라이징 호프’ 파트 4, 미국 넷플릭스 공개</h2>
+    <p class="item-summary">포켓몬스터 리코와 로드의 모험 시즌 3 라이징 호프의 네 번째 파트가 미국 넷플릭스에 공개되었어. 익스플로러즈와의 클라이맥스 대결을 향해 달려가는 만큼 전개가 아주 흥미진진해. 테라스탈과 메가진화를 총동원한 트레이너와 포켓몬들의 유대가 이번 파트의 핵심 관전 포인트야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fpokemon-horizons-season-3-rising-hope-part-4-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/marine-serre-chaisor-chair-furniture-collaboration-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마린 세르와 Chaisor, 시그니처 크레센트 문 모티프로 재해석한 프렌치 폴딩 체어</h2>
+    <p class="item-summary">마린 세르가 프랑스 폴딩 체어 브랜드 체이소르와 손잡고 가구 영역으로 확장에 나섰어. 메종을 상징하는 시그니처 문 모티프를 나폴레옹 3세 시대 가구 헤리티지에 녹여낸 점이 인상적이야. 프랑스 핸드메이드로 소량 제작된다고 하니 인테리어에 관심 많은 이들에게는 소장 가치가 충분해 보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fmarine-serre-chaisor-chair-furniture-collaboration-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/harris-tweed-vans-premium-slip-on-tweed-red-blue-vn000e96bjn-premium-loafer-53-tweed-brown-vn000y8mcyl-premium-old-skool-36-tweed-navy-blue-vn000e8vbip-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Harris Tweed x Vans Premium 컬렉션, 공식 이미지 공개</h2>
+    <p class="item-summary">해리스 트위드와 반스 프리미엄이 만나 클래식한 울 소재의 스니커즈를 선보였어. 올드스쿨과 슬립온, 로퍼 실루엣에 스코틀랜드의 묵직한 트위드 패턴을 얹어 독특한 질감을 완성했지. 은은한 디스트레스드 마감 덕분에 신을수록 자연스럽게 멋이 묻어나는 매력이 있어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fharris-tweed-vans-premium-slip-on-tweed-red-blue-vn000e96bjn-premium-loafer-53-tweed-brown-vn000y8mcyl-premium-old-skool-36-tweed-navy-blue-vn000e8vbip-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-human-made-10" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: HUMAN MADE</h2>
+    <p class="item-summary">니고와 파렐 윌리엄스가 함께 이끄는 휴먼 메이드의 신상품이 HBX에 도착했어. 과거의 빈티지 아카이브를 현대적으로 재해석하는 그들답게 이번에도 멋스러운 그래픽과 장인정신이 돋보여. 캐주얼한 아메리칸 스타일을 좋아한다면 지나치기 아쉬운 아이템들로 가득해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fgraphic-t-shirt-black-16-product-1-7b5dd598_1789867561.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-italia-70s-brown/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">This Grandpa Chic adidas Sneaker Is Looking Dapper as Hell</h2>
+    <p class="item-summary">아디다스 이탈리아 70스가 브라운과 베이지 조합의 하운드투스 패턴을 입고 클래식한 무드로 돌아왔어. 복고풍 풋볼 실루엣에 클래식한 검솔을 매치해서 그런지 빈티지하면서도 댄디한 감성이 물씬 풍겨. 쌀쌀해지는 날씨에 툭 신어주기 좋은 정갈한 스니커즈야.</p>
+    <div class="item-meta">Highsnobiety · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789736117-italia_70s_shoes_beige_kj7434_42_detail.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-samba-og-aurora-coffee/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">This GR Samba Is Wales Bonner-Coded</h2>
+    <p class="item-summary">아디다스가 1950년대 인도어 풋볼 오리지널 블루프린트를 그대로 살린 삼바 OG 오로라 커피 컬러를 선보였어. 웰스 본너와의 협업이 연상될 정도로 클래식한 무드와 정제된 컬러감이 아주 매력적이지. 군더더기 없이 깔끔한 디자인이라 어디에나 무난하게 곁들이기 좋아.</p>
+    <div class="item-meta">Highsnobiety · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789722002-9.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-tennis-centre-x-kallmeyer-travertine/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike and Kallmeyer Turned a Tennis Shoe Into an Everyday Essential</h2>
+    <p class="item-summary">나이키와 캘마이어가 테니스 슈즈를 일상복에 어울리는 세련된 에센셜 아이템으로 재해석했어. 코트 위를 벗어나 도심 속 라이프스타일에 녹아들 수 있도록 패션 포워드한 감성을 더한 것이 특징이지. 클래식한 실루엣에 은근한 멋을 더하고 싶을 때 신기 딱 좋은 스니커즈야.</p>
+    <div class="item-meta">Highsnobiety · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789654347-260824_schorr_nikekm_still_life_01_325_150-rvb.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/breadandandbutter-brought-fashion-and-culture-to-2010s-berlin/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Bread&amp;&amp;Butter Brought Fashion and Culture to 2010's Berlin</h2>
+    <p class="item-summary">과거 베를린의 대형 창고에서 패션과 음악, 아트가 한데 어우러졌던 브레드앤버터 페스티벌의 기억이 새록새록 떠올라. 잘란도가 주도했던 이 거대한 문화 행사는 2010년대 베를린의 자유롭고 창의적인 에너지를 그대로 보여줬던 상징적인 이벤트였어.</p>
+    <div class="item-meta">Highsnobiety · Sun, 20 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1789477723-1.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
