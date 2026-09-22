@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-22 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-22</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/jordan-wolfson-gagosian-new-york-chelsea-exhibition-2026" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fjordan-wolfson-gagosian-new-york-chelsea-exhibition-2026-4.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">조던 울프슨, 가고시안 뉴욕에 펼친 거울의 미궁</h2>
+    <p class="featured-summary">조던 울프슨이 가고시안 뉴욕에서 선보인 이번 전시는 그야말로 시각적 충격 그 자체야. 광택 나는 거울 조각과 호러 영화에서 튀어나온 듯한 뾰족한 돌기들이 공간을 가득 채우고 있거든. 로버트 메이플소프의 사진부터 제프 쿤스의 작품을 AI로 재해석한 작업까지, 불안하면서도 매혹적인 이미지들이 관람객을 묘하게 압도하는 기분이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/mowalola-ss27-collection-the-hunger-lfw-runway" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">모와롤라 SS27 ‘더 헝거’, 페이턴트 레더 에어 조던 14 세 가지 공개</h2>
+    <p class="item-summary">모와롤라의 SS27 컬렉션 ‘더 헝거’는 역시 날것 그대로의 관능미를 유감없이 보여주는 것 같아. 여성의 몸과 욕망을 전면에 내세운 서사에 이어, 런웨이에서 깜짝 공개된 페이턴트 레더 소재의 에어 조던 14 뮬은 정말 눈을 뗄 수 없게 만들어. 두 브랜드가 만나 완성한 이 과감하고도 매끄러운 조화가 은근히 자꾸 생각나.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2F006104F5-71BB-44E2-ABAF-A5E25213CEE0-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/shepard-fairey-filthy-lucre-aint-nothing-new-cart-department" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">셰퍼드 페어리, 1937년형 패커드를 아트 카로 재탄생시키다</h2>
+    <p class="item-summary">셰퍼드 페어리가 1937년형 패커드 투어링 세단을 가지고 또 하나의 거대한 오브제를 탄생시켰어. 힙합이 가진 부의 상징과 펑크가 외치는 소비주의 비판을 황금빛 차체 양쪽에 절묘하게 녹여낸 감각이 정말 인상적이야. 빈티지 자동차라는 캔버스 위에 시대의 메시지를 이렇게 무거우면서도 힙하게 담아낼 수 있다는 게 새삼 놀라워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fshepard-fairey-turns-a-1937-packard-into-an-art-car-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/lisa-playstation-dualsense-wireless-controller-collaboration-2026-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">PlayStation과 LISA가 선보이는 한정판 DualSense 컨트롤러</h2>
+    <p class="item-summary">플레이스테이션과 리사무의 만남은 언제나 기대를 저버리지 않는 것 같아. 이번에 공개된 한정판 듀얼센스는 그녀가 가장 좋아하는 크로마 펄 컬러를 바탕으로 시그니처 아이덴티티를 아주 세련되게 녹여냈거든. 함께 출시되는 머치 컬렉션까지 더해지면 게임을 좋아하는 이들에게는 놓칠 수 없는 최고의 아이템이 될 게 분명해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Flisa-playstation-dualsense-wireless-controller-collaboration-2026-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/donatella-versace-brand-launch-revolve-group-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">도나텔라 베르사체, 리볼브 그룹과 새 브랜드 론칭</h2>
+    <p class="item-summary">도나텔라 베르사체가 베르사체CCO 자리에서 내려온 뒤 선택한 다음 행보는 정말 의외이면서도 흥미로워. 리볼브 그룹과 손잡고 2027년에 선보일 패션과 뷰티 레이블이라니, 과연 어떤 문화적 시너지와 새로운 룩을 보여줄지 벌써부터 기대가 돼. 오랜 세월 명품 하우스를 이끌어온 그의 감각이 대중적인 리테일 플랫폼 위에서 어떻게 펼쳐질지 궁금해지는 대목이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fdonatella-versace-brand-launch-revolve-group-info-0-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/hypebeast-hypeform-usm-modular-furniture-symbol-audio-london-design-festival-party" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">하입비스트 x USM, 런던 디자인 페스티벌 파티 현장</h2>
+    <p class="item-summary">런던 디자인 페스티벌 기간 동안 열린 하입비스트와 USM의 파티 현장은 그야말로 힙 그 자체였어. USM의 모듈러 가구와 바이닐 음악이 어우러져 공간 전체가 하나의 거대한 레코드 숍으로 변모했더라고오. 수많은 크리에이터들이 모여 음악과 음료를 즐기며 디자인에 대해 이야기 나누는 그 자유로운 공기가 사진 너머까지 고스란히 전해지는 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fhypebeast-hypeform-usm-modular-furniture-symbol-audio-london-design-festival-party-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-umbro-2" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: Umbro</h2>
+    <p class="item-summary">엄브로가 지나온 한 세기의 역사는 언제 봐도 참 단단하고 멋스러워. 영국의 소박한 펍 뒤편에서 시작해 세계적인 스포츠팀들의 선택을 받기까지, 그 더블 다이아몬드 로고가 가진 헤리티지는 시간이 흐를수록 더 깊어지는 기분이야. 지금 HBX에서 만날 수 있는 엄브로의 아이템들은 그 묵직한 오리지널리티를 일상에서 즐기기에 더할 나위 없이 좋아 보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fit-all-ends-in-tears-t-shirt-washed-black-product-1-445167fd_1790000221.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nike-supreme-fall-2026-apparel-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">슈프림과 나이키, 2026년 가을 어패럴 컬렉션 공개</h2>
+    <p class="item-summary">슈프림과 나이키가 다시 한번 손을 잡고 2026년 가을을 겨냥한 어패럴 캡슐을 들고 나왔어. 발수 나이키 타슬란 소재로 실용성을 챙긴 아우터부터 인조 퍼 리버서블 파카까지, 스포티함과 스트리트 감성이 아주 영리하게 섞여 있더라고. 매 시즌 나오는 조합이지만 이번 컬렉션은 특히 날씨 변화에 대응하면서도 멋을 놓치지 않는 법을 잘 아는 이들에게 딱 어울릴 만해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnike-supreme-fall-2026-apparel-collaboration-collection-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/tesla-roadster-reopens-with-50k-deposit-and-hover-demo" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">테슬라, 10월 1일 공개 앞두고 로드스터 예약 재개…미화 5만 달러 보증금</h2>
+    <p class="item-summary">테슬라가 아직 양산차 한 대 인도하지 못한 로드스터의 예약을 또다시 재개했다니 솔직히 조금 실소가 나오기도 해. 정식 가격이나 사양도 모른 채 5만 달러라는 거액의 보증금을 먼저 요구하는 건 정말 테슬라가 아니면 상상하기 힘든 대담함인 것 같아. 과연 다가오는 텍사스 행사에서 이 수많은 연기와 의심을 잠재울 만한 진짜 물건을 보여줄 수 있을지 지켜보게 돼.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Ftesla-roadster-reopens-with-50k-deposit-and-hover-demo-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/amc-theatre-street-fighter-guile-wearable-popcorn-bucket-cody-rhodes-flat-top-hair-revealed" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">AMC, 가일의 아이코닉 플랫톱을 쓸 수 있는 ‘스트리트 파이터’ 팝콘 버킷 공개</h2>
+    <p class="item-summary">AMC 극장이 영화 스트리트 파이터 개봉을 기념해 내놓은 가일의 플랫톱 팝콘 버킷은 진짜 역대급 장난감 같아. 영화 속 캐릭터의 머리 모양을 그대로 재현해 실제로 착용까지 할 수 있게 만든 발상 자체가 너무 유쾌하잖아. 턱끈과 도그 태그까지 깨알 같은 디테일을 챙겨서, 영화관에 앉아 이걸 쓰고 있는 사람을 마주치면 정말 터져버릴지도 몰라.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Famc-theatre-street-fighter-guile-wearable-popcorn-bucket-cody-rhodes-flat-top-hair-revealed-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/miu-miu-new-balance-530-sl-deco-leather-delave-suede-ballerinas-5f846e-z5o-f0401-f-005-5f846e-3f33-f0009-f-005-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">미우미우 x 뉴발란스 530 SL, ‘화이트’와 ‘시나몬’ 발레 플랫으로 재탄생</h2>
+    <p class="item-summary">미우미우와 뉴발란스가 다시 뭉쳐 530 SL을 발레 플랫으로 재해석한 건 정말 반칙 같은 조합이야. 스포티한 러닝화의 구조와 부드러운 발레리나 슈즈의 무드가 만나서 어디서도 본 적 없는 오묘한 실루엣을 완성했거든. 화이트 가죽과 시나몬 스웨이드 모두 은은하게 스며드는 브랜드 로고와 함께 신는 이의 취향을 확실하게 드러내 줄 아이템이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FftMiu-Miu-New-Balance-530-SL-Deco-Leather-Delave-Suede-Ballerinas-5F846E-Z5O-F0401-F-005-5F846E-3F33-F0009-F-005-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nike-air-force-1-low-nyc-rat-iv4884-200-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키, 거친 ‘NYC Rat’ 디테일로 재해석한 에어 포스 1 로우 공개</h2>
+    <p class="item-summary">나이키가 뉴욕의 상징적인 도심 거주자인 쥐에서 영감을 받아 에어 포스 1 로우를 내놓다니 정말 이들다운 위트야. 어두운 그레이 레더에 브라운 페이크 퍼를 얹고 힐 안쪽에 숨겨둔 레드 아이 디테일은 묘하게 괴기스러우면서도 자꾸 눈이 가게 만들어. 뉴욕 시티 팩의 일환으로 메트로카드 버전과 함께 나온다니, 이 거칠고 독특한 감성을 사랑하는 스니커헤드들에게는 완벽한 수집품이 되겠어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 21 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnike-air-force-1-low-nyc-rat-IV4884-200-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
