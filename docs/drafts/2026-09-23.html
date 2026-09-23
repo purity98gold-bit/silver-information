@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-23 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-23</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/needby-vintage-fall-winter-2026" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fneedby-vintage-fall-winter-2026-lookbook-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">빈티지 데님을 새것으로 살 수 있다면?</h2>
+    <p class="featured-summary">데님 한 벌을 고르는 일은 생각보다 훨씬 복잡하고 머리 아픈 작업입니다. 수선이 겹쳐 완전히 독자적인 존재가 된 빈티지의 멋을 좋아하지만, 직접 찾아 나서는 건 눈이 빠지는 도박이나 다름없죠. 니드바이 빈티지는 그런 마니아들의 마음을 정확히 파악해 빈티지의 감성을 새옷의 완성도로 구현해 냅니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/arthur-jafa-i-am-tony-new-museum-review" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Arthur Jafa와 이미지의 무게</h2>
+    <p class="item-summary">아서 자파의 작업을 처음 마주했던 순간의 숨막히는 감각이 아직도 선생하게 기억납니다. 이번 뉴욕 회고전은 그의 방대한 아카이브를 통해 흑인 비주얼 컬처와 이미지의 무게를 고스란히 체감할 수 있는 자리가 될 겁니다. 아름다움과 잔혹함이 아슬아슬하게 교차하는 그 시각적 밀도를 다시 한번 마주하고 싶어집니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Farthur-jafa-i-am-tony-new-museum-review-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/teyana-taylor-calvin-klein-underwear-camapign-fall-2026-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">테야나 테일러, 캘빈 클라인 2026 가을 언더웨어 캠페인에서 선보인 압도적 퍼포먼스</h2>
+    <p class="item-summary">테야나 테일러가 참여한 이번 캘빈 클라인 캠페인은 단순한 언더웨어 화보 이상의 에너지를 보여줍니다. 격렬한 움직임 속에서도 몸을 편안하게 감싸는 가벼움이 화면 너머로도 고스란히 전해지네요. 일상과 무대를 가리지 않고 자신답게 움직일 수 있다는 메시지가 참 마음에 듭니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fteyana-taylor-calvin-klein-underwear-camapign-fall-2026-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/zellerfeld-nike-airmax-1000-3-stone-burgundy-crush-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키와 젤러펠드, 3D 프린팅 AIRMAX 1000.3 ‘스톤/버건디 크러시’ 공개</h2>
+    <p class="item-summary">나이키와 젤러펠드가 선보인 완전 3D 프린팅 에어맥스는 언제나 기술적인 호기심을 자극합니다. 정제된 제러메시 구조 덕분에 무게는 덜어내고 유연한 핏은 살려내어 신을 때의 감각이 무척 궁금해집니다. 전통적인 스니커즈의 문법을 완전히 비틀어버리는 이런 시도는 언제 환영입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fzellerfeld-nike-airmax-1000-3-stone-burgundy-crush-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/10-era-defining-figures-to-know-from-sothebys-next-hong-kong-sale" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">소더비 홍콩 경매에서 주목할 시대를 정의한 인물 10</h2>
+    <p class="item-summary">예술가들이 수세기 동안 인체를 통해 시대의 욕망과 상처를 탐구해 온 방식은 늘 매력적입니다. 소더비 홍콩 경매를 앞두고 공개된 작품들은 동서양의 철학과 기억이 어떻게 시각화되는지 잘 보여줍니다. 살과 피를 넘어 시대를 정의한 이들의 흔적을 찬찬히 들여다보는 것만으로도 깊은 영감을 받게 됩니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fsothebys-hong-kong-modern-contemporary-art-auction-highlights-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nike-lebron-24-chosen-1s-io8201-700-closer-look-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키 르브론 24 ‘초즌 1s’ 자세히 보기</h2>
+    <p class="item-summary">르브론 제임스가 훈련 세션에서 먼저 선보인 새로운 시그니처 켤레는 시선을 사로잡기에 충분합니다. 선명한 투어 옐로 컬러에 메탈릭 골드로 더해진 디테일이 퍼포먼스 라인 특유의 강렬함을 배가시키네요. 코트 위에서 어떤 존재감을 뿜어낼지 올겨울 정식 출 바깥이 기다려지는 모델입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fnike-lebron-24-chosen-1s-IO8201-700-closer-look-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/neon-genesis-evangelion-huf-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HUF, ‘신세기 에반게리온’ 2026 가을 캡슐 컬렉션 공개</h2>
+    <p class="item-summary">허프와 신세기 에반게리온의 만남은 언제나 스트리트웨어 판에서 기대를 저버리지 않는 조합입니다. 애니메이션 속 상징적인 그래픽을 탄탄한 셔츠와 소품 위에 자연스럽게 녹여낸 감각이 돋보입니다. 특히 야광으로 빛나는 디테일이나 워싱을 거친 질감에서 세심한 완성도가 느껴집니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FNeon-Genesis-Evangelion-HUF-Collaboration-collection-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/aston-martin-valhalla-spider-targets-november-open-top-debut" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애스턴마틴 발할라 스파이더, 1,064마력 미드십 슈퍼카의 더욱 희소한 오픈톱 버전</h2>
+    <p class="item-summary">애스턴마틴이 준비 중인 발할라 스파이더는 그야말로 하이퍼카 시장의 판도를 흔들 희귀한 물건입니다. 1,064마력이라는 엄청난 출력을 품고도 오픈톱 구조를 완성해 낸 엔지니어링이 놀라울 따름이죠. 전 세계 단 몇 대만 허락된 이 오픈에어 머신은 진정한 컬렉터들의 애증을 자극하기에 충분합니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Faston-martin-valhalla-spider-targets-november-open-top-debut-001.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/100-thieves-pokemon-modernica-porcelain-china-shell-chairs-collaboration-collection" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">100 Thieves·Pokémon·Modernica, 파인 차이나 셸 체어로 헤리티지 시팅을 새롭게 해석하다</h2>
+    <p class="item-summary">포켓몬과 백리브스, 그리고 모더니카가 손잡고 선보인 파이버글라스 셸 체어는 정말 소장욕을 자극합니다. 파인 차이나 도자기에서 영감받은 블루 앤 화이트 일러스트레이션을 가구 위에 정교하게 얹어낸 센스가 대단하네요. 어린 시절의 기억과 정제된 미드센추리 디자인이 이렇게 완벽하게 어우러질 줄은 몰랐습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2F100-thieves-pokemon-modernica-porcelain-china-shell-chairs-collaboration-collection-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/marvel-daredevil-born-again-will-officially-end-with-season-3-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마블 '데어데블: 본 어게인', 시즌 3로 공식 종영</h2>
+    <p class="item-summary">디즈니플러스로 자리를 옮겨 세 번째 시즌을 맞이하는 데어데블의 리바이벌이 드디어 종착지를 향해 갑니다. 원작의 오리지널 출연진이 다시 뭉쳐 거리 기반 히어로물의 진수를 보여줄 준비를 마쳤다고 하네요. 아쉬움은 남겠지만, 마무리가 어떻게 지어질지 후반 작업 소식에 귀가 쫑긋해집니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fmarvel-daredevil-born-again-will-officially-end-with-season-3-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/tremaine-emory-denim-tears-from-the-pool-of-black-genius-scad-museum-of-art-exhibition-opening-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">트레메인 에모리의 ‘Denim Tears from the Pool of Black Genius’, SCAD 미술관에서 개막</h2>
+    <p class="item-summary">트레메인 에모리의 데님 티어스를 패션이라는 범주에만 가두는 것은 그간의 작업을 오해하는 일입니다. 이번 SCAD 미술관 회고전은 그의 레이블이 아프리카 디아스포라의 서사를 담아내는 개념미술 그 자체임을 증명합니다. 흑인 천재성의 지형도 안에서 그의 아웃풋이 어떻게 재조명될지 직접 눈으로 확인하고 싶어집니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FftTremaine-Emory-Denim-Tears-from-the-Pool-of-Black-Genius-SCAD-museum-of-art-Exhibition-opening-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/apple-music-hall-london-announcement-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애플의 새 Apple Music Hall, 배터시 발전소 한 공간을 완성형 라이브 제작 스튜디오로 바꾸다</h2>
+    <p class="item-summary">런던 배터시 발전소에 들어선 애플 뮤직 홀은 아티스트와 리스너 모두에게 꿈의 공간처럼 다가옵니다. 소규모 공연의 친밀함과 아레나급 제작 인프라를 동시에 품어낸 설계 방식이 대단히 인상적이네요. 공간을 가득 채우는 서라운드 사운드로 생생한 라이브의 순간을 고스란히 담아내는 감각이 놀랍습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 22 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2FApple-Music-Hall-London-Announcement-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
