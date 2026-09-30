@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-09-30 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-09-30</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/9/bmw-i3-50-xdrive-brings-neue-klasse-design-to-the-3-series" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fbmw-3-series-i3-50-xdrive-ev-car-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">BMW i3 50 xDrive, 3시리즈에 노이어 클라세 디자인을 입히다</h2>
+    <p class="featured-summary">BMW의 3시리즈가 드디어 순수 전기차로 거듭났다는 소식이야. 노이어 클라세 플랫폼을 얹은 i3 50 xDrive는 고성능과 장거리 주행 능력을 다 잡아서 눈길이 가더라고. 전통적인 스포츠 세단의 매력을 유지하면서도 미래지향적인 기술을 담아낸 점이 인상적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/maison-margiela-ss27-spring-summer-2027-paris-fashion-week-glenn-martens-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">메종 마르지엘라 SS27, 가든 티 파티를 해체하다</h2>
+    <p class="item-summary">메종 마르지엘라의 이번 시즌은 일상의 평범함을 해체주의로 흥미롭게 풀어냈어. 찌그러진 은식기나 코팅된 플로럴 패브릭 같은 요소들이 은근한 위트를 더해주더라고. 과감한 절개의 여성복과 전형적인 남성복의 대비도 꽤 매력적인 포인트야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fmaison-margiela-ss27-spring-summer-2027-paris-fashion-week-glenn-martens-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/al-diaz-on-the-real-meaning-behind-samo-with-basquiat" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">바스키아와 함께한 '세이모(SAMO)'의 진짜 의미, 알 디아즈가 말하다</h2>
+    <p class="item-summary">세이모의 진짜 의미에 대해 알 디아즈가 입을 열었어. 단순한 그래피티 태그가 아니라 뉴욕 거리를 걷는 모두를 위한 풍자적인 메시지였다는 이야기가 흥미로워. 50년이 지난 지금도 그 당시의 본질을 지키려는 태도가 멋지게 느껴져.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fal-diaz-on-the-real-meaning-behind-samo-with-basquiat-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/david-hockney-dog-painting-17-christies-london-auction" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">데이비드 호크니의 희귀 반려견 그림, 크리스티 경매서 약 300만 달러에 낙찰되다</h2>
+    <p class="item-summary">데이비드 호크니의 희귀한 반려견 그림이 경매에 나온대. 그의 닥스훈트 스탠리가 침대에 웅크려 자는 모습을 보면 절로 미소가 지어지곤 해. 호크니의 따뜻한 시선이 고스란히 담긴 작품이라 소장 가치가 남달라 보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fdavid-hockney-dog-painting-17-christies-london-auction-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/drakes-fomo-coming-to-streaming-october-1st" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">드레이크의 'FOMO', 10월 1일 스트리밍 플랫폼 출시 예정</h2>
+    <p class="item-summary">드레이크의 단편 영화 'FOMO'에 나온 곡들이 드디어 스트리밍으로 풀린다고 해. 토론토의 여름 풍경과 함께 신곡들을 만날 수 있어서 팬들에게는 반가운 소식일 거야. 투어를 앞두고 분위기를 예열하기에 딱 좋은 타이밍이지.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2F%F0%9F%93%B8-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/phillips-rolex-oyster-perpetual-cosmograph-daytona-four-seasons-shatter-records-over-49-million-usd-charity-auction" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">유니크한 Rolex 'Four Seasons' Daytona, 4,950만 달러 자선 경매로 기록 경신</h2>
+    <p class="item-summary">롤렉스와 필립스가 함께 선보인 원오프 데이토나 컬렉션이 엄청난 기록을 세웠어. 사계절을 주제로 하드 스톤과 화려한 젬세팅을 더해 시계의 예술성을 극대화했더라고. 자선 경매 역사상 최고 모금액을 기록했다니 그 가치가 더 특별하게 다가와.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fphillips-rolex-oyster-perpetual-cosmograph-daytona-four-seasons-shatter-records-over-49-million-usd-charity-auction-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/kader-sylla-adidas-skateboarding-signature-shoe-the-kader" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Kader Sylla, adidas Skateboarding과 함께 첫 시그니처 슈즈 공개</h2>
+    <p class="item-summary">카더 실라가 아디다스와 손잡고 첫 시그니처 슈즈를 내놓았어. 90년대 농구화 무드에 스케이트보딩에 필요한 내구성을 잘 녹여낸 신발이야. 스케이트파크를 넘어 일상에서도 편하게 신기 좋은 디자인이라 손이 자주 갈 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fkader-sylla-adidas-skateboarding-signature-shoe-the-kader-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/inscopes-hayley-smith-on-what-galleries-keep-getting-wrong" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">InScope의 Hayley Smith, 갤러리들이 계속해서 놓치고 있는 것들에 대해 말하다</h2>
+    <p class="item-summary">갤러리와 아티스트의 관계가 점차 변해가는 요즘이야. 전통적인 방식을 넘어 직접 소통하고 커뮤니티를 만드는 아티스트들이 늘고 있지. 갤러리 역시 새로운 형태의 동반자 관계로 진화해야 할 때인 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fhayley-river-smith-on-why-the-artist-gallery-relationship-has-to-change-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/new-arrivals-from-hbx-unlikely-3" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: 언라이클리(Unlikely)</h2>
+    <p class="item-summary">나카다 신스케가 이끄는 언라이클리의 옷들은 언제나 눈여겨보게 돼. 아메리칸 클래식과 아이비리그 무드를 해체주의적인 워크웨어로 풀어내는 솜씨가 남다르거든. 오버사이즈 실루엣과 위트 있는 디테일이 자연스러운 레이어링을 완성해 줘.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Funlikely-team-tee-long-sleeve-white-1-product-1-d1f6991b_1790689201.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/blue-bottle-coffee-notes-in-repose-jazz-compilation-limited-edition-vinyl-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Blue Bottle의 첫 재즈 앨범, 여유로운 감상을 위해 탄생하다</h2>
+    <p class="item-summary">블루보틀에서 브랜드 최초의 한정판 재즈 바이닐을 선보였어. 카페의 앰비언트 사운드와 현대 재즈가 어우러져 일상의 속도를 늦추게 만드는 매력이 있지. 커피 한 잔과 함께 여유롭게 음악을 즐기기에 더할 나위 없는 초이스야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fblue-bottle-coffee-notes-in-repose-jazz-compilation-limited-edition-vinyl-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/nothing-headphone-1-pro-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nothing Headphone (1) Pro, 일상적 청취와 스튜디오급 제어의 경계를 허물다</h2>
+    <p class="item-summary">낫싱이 선보인 새로운 오이어 헤드폰은 투명한 디자인 언어가 한층 더 정교해졌어. 일상적인 무선 청취는 물론이고 스튜디오급 제어까지 가능하다고 하니 기능적으로도 기대가 돼. 독창적인 감성과 실용성을 모두 챙긴 모습이 마음에 들어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fft-nothing-headphone-1-pro-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/9/post-archive-faction-paf-fall-winter-2026-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">포스트 아카이브 팩션(PAF), FW26 'Drifter' 컬렉션 출시</h2>
+    <p class="item-summary">포스트 아카이브 팩션의 드리프터 컬렉션은 언제나 구조적인 재미를 줘. 차분한 색감 덕분에 텍스처와 실루엣의 디테일이 더욱 살아나는 느낌이랄까. 리버 재킷부터 셋업까지 절제되면서도 유동적인 무드가 아주 매력적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 29 Sep 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F09%2Fpost-archive-faction-paf-fall-winter-2026-collection-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
