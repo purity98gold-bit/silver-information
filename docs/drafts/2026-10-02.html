@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-02 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-02</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/yung-lean-jonatan-hastad-art-exhibition-collected-works-2026-2016-stockholm-sweden-info" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fyung-lean-jonatan-hastad-art-exhibition-collected-works-2026-2016-stockholm-sweden-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">Yung Lean의 아트 전시회에는 과연 무엇이 있을까?</h2>
+    <p class="featured-summary">스웨덴 랩의 아이콘 융 린이 이번엔 음악이 아닌 미술로 우리를 찾아왔어. 스톡홀름에서 열린 그의 첫 대규모 전시 'Collected Works'를 보니 10대 시절 빠져들었던 그래피티가 그의 진짜 뿌리였다는 게 실감 나더라고. 음악적 성취에 머물지 않고 비주얼 아트 영역까지 확장하는 그의 행보는 언제 봐도 매력적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/asap-rocky-awge-ss27-pfw" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">에이셉 라키의 AWGE SS27, 파리를 장악하다</h2>
+    <p class="item-summary">에이셉 라키가 이끄는 AWGE가 파리 패션위크에서 또 한 번 사고를 쳤지. 콘서트 직전에 열린 이번 런웨이는 밀리터리 무드를 멋지게 비틀어낸 전술 조끼와 레더 망토로 가득했어. 패션과 음악을 하나로 엮어내는 그의 크리에이티브 제국은 날이 갈수록 더 단단해지는 기분이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fhed.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/balenciaga-ss27-spring-summer-2027-runway-show-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">발렌시아가 SS27 컬렉션, 꾸뛰르의 캐주얼한 변신을 증명하다</h2>
+    <p class="item-summary">피엘파올로 피춀리가 재해석한 발렌시아가는 역시 기대를 저버리지 않네. 데님과 봄버 재킷 같은 일상의 에센셜 아이템에 정교한 꾸뛰르 기법을 녹여내서 전혀 새로운 차원의 실루엣을 만들어냈어. 신체를 의복의 근본으로 삼는다는 철학이 이번 레디투웨어에서도 우아하게 빛을 발하는 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbalenciaga-ss27-spring-summer-2027-runway-show-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/louis-de-guzman-jordan-brand-collaboration-capsule-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Louis De Guzman, Jordan Brand 아티스트 시리즈를 위해 Jumpman을 재해석하다</h2>
+    <p class="item-summary">루이 데 구즈만이 조던 브랜드와 손잡고 아주 개인적이면서도 깊이 있는 협업을 선보였어. 필리핀 이주민 가족의 추억이 담긴 상자에서 영감을 받은 이번 컬렉션은 손글씨 디테일과 기하학적인 그래픽이 더해져 남다른 서사를 완성했지. 단순한 협업을 넘어 자신의 뿌리를 진정성 있게 풀어내는 아티스트의 태도가 참 멋스러워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Flouis-de-guzman-jordan-brand-collaboration-capsule-collection-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/new-arrivals-from-hbx-stone-island-2" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: 스톤 아일랜드</h2>
+    <p class="item-summary">스톤 아일랜드가 보여주는 기술적 실험과 기능성에 대한 집착은 언제나 묘한 신뢰감을 줘. 4주십이 넘는 시간 동안 원단 혁신을 거듭하며 자신들만의 독보적인 시그니처를 지켜왔잖아. 이번 신상품 라인업 역시 브랜드 특유의 고집스러운 헤리티지가 고스란히 담겨 있어서 자꾸만 눈이 가게 돼.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Forganic-cotton-jersey-t-shirt-with-camo-print-navy-blue-product-1-3a341b14_1790863861.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/zendaya-on-second-co-created-apparel-footwear-cloudnova-moon-mary-jane-collection" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">젠데이아와 온(On), 두 번째 협업 어패럴 및 풋웨어 컬렉션 공개</h2>
+    <p class="item-summary">온과 젠데이아의 두 번째 만남은 액션 영화 같은 강렬한 무드로 시선을 사로잡네. 로 로치의 감각적인 스타일링이 더해져서 퍼포먼스 테크놀로지와 일상의 스타일이 아주 세련되게 맞물렸어. 특히 커스텀 파이톤 프린트가 들어간 액티브웨어는 운동할 때뿐만 아니라 일상에서도 충분히 멋 부리기 좋은 아이템이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fzendaya-on-second-co-created-apparel-footwear-cloudnova-moon-mary-jane-collection-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/feid-salomon-acs-nexxt-the-green-star-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">페이드 x 살로몬 'ACS NEXXT 더 그린 스타' 공개</h2>
+    <p class="item-summary">살로몬과 페이드의 만남은 언제나 대담한 시각적 재미를 주지. 이번에 공개된 ACS NEXXT는 브랜드의 탄탄한 아웃도어 유산에 페이드 특유의 생동감 넘치는 그린 컬러와 크롬 디테일이 더해져서 확실한 존재감을 뽐내. 신발 하나로 자신의 세계관을 이렇게 뚜렷하게 보여줄 수 있다는 게 새삼 놀라워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Ffeid-salomon-acs-nexxt-the-green-star-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/dom-perignon-damien-hirst-limited-edition-bottle-release" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Dom Pérignon의 최신 리미티드 에디션 보틀, Damien Hirst와 만나다</h2>
+    <p class="item-summary">동시대 가장 파격적인 아티스트 데미안 허스트가 돔 페리뇽과 손을 잡았어. 그의 시그니처인 만화경 패턴이 더해진 이번 리미티드 에디션은 보틀 자체만으로도 하나의 예술 작품을 보는 것 같아. 빈티지마다 담긴 고유의 컬러 팔레트가 연말 분위기를 한층 더 고급스럽게 만들어 줄 것 같네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fdom-perignon-damien-hirst-limited-edition-bottle-release-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/casio-g-shock-mrg-d5000-80000-usd-blue-sapphire-crafted-limited-edition-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">G-Shock, 전체를 블루 사파이어로 제작한 8만 달러의 MRG-D5000 공개</h2>
+    <p class="item-summary">지샥이 작정하고 내놓은 블루 사파이어 크리스털 시계는 그야말로 기술의 정점이야. 브랜드 창립자의 오랜 구상이 10년 만에 현실화되었다는데, 전통 목조 결구 방식을 차용한 프레임워크부터 남다른 공정이 느껴지더라고. 가격대를 떠나 이 작은 시계 안에 담긴 집념과 희소성 자체만으로도 충분히 화제 될 만해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fcasio-g-shock-mrg-d5000-80000-usd-blue-sapphire-crafted-limited-edition-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/nike-apex-marathon-racing-shoe-official-announcement" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키, 마라톤 레이싱화 '에이펙스' 공식 출시</h2>
+    <p class="item-summary">나이키가 마라톤 레이싱의 판도를 뒤흔들 새로운 에이펙스를 공개했어. 알파플라이보다 더 가벼우면서도 엄청난 에너지 리턴을 자랑한다니 러너들 가슴을 또 한 번 뛰게 만들겠지. 40mm 제로 드롭 플랫폼과 에어 줌 유닛의 조합이 실제로 어떤 속도감을 줄지 자꾸만 궁금해지는 신발이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnike-apex-marathon-racing-shoe-official-announcement-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/matieres-fecales-the-ninety-nine-percent-ss27-paris-fashion-week-runway-collection" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Matières Fécales, Place de la République에서 'THE NINETY NINE PERCENT' SS27 컬렉션 선보여</h2>
+    <p class="item-summary">마티에 페칼레가 파리에서 선보인 첫 런웨이는 그야말로 강렬한 시각적 선언이었어. 오직 유색인종 모델들로만 채운 99가지 룩을 통해 소외된 정체성과 노동자 계층에 대한 메시지를 가감 없이 던졌지. 핸드메이드 직물과 크리스찬 루부탱과의 협업까지 더해져 예술과 패션의 경계를 멋지게 무너뜨렸어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmatieres-fecales-the-ninety-nine-percent-ss27-paris-fashion-week-runway-collection-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/new-balance-204l-truffle-salt-u204l8wr-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">뉴발란스, 70년대 슬림함과 2000년대 테크 미학을 결합한 204L '트러플 솔트' 출시</h2>
+    <p class="item-summary">뉴발란스가 선보인 새로운 로우 프로파일 실루엣, 204L 트러플 솔트가 눈에 띄네. 70년대 트랙 러닝화의 슬림한 라인에 2000년대 테크니컬 무드를 얹어서 요즘 스트리트 스타일에 딱 어울리는 스니커즈가 완성됐어. 과하지 않으면서도 세심하게 조합된 스웨이드와 메시 디테일이 손이 자주 갈 것 같은 완벽한 데일리 슈즈야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 01 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnew-balance-204l-truffle-salt-U204L8WR-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
