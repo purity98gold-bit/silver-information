@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-04 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-04</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/peacock-taps-eddie-murphy-upcoming-drama-series-the-chairman-news" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fpeacock-taps-eddie-murphy-upcoming-drama-series-the-chairman-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">피콕, 새 드라마 시리즈 '더 체어맨' 주연에 에디 머피 낙점</h2>
+    <p class="featured-summary">에디 머피가 피콕의 새로운 오리지널 드라마 시리즈 더 체어맨의 주연을 맡는다는 소식이다. 매드맨의 매튜 와이너와 함께 총괄 프로듀서로도 참여한다고 하니 과연 어떤 깊이 있는 서사를 보여줄지 벌써부터 기대를 모으고 있다. 코미디의 전설이 보여줄 첫 실사 TV 시리즈 도전이라는 점에서 올드 팬들의 마음을 설레게 하기 충분하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 03 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/bradley-cooper-cast-duke-paramount-g-i-joe-reboot-director-danny-mcbride-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">대니 맥브라이드 감독의 파라마운트 '지.아이.조' 리부트작, 듀크 역에 브래들리 쿠퍼 캐스팅</h2>
+    <p class="item-summary">파라마운트의 새로운 지.아이.조 리부트 영화에서 야전 사령관 듀크 역을 브래들리 쿠퍼가 맡게 되었다. 대니 맥브라이드가 메가폰을 잡고 해즈브로의 클래식한 장난감을 새롭게 재해석한다고 하니 기존의 틀을 깬 신선한 액션 연출이 탄생할 것 같다. 트랜스포머와의 크로스오버를 분리하고 독자적인 노선을 걷는 만큼 영화 자체의 완성도에 더욱 집중하게 된다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbradley-cooper-cast-duke-paramount-g-i-joe-reboot-director-danny-mcbride-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/nike-zoom-vomero-5-cordura-camo-green-iq0380-300-official-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키, 코듀라 소재의 '카모 그린'으로 한층 견고해진 겨울용 보메로 5 출시</h2>
+    <p class="item-summary">나이키 줌 보메로 5에 처음으로 코듀라 소재가 적용되어 차가운 계절을 겨냥한 카모 그린 컬러로 찾아온다. 기존의 친숙한 패널 레이아웃과 오버레이 비율은 그대로 유지하면서 고강도 나일론 직물을 더해 내구성과 보온성을 단단히 챙겼다. 흙과 자연을 닮은 묵직한 올리브 톤 덕분에 겨울철 야외 활동용 스니커즈로 이보다 더 실용적인 선택지는 없을 것이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FNike-Zoom-Vomero-5-Cordura-Camo-Green-IQ0380-300-Official-Images-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/raymond-weil-millesime-jubilee-limited-edition-7776-stc-65501-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Raymond Weil, 한정판 Millesime Jubilee 워치로 창립 기념 스토리 확장</h2>
+    <p class="item-summary">레이몬드 웨일이 창립 50주년을 기념하며 밀레짐 주빌레 오토매틱 크로노그래프를 500피스 한정으로 선보인다. 라이트 블루 컬러의 바이 컴팩스 다이얼과 네오 빈티지 디자인 언어가 어우러져 독립 워치메이커 특유의 클래식한 멋을 은은하게 뿜어낸다. 과하게 화려하지 않으면서도 브랜드의 유산을 고스란히 담아내어 손목 위에서 잔잔한 존재감을 드러내기 좋은 피스다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fraymond-weil-millesime-jubilee-limited-edition-7776-stc-65501-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/adidas-originals-for-green-label-relaxing-gazelle-og-charcoal-gray-lc2631-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">세련된 스웨이드 소재의 "Charcoal Gray" 컬러로 돌아온 adidas Originals GAZELLE OG</h2>
+    <p class="item-summary">아디다스 오리지널스와 유나이티드 아로우즈의 그린 레이블 릴랙싱이 손잡고 가젤 OG의 차콜 그레이 컬러를 독점 발매한다. 미묘한 올리브 톤이 감도는 짙은 스웨이드 어퍼는 빛에 따라 그레이와 그린을 오가며 시각적인 즐거움을 더해준다. 여기에 브라운 검 러버 솔을 매치해 절제된 빈티지 무드를 극대화한 점이 에디터의 마음에 쏙 드는 부분이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fadidas-originals-for-green-label-relaxing-gazelle-og-charcoal-gray-lc2631-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-air-force-1-victory-lap-pine-green/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">London's Favorite Radio Station Deserves a Victory Lap</h2>
+    <p class="item-summary">나이키가 런던의 상징적인 라디오 스테이션과 손을 잡고 파인 그린 컬러의 에어 포스 1 로우를 새롭게 공개했다. 글로벌 무대로 뻗어나가는 라디오 스테이션의 승리를 기념하는 모델인 만큼 스트리트 컬처의 진한 로맨스가 묻어난다. 신발 한 켤레에 담긴 로컬 문화의 결속력이 요즘 스니커즈 신에서 가장 멋스러운 스토리텔링이 아닐까 싶다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1790927547-7-22.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/vans-skate-loafer-black/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Vans’ Latest Skate Loafer Is Further Proof They Make a Great Pair</h2>
+    <p class="item-summary">반스의 새로운 홀스빗 스케이트 로퍼는 스케이트보딩의 터프함과 클래식한 드레스 슈즈의 우아함이 근사하게 만난 결과물이다. 블랙 스웨이드 어퍼에 폴리시드 가공된 홀스빗 디테일을 더하고 브랜드의 시그니처 와플 솔을 장착해 멋과 실용성을 동시에 잡았다. 무심하게 툭 신어주기만 해도 스타일링 전체에 무심한 듯 시크한 뉘앙스를 더해줄 완벽한 데일리 슈즈다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1790846681-skate-loafer-shoe-vans-alt5.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-superstar-ii-ripple/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">adidas Made a Dressy Ripple-Soled Sneaker on Its Own</h2>
+    <p class="item-summary">아디다스가 클랏과의 협업 없이도 독자적으로 날카로운 톱니바퀴 아웃솔을 장착한 슈퍼스타 II 리플을 선보였다. 클래식한 실루엣에 톱니 모양의 립블 솔을 더해 대담하면서도 유니크한 옆모습을 완성해낸 점이 눈길을 사로잡는다. 군더더기 없는 디자인 속에서도 은근한 반항기를 숨기고 있는 이런 스니커즈야말로 진정한 패션 피플들의 은은한 멋을 채워준다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791049307-adidas-superstar-ii-ripple-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-air-max-plus-cordura-black/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike’s Killer Cordura Air Maxes Are Built to Last</h2>
+    <p class="item-summary">가을과 겨울 시즌을 조용하지만 확실하게 책임져줄 나이키의 올블랙 코듀라 에어 맥스 라인업이 다시 돌아왔다. 궂은 날씨에도 끄떡없는 내구성을 자랑하는 고강도 소재가 적용되어 투박한 매력과 세련된 감성을 동시에 챙긴 점이 돋보인다. 화려한 디테일 없이도 견고함 그 자체로 아우라를 뿜어내는 모델이라 언제 신어도 실패가 없다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791049143-nike-air-max-plus-cordura-black-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-air-max-95-i-95-sneakers/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike’s Sculpted Air Maxes Belong on the Trails</h2>
+    <p class="item-summary">나이키가 아웃도어 무드를 물씬 풍기는 에어 맥스 95 아이 나이십 모델을 미디엄 올리브와 WHEAT 같은 새로운 컬러로 재출시했다. 거친 자연 환경을 겨냥한 러기드한 디테일들이 스포티한 실루엣과 어우러져 독특한 볼륨감을 만들어낸다. 도시의 아스팔트 위에서도 산악 트레일 위에서도 고유의 존재감을 잃지 않는 매력적인 실루엣이다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791049036-nike-air-max-95-i-95-sneakers-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-sb-blazer-mid-black-spruce/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike’s Suave Suede Skate Shoe Is Ready for Fall Sessions</h2>
+    <p class="item-summary">나이키 SB의 줌 블레이저 미드가 가을 시즌을 완벽하게 저격할 블랙 스프루스 컬러와 크리미한 스웨이드 조합으로 찾아왔다. 차분하게 가라앉은 딥 그린 컬러웨이가 스케이트보딩 세션은 물론 가을철 일상복과도 자연스럽게 녹아든다. 신을수록 발에 맞게 길어지는 부드러운 스웨이드의 질감이 오랫동안 손이 가게 만드는 비결이다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791048898-nike-sb-blazer-mid-black-spruce-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/courreges-ss27-details/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Up Close With Courrèges' Incredible Shoes &amp; Insane Hats</h2>
+    <p class="item-summary">드류 헨리의 첫 꾸레ージュ SS27 컬렉션에서 선보인 신발과 모자들의 디테일은 그야말로 시각적 충격 그 자체였다. 미래지향적인 실루엣과 기하학적인 형태의 모자들이 어우러져 쇼의 완성도를 극적으로 끌어올렸다. 의상만큼이나 액세서리에서 브랜디한 고유의 정체성을 완벽하게 증명해낸 훌륭한 크리에이티브였다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 03 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791036651-courreges-ss27-details-12-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
