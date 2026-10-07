@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-07 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-07</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/brain-dead-adidas-bowling-cheetah-snakeskin-release-info" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbrain-dead-adidas-bowling-cheetah-snakeskin-release-info-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">Brain Dead x adidas 볼링화, 파격적인 변신을 꾀하다</h2>
+    <p class="featured-summary">브레인 데드와 아디다스가 이번에 내놓은 볼링화는 진짜 신선 그 자체다. 1978년 오리지널 디자인을 바탕으로 하면서도 대담한 레오파드랑 스네이크스킨을 통 크게 얹어버렸거든. 일상에 확 포인트 주기 딱 좋은 비주얼이라 발길이 저절로 향할 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/barbara-kruger-bourse-de-commerce-pinault-collection-history-of-tears-installation" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Barbara Kruger가 파리 Bourse de Commerce의 새로운 설치 작품을 통해 'The History of Tears'를 조명하다</h2>
+    <p class="item-summary">바바라 크루거가 파리를 완전히 블랙과 화이트, 레드 컬러의 메시지로 물들였다. 건축물 전체를 아우르는 과감한 텍스트 작업들이 관람객을 압도하는 느낌이다. 권력이나 소외 같은 무거운 주제를 이렇게 시각적으로 강렬하게 풀어내는 힘이 새삼 놀랍다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbarbara-kruger-bourse-de-commerce-pinault-collection-history-of-tears-installation-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/south2-west8-columbia-collaboration-fall-2026-fw26-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">포켓으로 가득한 South2 West8 x Columbia FW26 컬렉션</h2>
+    <p class="item-summary">사우스투 웨스트와 콜롬비아가 손잡고 만든 이번 가을 컬렉션은 진짜 실용성의 끝판왕이다. 플라이 피싱 무드에 넉넉한 유틸리티 포켓까지 더해져서 아웃도어 감성을 제대로 저격한다. 입을수록 손이 갈 것 같은 디테일들이 마음에 쏙 든다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fsouth2-west8-columbia-collaboration-fall-2026-fw26-release-info-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/beams-rei-co-op-1986-archive-legend-expedition-parka-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">빔즈와 REI 코옵, 1986년 아카이브 레전드 부활시켜</h2>
+    <p class="item-summary">빔즈가 REI 코옵의 1986년 아카이브를 현대적인 감성으로 멋지게 부활시켰다. 고어텍스 윈드스토퍼를 써서 기능성까지 확실하게 챙겼으니 찬바람 불 때 이만한 아우터도 없을 거다. 레트로한 컬러 팔레트까지 완벽하게 취향을 저격한다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbeams-rei-co-op-1986-archive-legend-expedition-parka-collaboration-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/zenith-defy-chronograph-usm-timeforart-unique-piece-reference-03-a780-400-t-01-m3642-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">제니스와 USM, 타임포아트(TimeForArt)를 위해 미러 다이얼의 데피(DEFY) 크로노그래프를 선보이다</h2>
+    <p class="item-summary">제니스와 USM이 다시 뭉쳐서 선보인 타임포아트 에디션은 정말 소장 가치 만점이다. 거울처럼 반짝이는 미러 다이얼에 USM의 시그니처 컬러를 살짝 얹어서 주변 풍경을 고스란히 담아낸다. 사이드보드 세트 구성까지 디테일이 아주 예술이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fzenith-defy-chronograph-usm-timeforart-unique-piece-reference-03-a780-400-t-01-m3642-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/lego-batman-returns-batmobile-duck-set-67008-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">레고, '배트맨 2' 배트모빌과 펭귄의 오리 차로 브릭 추격전 재현</h2>
+    <p class="item-summary">레고가 배트맨 2 속 상징적인 차량 두 대를 완벽한 672피스 브릭으로 재현해 냈다. 특히 배트미사일로 변신하는 배트모빌의 디테일은 어른이들 마음까지 설레게 하기 충분하다. 펭귄의 오리 차랑 나란히 두면 그 시절 영화 속 장면이 눈앞에 생생할 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FftLEGO-Batman-Returns-Batmobile-Duck-Set-67008-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/diptyque-2026-holiday-collection-the-enchanted-forest-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">딥티크 2026 홀리데이 컬렉션, 생동감 넘치는 우든 원더랜드를 구현하다</h2>
+    <p class="item-summary">딥티크가 선보인 올가홀리데이 컬렉션은 언제나 그렇듯 실망시키는 법이 없다. 시그니처인 사팽 향이 전해주는 서늘하고 푸릇한 숲의 기운이 벌써부터 겨울을 기다리게 만든다. 우드 톤의 패키지까지 더해져서 연말 선물용으로 완벽하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fdiptyque-2026-holiday-collection-the-enchanted-forest-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/the-chinese-library-hairy-crab-autumn-seasonal-menu-tai-kwun-hong-kong" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">더 차이니즈 라이브러리, 더욱 깊어진 중국 지역의 맛이 담긴 가을 메뉴 선보여</h2>
+    <p class="item-summary">홍콩의 더 차이니즈 라이브러리가 새롭게 선보인 가을 메뉴는 보기만 해도 군침이 돈다. 제철 식재료를 사용해 깊은 지역의 맛을 살린 뚝배기 장어 조림 같은 요리들이 아주 매력적이다. 전통적인 중식의 매력을 고급스럽게 잘 풀어낸 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fftthe-chinese-library-hairy-crab-autumn-seasonal-menu-tai-kwun-hong-kong.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/matthieu-blazy-chanel-paris-fashion-week-ss27-runway-collection" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Matthieu Blazy, SS27 컬렉션에서 Gabrielle Chanel의 다층적인 유산을 재해석하다</h2>
+    <p class="item-summary">매튜 블라지가 샤넬을 통해 보여준 이번 컬렉션은 그야말로 해방감 그 자체였다. 코르셋의 엄격함에서 벗어나 자유롭고 유연한 수트 룩으로 나아가는 과정이 런웨이 고스란히 묻어난다. 음악과 함께 어우러진 대담한 실루엣들이 깊은 인상을 남긴다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmatthieu-blazy-chanel-paris-fashion-week-ss27-runway-collection-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/adidas-originals-hellstar-megaride-s2-collection-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">헬스타, 아디다스 메가라이드 S2를 뜨겁게 달구다</h2>
+    <p class="item-summary">헬스타가 아디다스와 손잡고 선보인 메가라이드 S2는 에너지가 아주 넘쳐흐른다. 짙은 블랙에서 강렬한 레드로 이어지는 그라데이션에 불꽃 그래픽까지 더해져서 시선을 한눈에 사로잡는다. 스트리트 룩에 강렬한 한 방을 더하고 싶을 때 딱이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fftadidas-originals-hellstar-megaride-s2-collection-collaboration-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/jay-z-marcypen-capital-partners-close-acquire-50-percent-stake-rihanna-fenty-beauty-reports-rumors" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">제이지의 마시펜, LVMH가 보유한 리한나 '펜티 뷰티' 지분 50% 인수 임박</h2>
+    <p class="item-summary">제이이지의 투자사가 리한나의 펜티 뷰티 지분 인수를 코앞에 두고 있다는 소식이다. 뷰티 업계에서 엄청난 영향력을 가진 브랜드인 만큼 앞으로의 행보가 더욱 주목된다. 두 거물의 만남이 어떤 시너지를 만들어낼지 은근히 기대가 된다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FJAY-Z-MarcyPen-Capital-Partners-Close-acquire-50-percent-Stake-Rihanna-Fenty-Beauty-reports-rumors-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/sacai-chitose-abe-spring-summer-2027-womenswear-collection-runway-paris-fashion-week" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">사카이 SS27 컬렉션, '생성의 순간(Moment of Becoming)'에서 발견한 새로운 형태</h2>
+    <p class="item-summary">사카이가 파리에서 선보인 컬렉션은 언제나 예상치 못한 해체주의의 매력을 보여준다. 절개선이나 내부 구조를 겉으로 드러내며 불완전함 속에서 새로운 아름다움을 찾아낸다. 확신과 취약성 사이의 묘한 균형감이 사카이만의 색깔을 확실히 보여준다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 06 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fftsacai-chitose-abe-spring-summer-2027-womenswear-collection-runway-paris-fashion-week.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
