@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-09 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-09</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/new-balance-cooper-flagg-official-signature-logo-reveal-news" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnew-balance-cooper-flagg-official-signature-logo-reveal-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">뉴발란스, 쿠퍼 플래그 공식 시그니처 로고 공개</h2>
+    <p class="featured-summary">뉴발란스와 댈러스 매버릭스의 에이스 쿠퍼 플래그가 마카오에서 드디어 자신의 시그니처 로고를 선보였어. 고향인 메인주의 소나무 실루엣을 기하학적 형태로 녹여낸 디테일이 아주 인상적이야. 젊은 나이에 벌써 이런 상징적인 발자취를 남기는 걸 보면 앞으로의 활약이 더 기대되더라고.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/ramo-mayo-level-50-exhibition" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">라마 마요, 예술과 음악, 문화와 함께한 50년을 돌아보는 전시 '레벨 50(Level 50)' 개최</h2>
+    <p class="item-summary">라마 마요의 지난 50년 예술 여정을 돌아보는 첫 개인전 '레벨 50'이 뉴욕 허드슨에서 열리고 있어. 회화부터 파운드 오브제까지 그가 오랜 시간 쌓아온 크리에이티브한 인맥과 취향이 고스란히 담긴 자리야. 문화와 예술을 연결해온 그의 깊은 내공을 엿볼 수 있어서 괜히 마음이 가네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Framo-mayo-level-50-exhibition-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/gen-z-art-basel-ubs-global-collecting-survey-2026-findings" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Z세대 아트 컬렉터, 미술 시장의 최대 큰손으로 부상하다</h2>
+    <p class="item-summary">요즘 미술 시장의 진짜 큰손은 단연 Z세대 컬렉터들이라는 흥미로운 통계가 나왔어. 부모 세대보다 훨씬 과감하게 지출하면서 소위 '잡식성'으로 시장을 이끌고 있다고 해. 젊은 감각으로 작품을 수집하는 이들의 행보가 앞으로 미술계를 어떻게 바꿀지 지켜보는 재미가 쏠쏠해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fgen-z-art-basel-ubs-global-collecting-survey-2026-findings-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/enio-arroyo-gomezladron-de-casas-saveartspace" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">에니오 아로요 고메즈의 작품 'Ladrón', 퀸즈에 새로운 둥지를 틀다</h2>
+    <p class="item-summary">뉴욕 퀸즈의 한 주차장 빌보드에 코스타리카 아티스트 에니오 아로요 고메즈의 작품이 걸렸어. 집을 손에 쥐고 도망치는 기이한 생명체를 그린 초현실적인 모습이 묘한 여운을 남기더라고. 상상력 넘치는 공공 미술을 통해 이주와 소속감이라는 무거운 주제를 은근하게 풀어낸 시도가 참 신선해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fenio-arroyo-gomezladron-de-casas-saveartspace-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/gta-6-radio-stations-host-lineup-details" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">배드 버니, 라나 델 레이, 버나 보이 등 '그랜드 테프트 오토 VI' 라디오를 장악하다</h2>
+    <p class="item-summary">기대작 '그랜드 테프트 오토 VI'가 역대급 라디오 라인업을 공개하면서 또 한 번 사람들을 놀라게 만들었어. 배드 버니부터 라나 델 레이, 슬레이어까지 장르를 넘나드는 아티스트들이 게임 속 가상의 전파를 책임진다고 해. 가상의 플로리다를 누비며 들을 음악을 고르는 재미만으로도 벌써 플레이하고 싶어지네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fgta-vi-radio-station-details-feature.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/destinee-ross-sutton-state-of-art-hypeart-spotlight" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">데스티니 로스-서튼이 말하는 '나쁜 갤러리가 갤러리가 없는 것보다 나쁜 이유'</h2>
+    <p class="item-summary">갤러리와 아티스트의 관계에 대해 다시금 생각해보게 만드는 데스티니 로스-서튼의 인터뷰를 흥미롭게 읽었어. 소셜 미디어 덕분에 혼자서도 활동할 수 있는 세상이지만, 진짜 나에게 맞는 갤러리는 대체 불가능한 파트너가 될 수 있다는 말이 참 와닿더라고. 결국 서로에게 확실한 가치를 증명해야 하는 시대인 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fdestinee-ross-sutton-state-of-art-hypeart-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/wren-the-vessel-watch-limited-edition-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">렌(Wren), 양면 파셋 사파이어 크리스탈을 품은 '베슬(Vessel)' 워치 공개</h2>
+    <p class="item-summary">뉴욕의 신생 독립 시계 브랜드 렌이 내놓은 새로운 스포츠 워치 베슬은 정말 미래에서 온 것 같은 비주얼이야. 상하 대칭형 미러 곡면 패싯을 적용한 사파이어 크리스탈이라니, 디테일에 공들인 흔적이 눈에 확 들어와. 다이버 워치를 넘어 새로운 디자인 영역을 개척하려는 도전 정신이 멋진 시계야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fwren-the-vessel-watch-limited-edition-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/nomos-metro-date-power-reserve-metro-neomatik-41-ice-blue-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">노모스, 두 가지 아이스 블루 '메트로' 시계 출시</h2>
+    <p class="item-summary">노모스가 메트로 컬렉션에 은은한 메탈릭 피니시를 더한 새로운 아이스 블루 모델들을 선보였어. 도시적인 건축물에서 영감을 받았다는 옅은 블루 컬러가 특유의 여백의 미와 어우러져서 아주 청량해 보여. 미니멀하면서도 손목에 은은한 포인트를 주기엔 이만한 게 없지 싶어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnomos-metro-date-power-reserve-metro-neomatik-41-ice-blue-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/everyone-brick-and-mortar-pop-up-belowground-hong-kong-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">everyone, 홍콩 익스클루시브 피스와 함께 BELOWGROUND를 장식하다</h2>
+    <p class="item-summary">도쿄의 스트리트웨어 브랜드 에브리원이 홍콩 BELOWGROUND에서 첫 팝업을 열고 본격적인 진출에 나섰어. 절제된 미학이 돋보이는 2026 가을 컬렉션과 함께 홍콩 한정 아이템들을 알차게 준비했더라고. 포스트모던 가구로 꾸며진 공간 셋업까지 브랜드 특유의 무드가 고스란히 느껴지는 멋진 프로젝트야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Feveryone-brick-and-mortar-pop-up-belowground-hong-kong-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/maap-first-lab-concept-store-london-uk-opening-clare-cousins-architects-interiors-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">맵(MAAP), 런던에 첫 LaB 리테일 스토어 오픈</h2>
+    <p class="item-summary">사이클링 의류 브랜드 맵이 런던 소호에 새로운 플래그십 스토어를 열며 문화적 허브를 확장하고 있어. 단순히 물건을 파는 곳을 넘어 지역 라이더들이 모여 소통하는 공간을 지향한다는 점이 마음에 들어. 브랜드가 가진 라이프스타일 철학을 오프라인 공간에 자연스럽게 녹여내는 방식이 아주 매력적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmaap-first-lab-concept-store-london-uk-opening-clare-cousins-architects-interiors-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/new-balance-samurai-japan-redesigned-national-baseball-team-uniforms-unveiled-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">뉴발란스와 사무라이 재팬, 새로운 국가대표 유니폼 공개</h2>
+    <p class="item-summary">뉴발란스 재팬이 일본 야구 국가대표팀 사무라이 재팬의 새로운 파트너가 되면서 멋진 유니폼을 공개했어. 일본 전통 인디고 컬러에 강렬한 레드 스트라이프를 더해 무사도 정신을 세련되게 풀어냈더라고. 스포츠웨어와 전통의 멋이 조화롭게 어우러진 결과물을 보는 건 언제나 즐거워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnew-balance-samurai-japan-redesigned-national-baseball-team-uniforms-unveiled-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/soldier-unveils-exclusive-paintings-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">솔저(Soldier), 플라스터(Plaster) 본사에서 새로운 독점 페인팅 작품 공개</h2>
+    <p class="item-summary">런던 플라스터 본사에서 열린 아티스트 솔저의 협업 전시는 카무플라주를 통해 전쟁과 역사를 독특하게 풀어냈어. 라고스의 스케이트보딩 씬과 군수품에서 영감을 받은 그의 시각적 시그니처들이 공간을 가득 채우고 있더라고. 젊은 예술가 특유의 날것 그대로의 에너지가 진하게 느껴지는 전시라 기억에 남네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 08 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FSoldier_Plaster-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
