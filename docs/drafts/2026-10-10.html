@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-10 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-10</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/new-arrivals-from-hbx-gentle-monster" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fvolt-mbr5-brown-brown-product-1-aa07a7ef_1791588841.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">HBX 신제품: 젠틀 몬스터</h2>
+    <p class="featured-summary">젠틀 몬스터가 또 한 번 흥미로운 하이엔드 실험을 들고 나왔다. 언제 봐도 아방가르드한 셰이프와 톡톡 튀는 컬러감이 이번 신제품에도 고스란히 담겨 있어서 룩에 확실한 포인트를 주기 좋겠다. 가격대도 이 정도 독창성이라면 충분히 지갑을 열 만하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/sci-fi-fantasy-and-come-tees-team-up-for-a-hand-painted-capsule-collection-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">사이파이 판타지와 컴 티즈, 핸드페인팅 캡슐 컬렉션 위해 협업</h2>
+    <p class="item-summary">사이파이 판타지와 컴 티즈가 손을 잡고 완전히 크리에이티브한 캡슐 컬렉션을 완성했다. 로스앤젤레스 감성의 핸드페인팅 그래픽과 과감한 타이포그래피가 어우러져서 입는 재미가 확실히 살아나는 느낌이다. 무지 의류에 더해진 디테일들을 구경하는 것만으로도 시간 가는 줄 모른다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fhed-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/manual-photo-lab-opens-first-store-nyc-chinatown" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">뉴욕 차이나타운의 새로운 명소로 떠오른 매뉴얼 포토 랩</h2>
+    <p class="item-summary">뉴욕 차이나타운에 카메라 애호가들이 눈을 반짝일 만한 새로운 아지트가 생겼다. 매뉴얼 포토 랩은 단순히 장비만 파는 곳이 아니라 전시와 진 론칭까지 어우러지는 진짜 크리에이티브 커뮤니티 공간이다. 동네 작은 카메라 상점에서 영감을 받았다는 비주얼부터 벌써 마음에 쏙 든다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmanual-photo-lab-opens-first-store-nyc-chinatown-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/roy-lichtenstein-like-new-whitney-museum-nyc-curator-meg-onli-alex-da-corte-interview" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">부모님 세대의 팝 아트와는 다르다, ‘로이 리히텐슈타인: 라이크 뉴’</h2>
+    <p class="item-summary">로이 리히텐슈타인의 만화 같은 점과 굵은 선은 언제 봐도 친숙하지만 이번 전시는 그 이면의 복잡한 이야기까지 깊이 파고든다. 60년 경력을 아우르는 130여 점의 작품을 통해 대중문화와 고급문화의 경계를 허문 그의 성향을 새롭게 마주할 수 있다. 스크린 너머로 보던 것과는 또 다른 신선한 자극이 된다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Froy-lichtenstein-like-new-whitney-museum-nyc-curator-meg-onli-alex-da-corte-interview-0-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/apple-the-kings-trust-creative-labs-mentoring-program-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애플과 더 킹스 트러스트, 새로운 멘토링 프로그램 출범</h2>
+    <p class="item-summary">애플과 더 킹스 트러스트가 청년들의 크리에이티브한 도전을 돕기 위해 뭉쳤다. 전문가들의 멘토링과 최신 기술 교육을 결합해 진입 장벽을 낮춰주는 이런 프로그램은 언제나 환영할 만하다. 누군가에게는 새로운 길을 열어주는 멋진 출발점이 될 수 있을 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fapple-the-kings-trust-creative-labs-mentoring-program-info-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/kidsuper-dc-comics-super-villains-collaboration" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">키드슈퍼, DC의 가장 악명 높은 빌런들을 자신들의 세계로 불러들이다</h2>
+    <p class="item-summary">키드슈퍼가 이번에는 DC의 악명 높은 빌런들을 자신들만의 유니버스로 불러들였다. 조커부터 캣우먼까지 개성 넘치는 캐릭터들을 시그니처 페이스 후디와 독특한 수집품으로 풀어낸 상상력이 정말 재치 있다. 늘 유쾌한 반전을 선사하는 이들의 협업은 이번에도 역시 기대를 저버리지 않는다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fkid-super-dc-super-villains-product-info-featured-image.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/snoh-aalegra-teases-her-return-with-new-single-run-free" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Snoh Aalegra, 새 싱글 “Run Free”로 컴백 예고</h2>
+    <p class="item-summary">스노 알레그라가 오랜만에 선보이는 신곡으로 깊고 진한 감성의 컴백을 예고했다. 클래식 소울에 80년대 팝 감성을 녹여낸 사운드는 마치 한 편의 성장 영화를 보는 듯한 여운을 남긴다. 새 앨범이 나올 때까지 이 곡을 무한 반복하면서 기다리게 될 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FScreenshot-2026-10-08-at-5.04.12-PM-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/siam-paragon-siam-piwat-bangkok-watch-week-2026-event-recap" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">단순한 수집을 넘어선 시계 문화의 진수, '2026 방콕 워치 위크'가 증명하다</h2>
+    <p class="item-summary">방콕 워치 위크가 거둔 성공은 이 도시가 얼마나 뜨거운 시계 수집가의 안식처인지 잘 보여준다. 수많은 메종과 독립 창작자들이 모여 파인 워치메이킹의 진수를 보여주며 트렌드를 이끌고 있다. 럭셔리와 장인정신이 어우러진 이 멋진 축제를 현장에서 직접 즐기고 싶어진다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fsiam-paragon-siam-piwat-bangkok-watch-week-2026-event-recap-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/verdy-er-first-capsule-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">VERDY, ER과 함께 하트 모티프의 스트리트웨어 캡슐 컬렉션 공개</h2>
+    <p class="item-summary">버디가 일본 브랜드 ER과 만나 대담하고 모던한 스트리트웨어 캡슐을 선보였다. 에마와 리노 나카무라가 이끄는 ER의 페미닌한 미학 위에 버디 특유의 레드와 블랙 그래픽이 더해져 완벽한 조화를 이뤘다. 하트 모티프가 들어간 이번 아이템들은 또 한 번 소장 욕구를 강하게 자극한다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fverdy-er-first-capsule-collaboration-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/knoll-sam-chermayeff-storage-rrelease-info-furniture-homeware" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Knoll, Sam Chermayeff와 함께 Florence Knoll의 스토리지 시스템을 재해석하다</h2>
+    <p class="item-summary">놀이 건축가 삼 체르예프와 손잡고 플로렌스 놀의 클래식한 수급 시스템을 새롭게 해석했다. 오리지널의 구조를 존중하면서도 과감한 래커 피니시와 유연한 비율을 더해 현대적인 감각을 살려냈다. 수납장을 단순한 가구가 아니라 하나의 건축학적 오브제로 바라보게 만드는 매력이 있다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fknoll-sam-chermayeff-storage-rrelease-info-furniture-homeware-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/marvel-television-zodiac-live-action-spy-thriller-series-2028-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마블 텔레비전, 2028년 공개 예정인 실사 스파이 스릴러 시리즈 '조디악' 발표</h2>
+    <p class="item-summary">마블 텔레비전이 새롭게 선보일 실사 스파이 스릴러 '조디악'의 소식이 벌써부터 기대감을 높인다. 런던에서의 촬영을 시작으로 디즈니+를 통해 공개될 예정이라니 앞으로 풀릴 정보들을 챙겨보는 재미가 있겠다. 아이언하트 이후 오랜만에 스파이 장르로 찾아오는 만큼 신선한 서사를 보여주길 기대해본다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmarvel-television-zodiac-live-action-spy-thriller-series-2028-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/alpha-industries-triple-black-pack-fall-winter-2026-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">알파 인더스트리, MA-1, B-15, CWU-45를 모두 검은색으로 물들인 '트리플 블랙 팩' 출시</h2>
+    <p class="item-summary">알파 인더스트리의 시그니처 플라이트 재킷들을 모두 시크한 블랙으로 물들인 패키지가 등장했다. 스니커즈 문화의 트리플 블랙 공식을 그대로 가져와 겉감부터 안감과 태그까지 완벽하게 톤을 통일했다. 기존의 대비되는 요소를 싹 덜어낸 미니멀한 무드가 가을겨울 아우터로 제격이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 09 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FAlpha-Industries-Triple-Black-Pack-fall-winter-2026-Collection-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
