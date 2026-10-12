@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-12 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-12</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/new-arrivals-from-hbx-nonnative-2" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Ftrooper-l-s-henry-neck-tee-merino-wool-poly-thermal-black-product-1-5cb0d3ca_1791763201.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">HBX 신상품: 넌네이티브(nonnative)</h2>
+    <p class="featured-summary">도쿄에서 시작된 넌네이티브가 이번에 HBX를 통해 새로운 신상품을 선보였어. 고어텍스 같은 기능성 소재를 쓰면서도 일상복에 녹아드는 감성이 참 매력적이지. 실용적이면서도 멋을 잃지 않는 워크웨어 스타일을 좋아한다면 꼭 한번 둘러봐.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Mon, 12 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/jw-anderson-uniqlo-fall-winter-2026-fw26-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">JW 앤더슨 x 유니클로, 2026 가을/겨울 시즌을 캠퍼스 드라마로 탈바꿈하다</h2>
+    <p class="item-summary">유니클로와 JW 앤더슨의 만남은 언제나 기대를 저버리지 않는데 이번 가을 겨울 컬렉션은 캠퍼스 드라마 같은 무드를 보여주네. 짧아진 기장의 숏 블루종이나 램스울 페어 아일 니트 같은 아이템들이 빈티지한 디테일을 더해줘서 정말 탐나.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fjw-anderson-uniqlo-fall-winter-2026-fw26-collaboration-collection-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/starbucks-looking-to-acquire-chipotle-reports-rumors" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">스타벅스, 약 390억 달러에 치폴레 인수 추진설</h2>
+    <p class="item-summary">스타벅스가 치폴레를 인수할 수도 있다는 소식이 들려와서 조금 놀랐어. 두 기업의 규모 차이가 상당해서 실제로 성사될지는 지켜봐야겠지만 재정적인 부담이나 자금 조달 방식을 두고 벌써부터 말이 많더라고.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fft-Starbucks-Looking-To-Acquire-Chipotle-Reports-rumors.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/team-wang-design-clot-jackson-wang-edison-chen-team-clot-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">두 홍콩 아이콘이 하나의 사건 파일로 만났다: 팀 왕 디자인 x 클롯 컬렉션 출시</h2>
+    <p class="item-summary">팀 왕 디자인과 클롯이 만나서 홍콩을 기반으로 한 팀 클롯 컬렉션을 공개했어. 사건 번호 852라는 독특한 미학을 바탕으로 티셔츠부터 당수트 스타일의 재킷까지 한정판으로 만나볼 수 있어서 눈길이 가.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fteam-wang-design-clot-jackson-wang-edison-chen-team-clot-collaboration-collection-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/droplet-seth-rogen-houseplant-scent-burner-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">세스 로건의 하우스플랜트 x 드롭릿 '센트 버너', 티라이트 위로 수제 호박색 유리를 띄우다</h2>
+    <p class="item-summary">하우스플랜트와 드롭릿이 손잡고 선보인 센트 버너는 방 안을 향기로 채우는 방식을 아주 여유롭게 바꿔줘. 수제 호박색 유리와 황동 프레임 조합이라니 인테리어 소품으로도 하나쯤 두고 싶어지는 비주얼이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FDroplet-seth-rogen-Houseplant-Scent-Burner-Release-Info-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/new-naruto-shadow-rising-manga-naruto-x-ninku-limited-anime-series-announcement-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">'나루토 x 닌쿠' 한정 애니메이션 시리즈 공식 제작 확정</h2>
+    <p class="item-summary">뉴욕 코믹콘에서 나루토와 닌쿠의 크로스오버 애니메이션 한정 시리즈가 공식 발표되었어. 1990년대 감성을 떠올리게 하는 감독과 제작진의 만남이라 원작 팬들이라면 기대해도 좋을 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnew-naruto-shadow-rising-manga-naruto-x-ninku-limited-anime-series-announcement-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/one-punch-man-season-3-part-2-trailer-stream" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">'원펀맨' 시즌 3 파트 2 예고편 공개… '괴인 협회 편' 기대감 고조</h2>
+    <p class="item-summary">원펀맨 시즌 3 파트 2 예고편이 드디어 공개되면서 괴인 협회 편의 기대감이 한층 높아지고 있어. S급 히어로들과 괴인들의 본격적인 대결이 펼쳐진다고 하니까 다가올 2027년 1월이 기다려지네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fone-punch-man-season-3-part-2-trailer-stream-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/ugg-tasman-guard-gtx/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">UGG’s Waterproof Slippers Can Handle Winter's Worst</h2>
+    <p class="item-summary">어그에서 방수 기능과 비브람 솔을 더한 타스만 가드 GTX를 출시했어. 겨울철 추위와 눈길에도 신을 수 있는 슬립온이라 실용성과 스타일을 모두 챙기고 싶은 사람들에게 딱이야.</p>
+    <div class="item-meta">Highsnobiety · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791737157-ugg-tasman-guard-gtx-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-jordan-skyline-low-le/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike’s Textured Chocolate Jordan Has Us Feeling Peckish</h2>
+    <p class="item-summary">나이키의 에어 조던 스카이라인 로우가 깊고 진한 초콜릿 색상으로 새롭게 태어났어. 부드러운 뉴트럴 컬러와 텍스처가 살아있는 브라운 디테일이 어우러져서 가을 시즌에 신기 딱 좋은 스니커즈야.</p>
+    <div class="item-meta">Highsnobiety · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1790867126-air-jordan-skyline-low-le.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/junya-watanabe-new-balance-p400/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Junya Watanabe’s New Balance Basketball Shoe Is So Fresh (Foam), So Clean</h2>
+    <p class="item-summary">준야 와타나베 MAN이 뉴욕 패션위크에서 선보인 뉴 바란스 P400은 깔끔한 올블랙과 올백 컬러로 나왔어. 드레스슈즈 같은 포멀한 무드에 프레시폼의 편안함까지 더해져서 색다른 매력을 보여주네.</p>
+    <div class="item-meta">Highsnobiety · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791736472-junya-watanabe-new-balance-p400-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/jordan-4-bin-23-sneakers/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">This Elegant Wild-West Jordan Sneaker Is the New Sheriff in Town</h2>
+    <p class="item-summary">에어 조던 4 빈 23은 웨스턴 테마를 녹여낸 아주 특별한 에디션이야. 고급스러운 디테일들이 숨어 있어서 스니커즈 마니아들의 마음을 설레게 할 만한 요소를 가득 담고 있어.</p>
+    <div class="item-meta">Highsnobiety · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791736318-jordan-4-bin-23-sneakers-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/jordan-41-space-jam/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Jordan's Ice-Cold Hoops Shoe Is a New Kind of 'Space Jam' Sneaker</h2>
+    <p class="item-summary">에어 조던 41이 30주년 스페이스 잼 컬렉션에 합류하면서 차가운 빙하를 연상시키는 라이트 베이스 그레이 컬러를 선보였어. 새로운 유니버스를 여는 스니커즈라 디자인을 보는 재미가 쏠쏠해.</p>
+    <div class="item-meta">Highsnobiety · Sun, 11 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1791736178-jordan-41-space-jam-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
