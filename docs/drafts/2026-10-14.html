@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-14 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-14</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/costa-and-bureo-take-the-untangled-mission-beyond-eyewear" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FCosta_1_Featured.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">코스타와 부레오, 아이웨어를 넘어선 '언탱글드(Untangled)' 미션</h2>
+    <p class="featured-summary">코스타가 부레오와 손을 잡고 폐어망을 활용한 넷플러스 소재를 아이웨어를 넘어 의류와 액세서리까지 확장한다고 합니다. 바다를 누비는 서퍼와 다이버들의 실제 경험에서 우러나온 장비인 만큼, 단순한 친환경 마케팅을 넘어선 진정성이 느껴져서 마음에 듭니다. 자연을 사랑하는 이들이라면 이런 작은 디테일의 변화가 얼마나 반가운지 잘 아실 겁니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/third-born-market-gallery-cdmx-exhibition" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마켓 갤러리와 서드 본이 포착한 도시의 아름다운 혼돈</h2>
+    <p class="item-summary">뉴욕과 멕시코시티의 복잡한 에너지가 아카이브라는 이름으로 한곳에 모였습니다. 마켓 갤러리와 서드 본의 이번 그룹전은 도시가 품고 있는 이주와 기억의 흔적들을 고스란히 보여줍니다. 파편화된 도시의 삶 속에서 예술가들이 포착해낸 질감들을 가만히 따라가다 보면 묘한 여운이 남습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fthird-born-market-gallery-cdmx-exhibition-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/kith-digs-into-the-armani-archives-for-dreams-of-the-dune-fw26" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">아르마니 아카이브를 탐구한 키스(Kith)의 FW26 '드림스 오브 더 듄'</h2>
+    <p class="item-summary">키스가 아르마니의 90년대 사하라 컬렉션에서 영감을 받아 모로코 사막에서 런웨이를 펼쳤습니다. 아르마니 특유의 여유로운 테일러링과 키스의 스트리트 감성이 만나 아주 독특한 뉴트럴 톤의 결과물이 탄생했네요. 클래식과 모던함이 오묘하게 섞여 있는 이런 협업은 언제나 구경하는 재미가 쏠쏠합니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fgiorgio-armani-kith-fw6-collection-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/jw-anderson-ugg-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">JW 앤더슨, 클래식 어그 실루엣에 로퍼 디테일을 더하다</h2>
+    <p class="item-summary">조나단 앤더슨의 손길이 닿은 어그는 언제나 기대를 저버리지 않습니다. 이번에는 클래식 부츠와 타스만에 페니 로퍼의 디테일을 더해 한층 세련된 무드를 완성했네요. 가을바람이 불어올 때 이런 포근하면서도 위트 있는 슈즈 하나면 스타일링 걱정은 끝입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fjw-anderson-ugg-collaboration-collection-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/new-arrivals-from-hbx-oakley-3" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: 오클리</h2>
+    <p class="item-summary">오클리의 탄탄한 헤어프와 기능성은 언제 봐도 믿음직스럽습니다. 캘리포니아의 차고에서 시작된 작은 브랜드가 이제는 아이웨어와 퍼포먼스 장비의 대명사가 되었죠. 일상 속에서도 스포티한 매력을 자연스럽게 툭 걸치고 싶을 때 손이 가는 아이템입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Ffgl-recon-jacket-6-7-phantom-product-1-2e7f557e_1791907021.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/le-labo-expands-its-classic-candle-line-with-papyrus-20" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">르 라보, '파피루스 20'으로 클래식 캔들 라인 확장</h2>
+    <p class="item-summary">르 라보가 고대 문명의 파피루스 기록에서 영감을 받은 클래식 캔들을 선보였습니다. 흙내음이 감도는 시프리올과 따스한 랩다넘의 조화라니, 공간의 분위기를 순식간에 깊고 차분하게 만들어 줄 것 같습니다. 향으로 기억을 보존한다는 로맨틱한 접근이 참 르 라보답습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FFT-le-labo-papyrus-20-candle-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/prada-gives-the-americas-cup-sneaker-an-autumnal-update" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">프라다, 아메리카 컵 스니커즈에 가을의 무드를 더하다</h2>
+    <p class="item-summary">프라다의 아메리카 컵 스니커즈가 가을에 어울리는 깊은 컬러웨이를 입고 돌아왔습니다. 90년대 세일링 팀을 위해 탄생했던 오리지널의 유선형 실루엣은 그대로 살리면서 초경량 솔을 더해 편의성을 높였네요. 클래식한 감성과 현대적인 기술의 조화가 무척 매력적입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FFT-prada-americas-cup-sneaker-teak-blue-cacao-bordeaux-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/pokemon-apple-beats-pill-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">비츠, 피카츄와 따라큐를 담은 최초의 참 장식 '필' 스피커 출시</h2>
+    <p class="item-summary">비츠가 포켓몬과 만나 피카츄와 따라큐의 개성을 담은 스페셜 에디션 스피커를 내놓았습니다. 선명한 옐로와 차분한 그레이의 대비가 은근히 귀여우면서도 소장 가치를 자극합니다. 성능은 그대로 유지하면서 덕심을 자극하는 디테일을 챙긴 점이 아주 센스 있습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FFTPokemon-apple-Beats-Pill-Collaboration-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/wrangler-roa-second-collection-fall-winter-2026-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">랭글러와 로아, 2026 가을/겨울 시즌을 위한 데님 워크웨어의 새로운 해석</h2>
+    <p class="item-summary">랭글러와 로아가 다시 한번 손을 잡고 데님 워크웨어의 새로운 지평을 열었습니다. 스웨덴 나무꾼의 루틴에서 영감을 받았다더니, 거친 아메리칸 데님 헤리티지에 이탈리아의 기능적인 감성이 아주 멋지게 녹아들었네요. 묵직하면서도 실용적인 룩을 찾는 이들에게 딱입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fwrangler-roa-second-collection-fall-winter-2026-collaboration-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/stone-island-denim-research-collection-release" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">DUALITY IN LIGHT: 스톤 아일랜드의 두 얼굴</h2>
+    <p class="item-summary">스톤 아일랜드는 옷을 만든다기보다 원단을 연구하는 과학자들에 더 가까워 보입니다. 이번 데님 리서치 컬렉션 역시 낮과 밤의 빛에 따라 전혀 다른 표정을 보여주는 놀라운 디테일을 자랑하죠. 입을수록 옷이 가진 이야기에 빠져들게 만드는 매력이 있습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2F13%2FHB_Stoneisland_Thumnail_02.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/breitling-super-chronomat-b19-44-perpetual-calendar-automatic-38-aston-martin-valhalla-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">브라이틀링, 애스턴마틴 발할라 오너를 위한 맞춤형 슈퍼 크로노맷 공개</h2>
+    <p class="item-summary">브라이틀링이 애스턴마틴의 슈퍼카 발할라 오너들을 위한 초고가 비스포크 타임피스를 공개했습니다. 자동차의 디자인 DNA와 스위스 워치메이킹의 정수가 만난 만큼 그야말로 완벽한 하이엔드의 극치를 보여줍니다. 엄선된 소수를 위한 특별한 커스터마이징이라는 점에서도 로망을 자극하네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbreitling-super-chronomat-b19-44-perpetual-calendar-automatic-38-aston-martin-valhalla-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/2027-jeep-wrangler-switchback-debuts-with-custom-look" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">2027년형 Jeep Wrangler Switchback, 커스텀 룩으로 데뷔</h2>
+    <p class="item-summary">지프가 스페셜 에디션 캠페인의 대미를 장식할 랭글러 스위치백을 선보였습니다. 공장에서부터 커스텀 마니아들의 감성을 저격하는 투톤 패널 조합을 적용해 차고에서 직접 손본 듯한 거친 매력을 살렸네요. 오프로드를 사랑하는 이들에게는 더할 나위 없는 멋진 선물이 될 것 같습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 13 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2F2027-jeep-wrangler-switchback-debuts-with-custom-look-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
