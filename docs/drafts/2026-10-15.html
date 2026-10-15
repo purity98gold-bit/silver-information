@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-15 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-15</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/kim-ximya-interview" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2F08%2Fkim-ximya-interview-ft.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">김심야 인터뷰: 비우고 지워 I move my feet</h2>
+    <p class="featured-summary">오랜만에 돌아온 김심야의 인터뷰를 읽다 보면 음악만큼이나 그의 치열한 내면 풍경에 시선이 간다. 악플러와 싸우던 과거를 지나 이제는 스스로의 에고와 석가의 철학 사이에서 고행 같은 자기 검열을 거친다고 한다. 긁지 않고 참아내는 마음으로 음악을 비워내려는 그 태도가 오히려 더 단단한 영감을 준다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/ming-massena-lab-57-09-secret-honey-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">밍(MING)과 마세나 랩(Massena LAB), 5년 만에 '허니(Honey)' 협업을 새롭게 선보이다</h2>
+    <p class="item-summary">밍과 마세나 랩이 다시 한번 손을 잡고 내놓은 시크릿 허니는 시계가 단순히 시간을 보는 도구를 넘어 얼마나 매혹적인 장난감이 될 수 있는지 보여준다. 회전하는 사파이어 디스크로 구현한 다이내믹한 기요셰 패턴은 다크 브라운 다이얼 위에서 조용히 존재감을 드러낸다. 125피스 한정이라는 수량마저 이 물건을 더 소유하고 싶게 만드는 요인이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fming-massena-lab-57-09-secret-honey-collaboration-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/best-drops-october-week-2-supreme-martine-rose-palace-skateboards-stussy-denim-tears" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이번 주 놓쳐서는 안 될 신제품 발매 8선</h2>
+    <p class="item-summary">이번 주 발매 라인업은 정말 통장를 가만히 두지 않는 조합들로 가득하다. 마틴 로즈와 슈프림의 대담한 만남부터 팰리스와 키스, 아크테릭스까지 이름만 들어도 설레는 협업들이 줄을 잇는다. 특히 사막에서 영감을 받은 키스와 조르지오 아르마니의 테일러링은 가을 시즌을 위한 가장 우아한 선택지가 될 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbest-drops-october-week-2-supreme-martine-rose-palace-skateboards-stussy-denim-tears-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/beams-stitches-three-leathers-into-one-broken-in-blouson" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">BEAMS, 세 가지 가죽을 하나로 엮어낸 빈티지 무드의 블루종 출시</h2>
+    <p class="item-summary">빔즈가 선보인 새로운 레더 블루종은 구입하자마자 수년은 입은 듯한 자연스러운 에이징 무드가 돋보인다. 나파, 누벅, 스웨이드라는 세 가지 전혀 다른 질감의 가죽을 대담하게 패널로 엮어내어 입체적인 깊이감을 더했다. 와이드하면서도 숏한 실루엣 덕분에 무심하게 걸치기만 해도 스타일이 사는 옷이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FBEAMS-Leather-Blouson-fall-winter-2026-FW26-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/apples-homepod-mini-2-just-joined-your-home-theater" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">홈팟 미니 2, 당신의 홈 시어터를 완성하다</h2>
+    <p class="item-summary">애플이 새롭게 내놓은 홈팟 미니 2는 작지만 공간을 채우는 사운드의 진수를 보여준다. 특히 음악에 맞춰 상단 조명이 반응하는 사운드 글로우 기능은 방 안의 분위기를 완전히 바꿔놓는 묘한 매력이 있다. 맥 스피커 모드부터 향후 업데이트될 시리 AI까지 실속 있게 채워진 컴팩트한 기기다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FftApple-HomePod-mini-2-announcement-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/mm6-maison-margiela-fall-winter-2026-collection-campaign-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">MM6 메종 마르지엘라 FW26 캠페인, 역동성과 평범함에 대한 탐구</h2>
+    <p class="item-summary">엠엠식스 메종 마르지엘라의 이번 캠페인은 일상적인 옷차림 속에 숨겨진 과장된 평범함의 미학을 탁월하게 포착해냈다. 기차역이라는 낯익은 배경 속에서 펼쳐지는 비정형적인 실루엣과 노출된 라이닝은 우리가 매일 입는 옷의 구조를 새로운 시선으로 바라보게 만든다. 역시 마르지엘라다운 위트와 절제가 멋스럽게 공존한다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fftmm6-maison-margiela-fall-winter-2026-collection-campaign-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/spinnaker-seconde-seconde-collaboration-50-phantoms-fleuss-40-automatic-2026-edition-sp-5195-11a-crazy-sp-5195-11b-quiet-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">스피니커 x 세컨드/세컨드/의 새로운 '50 팬텀' 협업, UV 빛 아래 숨겨진 유령들 공개</h2>
+    <p class="item-summary">스피니커와 세컨드/세컨드의 협업은 시계를 차는 재미를 확실히 알고 있는 이들 위한 물건이다. 평범해 보이는 다이얼 속에 50개의 유령 피규어를 숨겨두고 UV 빛 아래에서만 드러나게 만든 장난기가 가득하다. 콰이어트와 크레이지, 둘 중 어떤 에디션을 고르든 손목 위에서 소소한 발견의 즐거움을 누릴 수 있다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fspinnaker-seconde-seconde-collaboration-50-phantoms-fleuss-40-automatic-2026-edition-sp-5195-11a-crazy-sp-5195-11b-quiet-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/hermes-h08-blue-white-editions-manufacture-h1837-movement-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Hermès의 새로운 H08 워치, 쿨톤 세라믹과 어우러지다</h2>
+    <p class="item-summary">에르메스의 H08 워치는 언제 봐도 쿠션형 케이스가 주는 건축적인 아름다움이 남다르다. 이번에 추가된 블루 드 말트와 블랑 샹티이 컬러웨이는 차갑고 밝은 톤으로 스포츠 워치의 스펙트럼을 한층 더 넓혔다. 가벼운 복합 소재 케이스와 세련된 세라믹 베젤의 조화가 역시 에르메스라는 감탄을 자아낸다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fhermes-h08-blue-white-editions-manufacture-h1837-movement-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/converse-tyler-the-creator-golf-le-fleur-pro-leather-molten-lava-bison-white-black-colorways-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Tyler, The Creator, Converse Pro Leather에 네 가지 새로운 개성을 부여하다</h2>
+    <p class="item-summary">타일러 더 크리에이터와 컨버스의 만남은 늘 원색적인 영감을 주지만 이번 프로 레더 컬렉션은 특히 더 다채롭다. 깔끔한 프리미엄 가죽부터 질감이 살아있는 어스 톤 브라운과 강렬한 레드 스웨이드까지 각기 다른 매력을 뿜어낸다. 하나의 스니커즈 실루엣으로 이렇게 넓은 미적 스펙트럼을 보여줄 수 있다는 게 놀라울 따름이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fconverse-tyler-the-creator-golf-le-fleur-pro-leather-molten-lava-bison-white-black-colorways-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/marvel-jeremy-renner-confirms-hawkeye-will-not-appear-avengers-doomsday" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">제레미 레너, '어벤져스: 둠스데이' 호크아이 불참 확인</h2>
+    <p class="item-summary">제레미 레너가 어벤져스: 둠스데이트에 불참한다는 소식은 원년 멤버를 아끼는 팬들에게는 꽤나 아쉬운 대목이다. 본인의 말처럼 자신을 부르지 않았으니 질 게 뻔하다는 유쾌한 농담 속에서도 캐릭터를 향한 남다른 애정이 느껴진다. 큰 사고를 딛고 일어난 그가 앞으로 보여줄 또 다른 행보를 더 응원하고 싶어 진다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmarvel-jeremy-renner-confirms-hawkeye-will-not-appear-avengers-doomsday-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/attack-on-titan-musical-world-tour-singapore-april-2027-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">‘진격의 거인: 더 뮤지컬’, 월드 투어의 시작을 알리며 싱가포르로 향하다</h2>
+    <p class="item-summary">진격의 거인 뮤지컬이 드디어 내년 싱가포르를 시작으로 월드 투어의 막을 올린다. 2.5차원 연극이라는 독특한 장르 속에서 원작의 압도적인 세계관을 무대 위로 어떻게 구현해 낼지 벌써부터 기대를 모은다. 일본 오리지널 프로덕션이 보여줄 정교한 의상과 무대 연출은 해외 관람객들에게도 꽤 강렬한 충격을 안겨줄 것이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fattack-on-titan-musical-world-tour-singapore-april-2027-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/acne-studios-and-hussein-chalayan-reimagine-archival-designs-in-new-collaboration" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Acne Studios와 Hussein Chalayan, 새로운 협업 통해 아카이브 디자인 재해석</h2>
+    <p class="item-summary">아크네 스튜디오가 후세인 살라얀의 2000년대 초반 아카이브를 소환한 이번 캡슐은 패션 역사상 가장 영감 넘치는 순간을 현대적으로 재해석했다. 패치워크 데님과 비대칭 실루엣을 통해 옷이 단순히 입는 것을 넘어 하나의 개념적 예술이 될 수 있음을 증명한다. 살라얀 고유의 실험적인 유산을 아크네만의 감성으로 풀어낸 완벽한 협업이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 14 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Facne-studios-hussein-chalayan-collaboration-campaign-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
