@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-22 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-22</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/kid-cudi-jean-michel-basquiat-upcoming-biopic-film" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fkid-cudi-jean-michel-basquiat-upcoming-biopic-film-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">Kid Cudi가 Basquiat 역을 소화할 수 있을까? Kid Cudi는 그렇다고 확신한다</h2>
+    <p class="featured-summary">아티스트 킷 커디가 직접 메가폰을 잡고 전설적인 화가 장 미셸 바스키아의 전기 영화를 만든다고 하네요. 그가 직접 주인공까지 맡아서 화제인데, 뉴욕과 80년대 감성을 담은 러브레터가 될 거라고 하니 왠지 감성이 듬뿍 담긴 멋진 작품이 나올 것 같아요. 2027년 개봉까지 느긋하게 기다려봐야겠습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/bassvictim-announces-album-peace-war-drops-single-white-flag" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">베이스빅팀(Bassvictim), 새 앨범 'PEACE + WAR' 발표 및 “White Flag” 발매</h2>
+    <p class="item-summary">일렉트로닉 듀오 베이스빅팀이 새 싱글과 함께 정규 앨범 소식을 전해왔습니다. 투박한 디스토션 사운드와 섬세한 가사가 오묘하게 섞여서 클럽 음악에 대한 이들만의 독특한 시선이 느껴지네요. 북미 투어에 이어 유럽까지 바쁘게 움직이는 모습이 참 보기 좋습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbassvictim-02-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/viz-media-shonen-jump-store-naruto-black-clover-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">소년 점프 스토어, 새로운 '나루토' 및 '블랙 클로버' 컬렉션으로 아이코닉한 만화 장면을 현실로</h2>
+    <p class="item-summary">소년 점프 스토어가 이번에는 나루토와 블랙 클로버 팬들을 설레게 할 컬렉션을 내놓았어요. 페인 편의 묵직한 명장면들이 그래픽 스트리트웨어로 고스란히 옮겨져서 옛날 만화책 보던 기억이 새록새록 납니다. 후디나 데스크 매트까지 구석구석 신경 쓴 티가 나서 애니메이션 팬들이라면 그냥 지나치기 힘들겠어요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fviz-media-shonen-jump-store-naruto-black-clover-collection-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/nfl-color-field-launch-jammie-holmes" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">NFL, '컬러 필드(COLOR FIELD)' 프로젝트로 미식축구 경기장을 예술 작품으로 탈바꿈</h2>
+    <p class="item-summary">NFL이 경기장을 거대한 캔버스로 쓰는 예술 프로젝트를 시작한다고 합니다. 에펠탑 아래에 멋진 인스톨레이션을 펼쳐놓는 걸 보니 스포츠와 현대미술의 조합이 꽤 신선하게 다가오네요. 12월 마이애미 아트 위크에서는 또 어떤 모습으로 우리를 놀라게 할지 기대가 됩니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnfl-color-field-launch-jammie-holmes-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/bedwin-the-heartbreakers-kipsso-buffalo-jacket-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">BEDWIN &amp; THE HEARTBREAKERS x KIPSSO 'BUFFALO Jacket', MA-1을 60년대 실루엣으로 재해석하다</h2>
+    <p class="item-summary">베드윈과 아티스트 킵소가 손잡고 만든 MA-1 자켓은 실루엣부터 남다르네요. 60년대 무드를 살린 크롭 헴라인에 수작업 패치까지 더해져서 빈티지하면서도 세련된 맛이 살아있습니다. 무심하게 걸치기만 해도 멋스러운 포인트가 되어줄 것 같아요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FBEDWIN-THE-HEARTBREAKERS-KIPSSO-BUFFALO-Jacket-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/best-drops-october-week-4-supreme-palace-carhartt-wip" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이번 주 놓치지 말아야 할 8가지 드롭</h2>
+    <p class="item-summary">이번 주 드롭 리스트는 정말 눈을 뗄 수 없는 아이템들로 꽉 차 있네요. 슈프림과 팀버랜드의 러기드한 부츠부터 지드래곤의 피스마이너스원까지 취향 저격 아이템들이 한가득입니다. 지갑 사정은 좀 걱정되지만 구경하는 것만으로도 충분히 즐거운 한 주입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fbest-drops-october-week-4-supreme-palace-carhartt-wip-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/balenciaga-automobili-lamborghini-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">발렌시아가 x 오토모빌리 람보르기니, 페노메노에서 영감을 받은 캡슐 컬렉션 출시</h2>
+    <p class="item-summary">발렌시아가와 람보르기니가 다시 한번 손을 잡고 멋진 캡슐 컬렉션을 선보였어요. 최신 슈퍼카의 느낌을 담아낸 레더 모토 재킷은 군더더기 없이 시크한 매력이 폭발합니다. 과한 그래픽 대신 은은한 레이싱 무드로 완성도를 높인 점이 마음에 쏙 드네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FBalenciaga-Automobili-Lamborghini-Collaboration-collection-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/outkast-atlanta-falcons-30th-anniversary-atliens-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">OutKast와 애틀랜타 Falcons, ‘ATLiens’ 30주년 기념 컬렉션 공개</h2>
+    <p class="item-summary">아웃캐스트의 명반 30주년을 기념해서 애틀랜타 팰컨스와 만났군요. 우주적인 SF 감성을 담았던 옛날 그 커버 아트가 바시티 재킷과 헬멧에 녹아들었습니다. 블랙과 네온 그린 조합도 힙하고 스트리트 감성이 제대로 느껴지는 콜라보예요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2FOutKast-Atlanta-Falcons-30th-Anniversary-ATLiens-Collection-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/tyakasha-keen-howser-iii-slide-mr-green-oring-1032615-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">킨(KEEN), 타카샤(TYAKASHA)와 협업해 미스매치 디테일의 하우저 III 슬라이드 출시</h2>
+    <p class="item-summary">킨과 타카샤가 만난 슬라이드는 양발이 다른 미스매치 디자인이 아주 장난스럽네요. 폭신한 플리스 소재에 귀여운 자수 패치까지 더해져서 신기만 해도 기분이 좋아질 것 같아요. 슬립온 형태라 편하게 신기에도 그만이겠네요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Ftyakasha-keen-howser-iii-slide-mr-green-oring-1032615-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/air-jordan-15-cosmic-clay-multi-color-iv7643-800-mock-up-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">에어 조던 15 '코스믹 클레이', 다채로운 우븐 디자인으로 등장</h2>
+    <p class="item-summary">에어 조던 15에 코스믹 클레이 컬러라니, 90년대 후반의 독특한 실루엣이 다시 살아나네요. 오렌지 톤 베이스에 알록달록한 우븐 소재가 모자이크처럼 얽혀서 눈길을 확실히 사로잡습니다. 2027년 가을 발매까지 룩북 나오는 걸 느긋하게 기다려봐야겠어요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fair-jordan-15-cosmic-clay-multi-color-iv7643-800-mock-up-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/geeks-rule-ghost-in-the-shell-dsm-dover-street-market-ginza-open-house-exclusive-long-sleeve-t-shirt-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">소라야마 하지메의 크롬 아트가 더해진 긱스 룰의 DSM 긴자 독점 '공각기동대' 롱슬리브</h2>
+    <p class="item-summary">긱스 룰이 공각기동대 롱슬리브로 또 한 번 소장 가치 넘치는 아이템을 뽑았네요. 소라야마 하지메의 독보적인 크롬 아트가 후면에 박혀 있어서 사이버펑크 감성이 폭발합니다. 도쿄를 방문한다면 꼭 하나 건지고 싶은 탐나는 아이템이에요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fgeeks-rule-ghost-in-the-shell-dsm-dover-street-market-ginza-open-house-exclusive-long-sleeve-t-shirt-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/murcielago-tv-animes-teaser-trailer-cast-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애니메이션 ‘무르시엘라고(MURCIÉLAGO)’, 새로운 티저 예고편에서 주요 캐스팅 공개</h2>
+    <p class="item-summary">범죄 애니메이션 무르시엘라고가 새로운 티저를 풀며 본격적인 시동을 걸었네요. 톡톡 튀는 캐릭터들과 강렬한 액션이 원작의 분위기를 아주 화끈하게 살려줄 것 같습니다. 2027년 1월 방영일에 맞춰 챙겨봐야 할 애니메이션 리스트에 살짝 올려둬야겠어요.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 21 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fmurcielago-tv-animes-teaser-trailer-cast-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
