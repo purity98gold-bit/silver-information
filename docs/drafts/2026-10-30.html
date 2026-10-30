@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-10-30 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-10-30</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/10/inscope-art-festival-miami-debut-edition-exhibitor-list-announcement" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Finscope-art-festival-miami-debut-edition-exhibitor-list-announcement-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">마이애미 첫 인스코프 아트 페스티벌, 주목해야 할 갤러리</h2>
+    <p class="featured-summary">마이애미의 눈부신 모래사장 위로 예술이 찾아온다는 소식이야. 인스코프 아트 페스티벌이 올해 첫 선을 보이며 전 세계 갤러리들을 한데 모은다고 해. 해변가 파빌리온에서 펼쳐지는 전시라니 생각만 해도 낭만적이지 않아? 기존의 틀에서 벗어나 새로운 영감을 찾고 싶다면 꼭 주목해봐야 할 페어인 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/lamborghini-revuelto-sv-test-drive-review" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">람보르기니 레부엘토 SV: 사상 '가장 똑똑한' 슈퍼 벨로체</h2>
+    <p class="item-summary">람보르기니가 내놓은 이번 레부엘토 SV는 단순히 힘만 센 차가 아니더라고. 발레룽가 서킷에서 테스트를 거친 만큼 정교한 기술과 전략이 아주 돋보여. 성난 황소의 명성을 이어가면서도 한층 더 영리해진 주행 성능 덕분에 자동차 애호가들의 마음을 제대로 흔들 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Flamborghini-revuelto-sv-test-drive-review-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/norqain-wild-one-skeleton-x-lite-turquoise-n3003-26x02-b07-r01-n3003-26x02-b07-f01-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">노르케인, 브랜드에서 가장 가벼운 시계에 터콰이즈 컬러를 더하다</h2>
+    <p class="item-summary">노르케인이 내놓은 이번 45g짜리 스켈레톤 시계는 정말 가볍고 감각적이야. 터콰이즈 컬러가 자칫 지루할 수 있는 블랙 구조에 산뜻한 포인트를 더해주거든. 연간 한정 수량으로만 만날 수 있다고 하니, 가볍고 유니크한 타임피스를 찾는다면 놓치기 아쉬울 거야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fnorqain-wild-one-skeleton-x-lite-turquoise-n3003-26x02-b07-r01-n3003-26x02-b07-f01-release-info-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/10-horror-films-series-to-watch-this-halloween-2026-whalefall-other-mommy-crystal-lake-below" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이번 할로윈에 꼭 봐야 할 공포 영화 및 시리즈 10편</h2>
+    <p class="item-summary">선선한 바람이 불어오는 계절에 딱 어울리는 오싹한 소식이 기다리고 있어. 새로운 공포 영화와 시리즈들이 이번 시즌 우리의 밤을 책임져 줄 예정이거든. 익숙한 프랜차이즈의 귀환부터 신선한 초자연적 스릴러까지 골라보는 재미가 쏠쏠할 거야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2F10-horror-films-series-to-watch-this-halloween-2026-whalefall-other-mommy-crystal-lake-below-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/adidas-originals-by-wales-bonner-fall-winter-2026-footwear-collection-wb-karintha-wb-gazelle-snake-wb-adizero-adios-suede-cmapaign-images-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">웨일스 보너, 악어 가죽, 스웨이드, 포니 헤어로 아디다스 클래식을 재해석하다</h2>
+    <p class="item-summary">웨일스 보너가 아디다스와 손잡고 또 한 번 멋진 풋웨어 컬렉션을 선보였어. 크로커다일 패턴의 가죽부터 스웨이드까지 질감의 묘미를 아주 기가 막히게 살려냈더라고. 클래식한 실루엣에 럭셔리한 스포티함을 얹어낸 솜씨가 역시 남다르다는 생각이 들더라.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fadidas-originals-by-wales-bonner-fall-winter-2026-footwear-collection-wb-karintha-wb-gazelle-snake-wb-adizero-adios-suede-cmapaign-images-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/travis-scott-nike-cpfm-flea-1-cactus-jack-ix7250-200-rumored-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">트래비스 스캇 x CPFM x 나이키 3자 협업 '플리 1' 2027년 봄 출시 루머</h2>
+    <p class="item-summary">트래비스 스캇과 캑터스 플랜트 프리 마켓 그리고 나이키가 뭉친다는 루머가 돌고 있어. 플리 1 캑터스 잭이라는 이름만 들어도 스니커 헤드들의 심장이 벌써부터 뛰기 시작할 거야. 독특한 카키 컬러웨이와 리버스 스우시 조합이라니 발매일만을 손꼽아 기다리게 되네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Ftravis-scott-nike-cpfm-flea-1-cactus-jack-ix7250-200-rumored-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/onitsuka-tiger-paraty-mexico-66-official-images-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">오니츠카 타이거, 퍼 소재를 입은 “파라티” 멕시코 66 공개</h2>
+    <p class="item-summary">오니츠카 타이거의 스테디셀러 파라티 멕시코 66에 롱파일 인조 퍼가 더해졌어. 끈이 없는 슬리퍼 같은 구조에 부드러운 텍스처가 얹어져서 신을 때마다 포근함을 느낄 수 있을 거야. 파스텔 톤부터 뉴트럴한 컬러까지 취향에 따라 골라 신는 재미도 쏠쏠하겠지.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fonitsuka-tiger-paraty-mexico-66-official-images-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/pedro-pascal-tony-gilroy-behemoth-official-trailer-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">페드로 파스칼, 14년 만에 선보이는 토니 길로이 감독 신작 '베히모스!' 주연 발탁</h2>
+    <p class="item-summary">페드로 파스칼이 무려 14년 만에 토니 길로이 감독의 장편 영화로 돌아온다는 소식이야. 로스앤젤레스를 배경으로 음악과 기억을 엮어낸 비선형적 서사라니 벌써부터 예술적인 향기가 물씬 풍겨. 화려한 앙상블 캐스팅까지 더해져서 극장에서 꼭 봐야 할 작품으로 찜해뒀어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fpedro-pascal-tony-gilroy-behemoth-official-trailer-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/prada-holiday-2026-campaign-disney-animator-john-pomeroy-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">프라다 2026 홀리데이 캠페인, 한 편의 손그림 겨울 동화로 피어나다</h2>
+    <p class="item-summary">프라다가 이번 홀리데이 캠페인을 통해 한 편의 동화 같은 일러스트 세계를 펼쳐 보였어. 전설적인 애니메이터의 손길을 거쳐 수작업으로 완성된 비주얼이 참 몽환적이고 아름답더라고. 연말 시즌의 따뜻한 감성을 고스란히 담아낸 이런 아트워크는 언제 봐도 참 반가워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fprada-holiday-2026-campaign-disney-animator-john-pomeroy-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/pokemon-unite-officially-shutting-down-march-2027-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">'포켓몬 유나이트', 2027년 3월 공식 서비스 종료</h2>
+    <p class="item-summary">포켓몬 유나이트가 아쉽게도 몇 년 뒤 긴 여정의 마침표를 찍는다고 해. 그동안 많은 유저들과 함께 달렸던 MOBA 게임이라 그런지 왠지 모르게 섭섭한 마음이 드네. 그래도 종료 전에 소중한 인게임 아이템들을 로컬에 담아둘 수 있는 기능을 열어준다고 하니 다행이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fpokemon-unite-officially-shutting-down-march-2027-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/playstation-the-prism-collection-dualsense-wireless-controllers-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">플레이스테이션, 90년대 투명 테크 미학을 살린 '프리즘 컬렉션' 출시</h2>
+    <p class="item-summary">플레이스테이션이 90년대 투명 테크 미학을 그대로 담아낸 프리즘 컬렉션을 공개했어. 속이 훤히 들여다보이는 반투명 쉘에 영롱한 컬러를 더해 레트로하면서도 미래지향적인 분위기를 자아내더라고. 옛날 감성을 고스란히 소장하고 싶은 게이머들이라면 절대 그냥 지나치지 못할 거야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fplaystation-the-prism-collection-dualsense-wireless-controllers-southeast-asia-exclusive-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/10/the-realest-kobe-bryant-game-worn-dual-signed-air-jordan-8-lakers-pe-auction-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">코비 브라이언트가 실제 착용하고 양발에 서명한 '에어 조던 8 레이커스 PE', 경매 출품</h2>
+    <p class="item-summary">코비 브라이언트가 직접 경기에 신고 서명까지 남긴 에어 조던 8 레이커스 PE가 경매에 올랐어. 블랙 맘바의 숨결이 고스란히 담긴 스니커즈라니 스포츠 역사상 엄청난 가치를 지닌 보물 같은 존재지. 그 시절 농구 팬들의 추억을 제대로 자극하는 멋진 아이템인 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 29 Oct 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F10%2Fthe-realest-kobe-bryant-game-worn-dual-signed-air-jordan-8-lakers-pe-auction-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
