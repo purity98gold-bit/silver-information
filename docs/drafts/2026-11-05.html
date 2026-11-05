@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-05 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-05</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/denim-tears-adidas-originals-collaboration-tremaine-emory-interview" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fdenim-tears-adidas-originals-collaboration-tremaine-emory-interview-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">데님 티어스 x 아디다스 오리지널스의 첫 뮤즈? 커다란 체크무늬 가방</h2>
+    <p class="featured-summary">데님 티어스와 아디다스의 첫 만남은 역시 기대를 저버리지 않는 감각적인 조합인 것 같아. 카날 스트리트를 걷는 듯한 무드에서 영감을 받아 시그니처 실루엣에 시장 가방을 연상시키는 우븐 체크무늬를 더했더라고. 이런 세심한 스토리텔링과 디테일 덕분에 매번 이들의 협업을 기다리게 되는 모양이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/coperni-closes-brand-founders-arnaud-vaillant-sebastien-meyer-cease-operations-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">코페르니, 설립자들의 운영 중단 결정으로 브랜드 전격 폐업</h2>
+    <p class="item-summary">파리지앵 패션의 한 축을 담당하던 코페르니가 결국 운영 중단 소식을 전해서 너무 아쉽네. 유통사와의 지속적인 미지급금 분쟁 끝에 8년의 역사를 뒤로하고 문을 닫는다고 하니 마음이 복잡해. 언제나 기발한 시도를 보여주던 레이블이었는데 이렇게 또 하나가 사라지는구나.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fcoperni-closes-brand-founders-arnaud-vaillant-sebastien-meyer-cease-operations-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/new-arrivals-from-hbx-guidi-2" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신규 입고: 구이디</h2>
+    <p class="item-summary">구이디 특유의 투박하면서도 고급스러운 가죽 질감은 언제 봐도 참 멋스러운 것 같아. 베지터블 태닝과 수작업 염색을 거쳐서 그런지 착용하기도 전에 이미 멋지게 길들여진 듯한 분위기를 풍기거든. 로고 없이 오직 본질에만 집중한 미니멀한 실루엣이라 소장 가치가 충분하다고 생각해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fdaddy-shoes-product-1-08c04be3_1793801642.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/best-drops-november-week-1-supreme-palace-bape" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이번 주 놓치지 말아야 할 8가지 신제품</h2>
+    <p class="item-summary">이번 주 신제품 라인업은 정말 눈을 뗄 수 없을 정도로 다채롭고 흥미로운 협업들이 가득하네. 슈프림과 바케라의 유쾌한 캡슐부터 런던을 뜨겁게 달군 팔라스의 스토어 익스클루시브까지 트렌드의 흐름을 한눈에 읽을 수 있어. 역시 새로운 한 주의 시작은 이런 신제품 소식을 훑어보는 재미가 제일 큰 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fbest-drops-november-week-1-supreme-palace-bape-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/the-whitaker-group-new-balance-2010-willful-bias-for-identity-collection-u20104wp-u20106kh-official-look-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">더 휘터커 그룹과 뉴발란스, 2010 '윌풀 바이어스 포 아이덴티티' 컬렉션 공개</h2>
+    <p class="item-summary">뉴발란스와 더 휘터커 그룹이 함께 선보인 2010 콜라보는 빈티지하면서도 거친 매력이 정말 일품이야. 올이 풀린 듯한 스웨이드 소재와 노출된 스티치 디테일에서 그들만의 깊은 커뮤니티 감성이 고스란히 느껴지거든. 은은하게 들어간 오렌지 컬러 포인트까지 전체적인 밸런스가 아주 마음에 들어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fthe-whitaker-group-new-balance-2010-willful-bias-for-identity-collection-u20104wp-u20106kh-official-look-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/jason-statham-guy-ritchie-reunite-new-netflix-feature-dogfight-news" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Jason Statham과 Guy Ritchie, Netflix 복수극 'Dogfight'로 재회</h2>
+    <p class="item-summary">제이슨 스타뎀과 가이 리치 감독이 다시 한번 손을 잡고 새로운 복수 액션 영화를 선보인다는 소식이야. 두 사람의 조합은 언제나 런던 암흑가의 묘한 긴장감과 타격감을 제대로 살려내서 이번에도 기대가 꽤 크거든. 2027년 초 촬영을 목표로 하고 있다니 느긋하게 기다려봐야겠어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fjason-statham-guy-ritchie-reunite-new-netflix-feature-dogfight-news-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/nike-zoom-hyperflight-safari-iz2573-010-official-look-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키, 줌 하이퍼플라이트에 클래식한 '사파리' 패턴 적용</h2>
+    <p class="item-summary">나이키가 줌 하이퍼플라이트에 클래식한 사파리 패턴을 더해 농구화 아카이브를 새롭게 조명했어. 세기 전환기 코트 모델에 과감한 점박이 디자인과 오렌지 컬러 포인트를 얹어 향수를 제대로 자극하더라고. 이런 헤리티지 감성이 담긴 레트로 스니커즈는 언제나 패션 씬에서 환영받는 법이지.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fnike-zoom-hyperflight-safari-IZ2573-010-official-look-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/cecilie-bahnsen-uniqlo-fall-winter-2026-collaboration-capsule-collection-lookbook-release-info-dvxx" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">세실리에 반센, 유니클로와 2026 F/W 캡슐 컬렉션으로 재회</h2>
+    <p class="item-summary">유니클로와 세실리에 반센이 다시 뭉쳐서 선보이는 이번 캡슐 컬렉션은 보기만 해도 마음이 포근해져. 플리스 소재에 자수 플라워 패턴이 흩뿌려져 있어서 특유의 모던한 페미니티와 로맨틱한 실루엣이 아주 잘 살아있거든. 주말의 여유로운 순간에 가볍게 걸치기 딱 좋은 아이템인 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fcecilie-bahnsen-uniqlo-fall-winter-2026-collaboration-capsule-collection-lookbook-release-info-dvxx-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/pleasures-holiday-2026-lookbook-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">PLEASURES의 2026 홀리데이 'Ciel Couvert' 컬렉션, 흐린 날씨를 위한 완벽한 대비</h2>
+    <p class="item-summary">플레져스가 '흐린 하늘'이라는 뜻의 프랑스어에서 영감을 받아 차분하고 깊이감 있는 홀리데이 컬렉션을 공개했어. 어두운 뉴트럴 톤을 바탕으로 레이어링하기 좋은 방한용 아이템들을 다채롭게 풀어내서 룩에 무게감을 더해주더라고. 궂은 날씨마저 스타일리시하게 만들어주는 이런 무드가 참 좋아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fpleasures-holiday-2026-lookbook-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/palace-skateboards-poland-street-london-flagship-opening-announcement-info-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">팔라스 스케이트보드, 아카이브로 빚어낸 스테인드글라스 박물관 형태의 런던 플래그십 스토어 새롭게 오픈</h2>
+    <p class="item-summary">팔라스가 대영박물관과 교회에서 영감을 받아 스테인드글라스 창문으로 채워진 새로운 런던 플래그십을 오픈했어. 매장 자체가 하나의 웅장한 갤러리이자 브랜드의 역사를 담은 타임캡슐처럼 느껴져서 구경하는 재미가 쏠쏠할 것 같아. 역시 공간을 기획하는 방식부터 남다른 브랜드다운 과감한 시도야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fpalace-skateboards-poland-street-london-flagship-opening-announcement-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/palace-skateboards-poland-street-london-flagship-exclusive-items-burberry-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">팔라스 스케이트보드, 런던 플래그십 전용 캡슐 컬렉션으로 버버리를 홈으로 불러들이다</h2>
+    <p class="item-summary">팔라스와 버버리가 새로운 런던 플래그십 오픈을 기념해 런던의 홈타운 감성을 담은 캡슐 컬렉션을 선보였어. 버버리의 클래식한 하우스 체크와 카 코트에 팔라스만의 스케이트보드 정체성을 녹여내서 완벽한 조화를 이뤘더라고. 영국의 헤리티지를 멋지게 비틀어낸 이런 홈타운 이벤트는 언제나 환영이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fpalace-skateboards-poland-street-london-flagship-exclusive-items-burberry-collaboration-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/razer-raiju-v3-pro-signature-edition-limited-edition-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">레이저(Razer), 350달러의 ‘라이주 V3 프로 시그니처 에디션’으로 PS5 셋업 업그레이드 제안</h2>
+    <p class="item-summary">레이저가 선보인 마그네슘 합금 외골격의 PS5 컨트롤러는 그야말로 하이엔드 게이밍 셋업의 끝판왕 같아. 전 세계 한정판으로 제작된 데다가 매트 블랙 그립과 반투명 터치패드까지 디테일에서 프리미엄 감성이 넘쳐흐르거든. 가젯을 좋아하는 이들에게는 놓칠 수 없는 소장품이 아닐까 싶어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 04 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fft-razer-raiju-v3-pro-signature-edition-limited-edition-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
