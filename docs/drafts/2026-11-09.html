@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-09 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-09</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/yoshitomo-nara-david-zwirner-nyc-exhibition-info" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fyoshitomo-nara-david-zwirner-nyc-exhibition-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">요시토모 나라의 '대두 소녀들', 뉴욕을 점령하다</h2>
+    <p class="featured-summary">드디어 요시토모 나라가 뉴욕으로 돌아왔다는 소식이야. 데이비드 즈위너 갤러리를 가득 채운 이번 전시를 보니 그 특유의 대두 소녀들이 여전히 매력적으로 다가오네. 회고전을 앞두고 미리 만나는 신작들이라 그런지 더 눈길이 가.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/new-arrivals-from-hbx-roa-3" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: 로아(ROA)</h2>
+    <p class="item-summary">로아의 이번 아이템들을 보니 아웃도어 웨어가 이렇게 멋스러울 수도 있구나 싶어. 테크니컬한 디테일과 아방가르드한 감성이 잘 섞여 있어서 일상 속에서 가볍게 포인트를 주기 딱 좋아 보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Froa-x-wrangler-jersey-long-sleeve-washed-pattern-owl-dark-product-1-96eb22dd_1794146881.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/robert-pattinson-new-james-bond-screen-test-reports-rumors" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">배트맨에서 제임스 본드로? 로버트 패틴슨, 007 스크린 테스트 소식</h2>
+    <p class="item-summary">로버트 패틴슨이 차기 제임스 본드 후보군에 올랐다니 정말 흥미로운 소식이야. 배트맨과는 또 다른 매력의 본드를 보여줄 수 있을 것 같아서 내심 기대를 하게 되네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Frobert-pattinson-new-james-bond-screen-test-reports-rumors-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/cactus-jack-nike-miami-heat-grand-theft-auto-gta-vi-vice-city-jersey-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마이애미 히트, 캑터스 잭 x 나이키 x 'GTA VI' 바이스 시티 유니폼과 함께 6개의 별을 띄우다</h2>
+    <p class="item-summary">마이애미 히트와 트래비스 스캇, 그리고 GTA 6의 조합이라니 이건 절대 놓칠 수 없는 콜라보야. 블랙과 핑크 조합의 바이스 시티 유니폼은 농구 코트뿐만 아니라 스트릿에서도 엄청난 반응을 이끌어낼 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fcactus-jack-nike-miami-heat-grand-theft-auto-gta-vi-vice-city-jersey-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/mark-lona-asics-tassel-striders-black-mls-26c-ss03-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마크앤로나 x 아식스, FW26 '태슬 스트라이더' 블랙 컬러웨이 출시</h2>
+    <p class="item-summary">마크앤로나와 아식스가 만난 태슬 스트라이더 블랙 컬러웨이는 정말 세련미가 넘쳐. 클래식한 농구화 실루엣에 골프웨어 감성을 녹여낸 디테일이 아주 인상적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmark-lona-asics-tassel-striders-black-mls-26c-ss03-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/gorsch-fw-fall-winter-2026-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">움직임을 위한 재단과 희귀 원단으로 완성한 고르쉬(Gorsch) 2026 가을/겨울 '더 댄싱 피플(The Dancing People)' 컬렉션</h2>
+    <p class="item-summary">고르쉬의 이번 가을겨울 컬렉션은 옷이 인체에 닿았을 때의 움직임을 정말 잘 고려한 것 같아. 감물 염색 데님이나 빈티지한 무드의 셋업들을 보니 디자이너의 고집스러운 진심이 느껴져.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fgorsch-fw-fall-winter-2026-collection-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/adam-driver-done-playing-kylo-ren-star-wars-the-hunt-for-ben-solo" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Adam Driver, Kylo Ren 역 하차 공식화</h2>
+    <p class="item-summary">아담 드라이버가 카일로 렌으로 다시 돌아오지 않겠다고 공식적으로 선언했네. 팬들의 뜨거운 바람에도 불구하고 프로젝트가 무산된 건 아쉽지만 그의 확고한 결심도 이해는 가.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fadam-driver-done-playing-kylo-ren-star-wars-the-hunt-for-ben-solo-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/medongaule-garden-yangpyeong-opening-announcement-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">한국 '메동고을' 모던 정원, 니체의 철학을 파빌리온과 산책로, 미로로 구현하다</h2>
+    <p class="item-summary">양평에 생긴 인문학 정원이라니 공간 자체가 주는 깊이감이 남다를 것 같아. 니체와 사상가들의 철학을 조경과 건축으로 녹여냈다니 조만간 꼭 한 번 산책하러 가보고 싶어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmdongaule-garden-yangpyeong-opening-announcement-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/2026-mama-awards-beams-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">빔즈(BEAMS) ‘디어 빈티지 컬렉션(DEAR VINTAGE COLLECTION)’, 2026 MAMA AWARDS 굿즈 출시</h2>
+    <p class="item-summary">빔즈가 마마 어워즈와 손잡고 선보인 디어 빈티지 컬렉션은 일반적인 행사 굿즈와는 결이 달라. 흔한 로고 플레이 대신 빈티지 밴드 티셔츠 감성을 담아내서 소장 가치가 충분해 보여.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2F2026-mama-awards-beams-collaboration-collection-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/nike-air-max-90-sp-black-leather-iv4504-001-release-info-date" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">오버레이가 없는 나이키 에어 맥스 90 SP “블랙 레더”, 2026년 11월 출시 확정</h2>
+    <p class="item-summary">나이키 에어 맥스 90 블랙 레더는 오버레이를 덜어내고 스티치로 라인을 살린 점이 아주 매력적이야. 기존의 복잡한 레이어링에서 벗어나 미니멀한 감성을 보여주는 게 마음에 쏙 들어.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fnike-air-max-90-sp-black-leather-iv4504-001-release-info-date-000-black-leather.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-albrecht-ll-spzl/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">adidas' Smartly Dressed Sneaker Is for "Spezial" Occasions</h2>
+    <p class="item-summary">아디다스의 알브레히트 II 스페지얼은 이름처럼 정말 격식 있으면서도 멋스러운 스니커즈야. 캐주얼한 룩에 가볍게 신어주기만 해도 전체적인 스타일에 품격이 확 살아날 것 같아.</p>
+    <div class="item-meta">Highsnobiety · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794155085-adidas-albrecht-ll-spzl.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/vans-half-cab-gore-tex-light-grey/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Vans’ Waterproof Skate Shoe Stays Fresh When Wet</h2>
+    <p class="item-summary">반스의 하프캡 고어텍스 라이트 그레이 컬러는 날씨가 궂은 날에도 스타일을 포기할 수 없는 이들에게 최고의 선택이야. 빗물 걱정 없이 언제나 산뜻하게 신을 수 있어서 유용할 것 같아.</p>
+    <div class="item-meta">Highsnobiety · Sun, 08 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794154598-vans-half-cab-gore-tex-light-grey-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
