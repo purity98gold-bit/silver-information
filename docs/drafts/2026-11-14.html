@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-14 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-14</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/sothebys-the-human-touch-exhibition-info" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fsothebys-the-human-touch-exhibition-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">위커, 코치워크, 사파이어가 소더비 '인간의 손길' 전시의 중심에 서다</h2>
+    <p class="featured-summary">소더비가 손끝의 온기가 담긴 수공예의 가치를 조명하는 특별한 자리를 마련했어. 자동화가 지배하는 요즘 시대에 에르메스의 위커 미니 켈리나 클래식 자동차 같은 공예품들은 참 반가운 존재야. 인간이 직접 손으로 빚어낸 물건만이 주는 깊은 밀도가 새삼스럽게 다가오더라고.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/gentle-monster-intelligent-balenciaga-on-rimowa-maison-margiela-jw-anderson-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이번 주 주요 패션 뉴스: 젠틀몬스터 스마트 글라스 전격 공개 &amp; 리모와 x 메종 마르지엘라 협업 외</h2>
+    <p class="item-summary">이번 주는 대형 브랜드들의 과감한 협업 소식들로 아주 시끌벅적했어. 특히 젠틀몬스터가 구글, 삼성과 손잡고 내놓은 지능형 아이웨어는 테크와 패션의 경계를 가볍게 무너뜨리며 색다른 인상을 남겼지. 앞으로 우리가 일상에서 마주할 안경의 정의가 완전히 달라질 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fgentle-monster-intelligent-balenciaga-on-rimowa-maison-margiela-jw-anderson-info-0-2.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/barry-mcgee-jeffrey-deitch-another-round-exhibition-los-angeles" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">제프리 다이치 갤러리에서 선보이는 배리 맥기의 '어나더 라운드'</h2>
+    <p class="item-summary">배리 맥기가 제프리 다이치 갤러리에서 20년 만에 거대한 개인전을 펼쳤어. 200점이 넘는 작품을 공간 가득 채워 넣은 모습은 그야말로 압도적이더라고. 상업적인 아트페어의 틀을 깨고 동료들과 함께 만들어낸 이번 전시는 순수 미술과 대중문화 사이의 경계를 유쾌하게 헤엄치는 느낌이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fbarry-mcgee-jeffrey-deitch-another-round-exhibition-los-angeles-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/secretlab-los-angeles-us-flagship-experience-store-opening-announcement-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">시크릿랩, 미국 LA에 브랜드 최초의 '익스피리언스 스토어' 오픈</h2>
+    <p class="item-summary">시크릿랩이 LA 멜로즈 애비뉴에 브랜드 첫 익스피리언스 스토어 문을 열었어. 그동안 화면으로만 보던 인체공학 의자들을 직접 앉아보고 고를 수 있게 된 거지. 온라인 중심에서 오프라인으로 발을 넓힌 이 공간이 게이머들과 크리에이터들에게 어떤 아일랜드가 되어줄지 궁금해지네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FSecretlab-Los-Angeles-us-Flagship-experience-Store-Opening-Announcement-info-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/moma-new-era-celebrate-new-york-knicks-championship-exclusive-59fifty-9twenty-caps-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">MoMA와 뉴에라, 뉴욕 닉스의 우승을 기념하는 익스클루시브 캡 출시</h2>
+    <p class="item-summary">뉴욕 현대미술관 MoMA와 뉴에라가 뉴욕 닉스의 우승을 기념하는 특별한 캡을 선보였어. 스포츠의 열정과 미술관의 정제된 감각이 자연스럽게 맞닿아 있는 모습이 꽤나 흥미로워. 뉴욕이라는 도시가 가진 고유의 헤리티지를 고스란히 담아낸 이런 모자라면 하나쯤 소장할 가치가 충분하지.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmoma-new-era-celebrate-new-york-knicks-championship-exclusive-59fifty-9twenty-caps-release-info-000a.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/culture-over-couture-why-luxury-is-doubling-down-on-streetwear-martine-rose-balenciaga-kering-lvmh" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">꾸뛰르보다 문화: 럭셔리 브랜드가 스트리트웨어에 다시 올인하는 이유</h2>
+    <p class="item-summary">요즘 유럽 럭셔리 하우스들이 다시 스트리트웨어와 강렬한 로고로 회귀하는 건 결국 경제적인 현실과 맞닿아 있어. 침체된 시장에서 소비자들의 눈길을 사로잡으려면 조용한 럭셔리보다는 즉각적인 바이럴과 문화적 소음이 절실하거든. 결국 패션은 언제나 가장 예민하게 시대를 반영하는 거울인 셈이지.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fculture-over-couture-why-luxury-is-doubling-down-on-streetwear-martine-rose-balenciaga-kering-lvmh-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/vans-pringle-of-scotland-footwear-collection-premium-classic-slip-on-shoe-5315-premium-authentic-shoe-5310-premium-sk8-hi-shoe-5325-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">반스와 프링글 오브 스코틀랜드, 프리미엄 아이콘 3종에 포근한 아가일 울 적용</h2>
+    <p class="item-summary">반스와 프링글 오브 스코틀랜드가 만나 아주 포근한 겨울 캘리포니아 스케이트 룩을 완성했어. 클래식한 아가일 니트 패턴을 캔버스 대신 펠트 울로 풀어내니 신발 자체가 하나의 따뜻한 스웨터처럼 느껴져. 추워지는 계절에 발끝부터 은근한 위로를 건네주는 기분이랄까.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fvans-pringle-of-scotland-footwear-collection-premium-classic-slip-on-shoe-5315-premium-authentic-shoe-5310-premium-sk8-hi-shoe-5325-release-info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/gentle-monster-full-intelligent-eyewear-collection-new-york-city-first-time-public-preview" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">젠틀몬스터, 12월 출시에 앞서 뉴욕에서 인텔리전트 아이웨어 컬렉션 공개</h2>
+    <p class="item-summary">젠틀몬스터가 뉴욕 월스트리트에서 정식 출시를 앞둔 인텔리전트 아이웨어를 먼저 공개했어. 제미나이 AI와 카메라를 품고도 40그램이라는 가벼운 무게를 자랑한다는 점이 놀라워. 안경이라는 지극히 개인적인 물건에 최첨단 기술을 녹여낸 그들의 대담한 시선이 참 멋스러워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fgentle-monster-full-intelligent-eyewear-collection-new-york-city-first-time-public-preview-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/air-jordan-4-spotlight-hv0823-002-first-look-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">조던 브랜드, 인조 악어가죽 소재의 에어 조던 4 '스포트라이트' 출시</h2>
+    <p class="item-summary">조던 브랜드가 클래식한 에어 조던 4에 인조 악어가죽을 더한 스포트라이트 모델을 예고했어. 올블랙의 묵직한 실루엣 속에서 빛나는 이국적인 텍스처와 메탈릭 디테일이 은근한 긴장감을 만들어내지. 스니커즈 신에서 블랙 캣이 가진 매력을 또 한 번 깊게 파고든 수작이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fair-jordan-4-spotlight-HV0823-002-first-look-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/doublet-emoji-leather-bag-camel-black-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">더블렛 FW26, 가장 많이 사용하는 이모티콘을 가방으로 재탄생시키다</h2>
+    <p class="item-summary">더블릿이 일상에서 가장 흔하게 쓰이는 이모티콘을 가죽 가방으로 고스란히 옮겨왔어. 눈물 흘리는 표정부터 다소 민망한 표정까지 가죽 패치워크로 입체적으로 구현한 유머 감각이 정말 남다르지. 감정의 무게를 가볍게 덜어내려는 그들의 장난스러운 태도가 늘 가슴 한켠을 즐겁게 해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fdoublet-emoji-leather-bag-camel-black-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/evisu-faf-beams-t-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">에비수 x FAF x 빔즈 T, 90년대 아카이브 데님을 재해석한 5종 데뷔 컬렉션 공개</h2>
+    <p class="item-summary">에비수와 FAF, 그리고 빔즈 T가 90년대 데님 아카이브를 새롭게 해석한 캡슐 컬렉션을 꺼내놓았어. 옛 시절의 투박한 실루엣을 도시적인 감각과 아웃도어 무드로 매끄럽게 다듬어낸 솜씨가 돋보여. 하라주쿠의 생생한 음악과 함께 어우러지는 이런 협업이라면 언제나 환영이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FftEVISU-FAF-BEAMS-T-Collaboration-collection-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/toyota-bringing-kei-01-scion-truck-to-america-tops-out-at-25-mph-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">토요타, 마침내 미국 시장에 경트럭 출시… 최고 속도는 시속 25마일</h2>
+    <p class="item-summary">토요타가 미국 시장을 겨냥해 복각한 싸이언 브랜드를 통해 독특한 경트럭을 선보인다고 해. 거대한 트럭들이 판치는 도로 위에서 이 작고 앙증맞은 우핸들 트럭이 보여줄 실용성은 또 다른 결의 신선함을 선사하지. 작지만 확실한 개성으로 답답한 모빌리티 판에 작은 숨통을 틔워줄 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 13 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Ftoyota-bringing-kei-01-scion-truck-to-america-tops-out-at-25-mph-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
