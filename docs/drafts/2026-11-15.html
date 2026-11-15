@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-15 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-15</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/kidsuper-mercedes-benz-football-capsule-fall-winter-2026" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fkidsuper-mercedes-benz-football-capsule-fall-winter-2026-featured-image-scaled-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">축구 열풍에 빠진 키드슈퍼와 메르세데스-벤츠</h2>
+    <p class="featured-summary">키드슈퍼와 메르세데스벤츠가 손을 잡고 축구의 역사와 헤리티지를 담은 독창적인 협업 컬렉션을 선보였다. 월드컵 우승국들을 오마주한 이번 라인업은 차와 스포츠가 어떻게 멋지게 어우러질 수 있는지 잘 보여준다. 세대를 뛰어넘는 팬들을 연결하는 매개체로서 축구를 해석한 쿨한 시도가 돋보인다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/siegelman-stables-holiday-homecoming-soho-pop-up" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">시겔만 스테이블, 뉴욕 소호에서 홀리데이 팝업 스토어 오픈</h2>
+    <p class="item-summary">시겔만 스테이블이 뉴욕 소호에 홀리데이 시즌을 위한 특별한 팝업 스토어를 열었다. 1980년대 후반 무드로 꾸며진 공간은 브랜드의 고향인 뉴욕 감성을 진하게 풍긴다. 익스클루시브 아이템과 탄탄한 FW26 컬렉션을 직접 만날 수 있어 방문할 가치가 충분하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fsiegelman-stables-holiday-homecoming-soho-pop-up-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/vincent-tsang-montreal-pierre-golf-lifestyle-apparel-brand-debut-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">빈센트 창이 피에르(PIERRE)와 함께 페어웨이에 선보이는 조용한 럭셔리</h2>
+    <p class="item-summary">다임의 아티스틱 디렉터 빈센트 창이 참여한 신규 럭셔리 레이블 피에르는 진정한 멋이 무엇인지 조용히 속삭인다. 화려한 로고 대신 프리미엄 소재와 장인정신에 집중해 절제된 워드로브를 완성했다. 골프와 자연의 리듬을 담아낸 이 신중한 접근 방식이 참 마음에 든다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fvincent-tsang-montreal-pierre-golf-lifestyle-apparel-brand-debut-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/mercedes-benz-unveils-holographic-tech-turn-windshields-into-screens" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">메르세데스 벤츠, 윈드실드를 스크린으로 바꾸는 홀로그래픽 기술 공개</h2>
+    <p class="item-summary">메르세데스벤츠가 차량의 윈드실드 자체를 스크린으로 바꾸는 홀로 디스플레이 기술을 공개했다. 평소에는 눈에 띄지 않다가 필요할 때 선명하게 정보를 띄워주는 스마트한 방식이 인상적이다. 미래 지향적인 기술이 자동차 안의 풍경을 또 한 번 근사하게 바꿔놓을 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmercedes-benz-unveils-holographic-tech-turn-windshields-into-screens-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/nike-zoom-vomero-5-vapor-pro-black-metallic-silver-jf3428-001-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">라이프스타일 아이콘이 그라운드로, 나이키 줌 보메로 5 베이퍼 프로 '블랙/메탈릭 실버'</h2>
+    <p class="item-summary">나이키가 인기 라이프스타일 슈즈인 줌 보메로 5를 경기장용 스터드와 결합해 색다른 퍼포먼스 기어로 변주시켰다. Y2K 무드의 친숙한 어퍼 디자인에 스피디한 요소를 더해 독특한 실루엣을 완성했다. 가벼운 외출용으로 사랑받던 모델이 그라운드로 향한다는 점 자체가 은근한 재미를 준다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FNike-Zoom-Vomero-5-Vapor-Pro-Black-Metallic-Silver-JF3428-001-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/globe-trotter-yoshirotten-supernova-luggage-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">글로브 트로터와 요시로텐, 3개의 수트케이스에 담아낸 '슈퍼노바(SUPERNOVA)'</h2>
+    <p class="item-summary">글로브트로터와 아티스트 요시로텐이 만나 우주의 신비를 담아낸 수트케이스 세트를 세상에 내놓았다. 세 개의 케이스가 나란히 놓여야 비로소 하나의 완성된 작품이 되는 기발한 구도가 매력적이다. 여행용 오브제를 넘어 모듈형 캔버스로 변신한 러기지의 모습이 소장욕구를 자극한다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FGlobe-Trotter-YOSHIROTTEN-supernova-luggage-Collaboration-collection-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/vans-authentic-wingtip-brogue/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Vans’ Wingtip Skate Shoes Have Never Looked More Dapper</h2>
+    <p class="item-summary">ABC마트가 선보인 반스 어센틱 윙팁 브로그는 클래식한 멋과 스케이트보드 감성이 어떻게 조화를 이루는지 잘 보여준다. 깔끔한 블랙과 브라운 컬러웨이에 더해진 윙팁 디테일이 스니커즈를 한층 더 댄디하게 만들어준다. 캐주얼하면서도 차려입은 듯한 느낌을 내고 싶을 때 손이 자주 갈 것 같다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794672750-vans-authentic-wing-tip-brogue-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-springblade-lucid-blue/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">adidas Springs Back to the Future With This Bladed Runner</h2>
+    <p class="item-summary">아디다스가 미래지향적인 무드를 듬뿍 담은 스프링블레이드 루시드 블루를 통해 과거와 미래를 절묘하게 잇는다. 독특하게 뻗어 나간 블레이드 솔 구조는 보기만 해도 시각적인 에너지가 확 느껴진다. 트렌드를 뻔하지 않게 해석해 내는 아디다스 특유의 대담한 시도가 흥미롭다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794574807-3-9.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-rainboots/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">adidas’ Slick Rain Boots Want To Be the Next Splash Hit</h2>
+    <p class="item-summary">비 오는 날에도 스타일을 포기할 수 없는 이들을 위해 아디다스가 세련된 감성의 웰링턴 레인부츠를 준비했다. 방수 기능에 충실하면서도 브랜드의 상징적인 삼선 디테일을 깔끔하게 녹여냈다. 궂은 날씨 속에서도 패셔너블한 무드를 잃지 않게 도와줄 든든한 아이템이 될 것이다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794672211-adidas-rain-boots-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/social-status-jordan-1-low-sashiko/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Social Status Is Behind These Beautiful "Sashiko" Air Jordans</h2>
+    <p class="item-summary">소셜 스태터스가 빈티지한 시카고 무드와 정교한 스티칭을 더한 에어 조던 1 로우를 새롭게 선보였다. 사시코 기법을 연상시키는 섬세한 디테일이 스니커즈 전체의 완성도를 한 차원 끌어올린다. 클래식한 실루엣 위에 브랜드만의 독보적인 감각을 영리하게 얹어낸 수작이다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794672086-social-status-jordan-1-low-sashiko-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nocta-nike-air-modmax/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">NOCTA's Got Its Own Nike “Shox” Air Maxes</h2>
+    <p class="item-summary">낙타가 전개하는 넉타 라인이 나이키의 최신 테크놀로지를 품은 에어 모드맥스를 새롭게 세상에 공개했다. 독특한 에어 맥스 실루엣 위에 고유의 무드를 얹어 기존 스니커즈와는 또 다른 결의 퓨처리스틱한 매력을 뿜어낸다. 스니커즈 신에서 언제나 새로운 자극을 주는 이들의 협업은 이번에도 역시 기대를 저버리지 않는다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794671947-nocta-nike-air-modmax-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/nike-air-max-90-infrared-flip/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Nike’s Flipped Air Max Is Just as Clean as the Original</h2>
+    <p class="item-summary">나이키가 상징적인 에어 맥스 90의 컬러웨이를 재해석한 인프라레드 플립 모델을 조용히 선보였다. 오리지널이 가진 고유의 무드와 결은 그대로 유지하면서도 신선한 반전을 주는 배색이 아주 매력적이다. 과하지 않은 변주만으로도 원판 못지않은 근사한 완성도를 뿜어내는 모습이 인상적이다.</p>
+    <div class="item-meta">Highsnobiety · Sat, 14 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1794671801-nike-air-max-90-infrared-flip-0.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
