@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-18 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-18</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/reo-runabout-truck-t4x-t4c-s4c-release-info" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Freo-runabout-truck-t4x-t4c-s4c-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">레오 트럭, 현대 트럭의 안티테제를 공개하다</h2>
+    <p class="featured-summary">요즘 나오는 거대하고 복잡한 트럭들과는 완전히 결을 달리하는 물건이 나왔습니다. 레오가 선보인 러너바웃 라인업은 극단적인 단순함과 수리할 권리라는 철학을 담아내어 감탄을 자아냅니다. 투박하지만 오래두고 탈 수 있는 이런 실용적인 미학이야말로 진짜 멋이 아닐까 싶습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/devin-booker-nike-book-3-official-launch-announcement" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키와 데빈 부커, '북 3' 및 프라그먼트 디자인 협업 모델 공식 공개</h2>
+    <p class="item-summary">나이키와 데빈 부커가 손잡고 선보인 북 3는 코트 위에서의 퍼포먼스뿐만 아니라 일상적인 스타일까지 완벽하게 챙긴 실루엣입니다. 가벼운 메시 소재와 줌 스트로벨의 조합은 신어보지 않아도 그 편안함을 짐작게 합니다. 클래식하면서도 웨어러블한 이 감성은 언제나 환영할 만합니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fdevin-booker-nike-book-3-official-launch-announcement-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/007s-new-watch-dilemma-will-robert-pattinson-bring-jaeger-lecoultre-to-mi6-james-bond-007-omega-feature" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">007의 새로운 시계 딜레마: 로버트 패틴슨이 예거 르쿨트르를 MI6로 가져올까?</h2>
+    <p class="item-summary">제임스 본드의 손목시계를 둘러싼 비하인드 스토리가 이렇게 흥미로울 줄 몰랐습니다. 오랫동안 이어져 온 오메가와의 관계 속에서 예거 르쿨트르 앰버서더인 로버트 패틴슨의 합류는 꽤 재미있는 관전 포인트를 제공합니다. 공식 발표 사진에서 빈손이었던 그의 손목이 앞으로 어떤 시계를 차게 될지 자꾸만 눈이 갑니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2F007s-new-watch-dilemma-will-robert-pattinson-bring-jaeger-lecoultre-to-mi6-james-bond-007-omega-feature-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/slam-jam-levis-star-studded-custom-denim-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">슬램 잼과 리바이스, 별 장식이 돋보이는 커스텀 데님 컬렉션으로 다시 뭉치다</h2>
+    <p class="item-summary">슬램 잼과 리바이스가 다시 만나 선보인 이번 데님 컬렉션은 DIY 감성이 무엇인지 제대로 보여줍니다. 블랙 페인트 스티치와 별 모양 메탈 스터드로 재해석된 501과 트러커 재킷은 반항적이면서도 매력적입니다. 데드스톡 데님에 새로운 생명을 불어넣는 이런 방식은 언제나 마음을 흔듭니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fslam-jam-levis-star-studded-custom-denim-collaboration-collection-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/crocs-classic-clog-puerto-rico-216181-100-official-look-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">크록스, 섬에 경의를 표하는 '푸에르토리코' 클래식 클로그 출시</h2>
+    <p class="item-summary">크록스가 푸에르토리코 섬에 바치는 오마주를 담은 클래식 클로그를 공개했습니다. 산뜻한 화이트 크로슬라이트 어퍼에 더해진 국기 줄무늬와 지비츠 참의 조합이 꽤나 생동감 넘칩니다. 휴일 시즌에 맞춰 가볍게 신기 좋으면서도 은근한 스토리텔링이 담겨 있어 소장 가치가 충분해 보입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fcrocs-classic-clog-puerto-rico-216181-100-official-look-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/kate-bryan-soho-art-house-book-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">소호 하우스(Soho House), 전 세계 1만 1천여 점의 미술 컬렉션을 담은 아트북 ‘소호 아트 하우스(Soho Art House)’ 출간</h2>
+    <p class="item-summary">소호 하우스가 전 세계 지점의 방대한 미술 컬렉션을 담은 첫 번째 아트북을 출간했습니다. 단순한 카탈로그를 넘어 전 세계 하우스들을 둘러보는 감각적인 가이드 투어 같아서 책장을 넘기는 재미가 쏠쏠합니다. 문화계 인사들이 직접 엄선한 작품들을 통해 공간이 주는 영감을 집에서도 고스란히 느낄 수 있겠습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fkate-bryan-Soho-Art-House-Book-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/mark-wahlberg-reopens-memberships-his-exclusive-golf-society-the-underground-waitlist-sign-up" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">마크 월버그, 프라이빗 골프 소사이어티 '디 언더그라운드' 멤버십 신청 재개</h2>
+    <p class="item-summary">마크 월버그가 운영하는 프라이빗 골프 소사이어티 디 언더그라운드가 다시 한번 멤버십 모집을 시작합니다. 초대제로만 운영되는 이런 익스클루시브한 플랫폼은 스포츠와 라이프스타일의 경계를 절묘하게 줄타기합니다. 차원이 다른 코스 경험을 선사한다는 점에서 골프 애호가들의 마음을 꽤나 설레게 할 것 같습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmark-wahlberg-reopens-memberships-his-exclusive-golf-society-the-underground-waitlist-sign-up-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/louis-vuitton-f1-las-vegas-grand-prix-2026-trophy-trunk-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">루이 비통, 2026 포뮬러 1 라스베이거스 그랑프리 맞춤형 트로피 트렁크와 함께 스트립 귀환</h2>
+    <p class="item-summary">루이 비통이 포뮬러 1 라스베이거스 그랑프리를 위해 또 한 번 멋진 트로피 트렁크를 들고 나왔습니다. 시그니처 모노그램과 체커기 패턴, 그리고 화이트 골드 리프로 완성된 'V' 디테일까지 장인의 손길이 듬뿍 담겨 있습니다. 자동차 문화와 메종의 헤리티지가 만나는 지점은 언제 보아도 시각적인 희열을 줍니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Flouis-vuitton-f1-las-vegas-grand-prix-2026-trophy-trunk-0000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/wtaps-hoka-speedgoat-ts-galactic-grey-black-volcanic-ash-1185590-ghg-1185590-bkvl-collaboration-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HOKA, 갑옷에서 영감받은 스피드고트 TS 스니커즈를 위해 WTAPS와 협업</h2>
+    <p class="item-summary">HOKA와 WTAPS가 다시 한번 손잡고 내놓은 스피드고트 TS는 그야말로 갑옷 같은 든든함을 자랑합니다. 메시 베이스 위에 덧대어진 광범위한 보호 패널과 강렬한 컬러 포인트가 스트리트웨어의 감성을 제대로 저격합니다. 도심과 오프로드를 모두 아우를 수 있는 이런 투박한 매력에 자꾸 눈길이 갑니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fwtaps-hoka-speedgoat-ts-galactic-grey-black-volcanic-ash-1185590-ghg-1185590-bkvl-collaboration-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/bare-knuckles-brings-brooks-archival-cascadia-1-back-to-the-trail" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">베어 너클스, 브룩스의 아카이브 속 카스카디아 1을 다시 트레일로 소환하다</h2>
+    <p class="item-summary">브룩스의 아카이브에서 발굴된 카스카디아 1이 베어 너클스와 만나 한정판으로 새롭게 태어났습니다. 오리지널 기술들을 고스란히 복원하면서도 일상에 맞게 폼을 업그레이드한 세심함이 돋보입니다. 청키한 솔 유닛과 깊고 역동적인 러그가 만들어내는 실루엣이 신을 때마다 기분 좋은 무게감을 줄 것 같습니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fbrooks-bare-knuckles-cascadia-1-collaboration-release-info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/nonnative-gallery-hbx-skys-the-limit-pop-up-frgmt-guidi-artist-proof-exclusive-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">논네이티브(nonnative), 갤러리 HBX에서 'SKY'S THE LIMIT' 팝업 및 익스클루시브 제품 출시</h2>
+    <p class="item-summary">논네이티브가 홍콩 갤러리 HBX에서 펼치는 팝업과 익스클루시브 라인업은 언제나 기대를 저버리지 않습니다. 고어텍스 아카이브 전시부터 다양한 브랜드와의 협업까지 후지이 타카유키의 철학이 공간 전체에 깊게 스며들어 있습니다. 기능성 디자인을 멋스럽게 풀어내는 이들의 행보는 늘 주목하게 됩니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fnonnative-gallery-hbx-skys-the-limit-pop-up-frgmt-guidi-artist-proof-exclusive-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/travis-scott-rockstar-nike-air-force-1-low-07-gta-6-black-white-fire-pink-jj7604-001-jj7602-100-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">트래비스 스캇 x 나이키 에어 포스 1 'GTA 6' 블랙 및 화이트 모델 상세 보기</h2>
+    <p class="item-summary">트래비스 스캇과 락스타 게임즈, 그리고 나이키까지 가세한 에어 포스 1 로우라니 조합부터가 엄청납니다. 블랙과 화이트 두 가지 컬러웨이에 더해진 파이어 핑크 포인트가 묘하게 시선을 사로잡습니다. 올가을 발매 소문만으로도 이미 스니커즈 신을 들썩이게 만들기에는 충분한 파괴력을 가진 모델입니다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Tue, 17 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Ftravis-scott-rockstar-nike-air-force-1-low-07-gta-6-black-white-fire-pink-jj7604-001-jj7602-100-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
