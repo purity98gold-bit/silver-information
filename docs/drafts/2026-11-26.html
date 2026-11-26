@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-26 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-26</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/nanga-host-limited-time-pop-up-store-new-york" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fpop-up-store-banner-feature-image.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">난가(NANGA), 뉴욕에서 기간 한정 팝업 스토어 오픈</h2>
+    <p class="featured-summary">일본 아웃도어의 자존심 같은 브랜드 난가가 뉴욕에서 기간 한정 팝업을 연다는 소식이다. 오랜 역사와 장인정신이 담긴 다운 웨어부터 일상복까지 한 자리에서 볼 수 있어 현지 반응이 무척 뜨거울 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/lisa-wears-unreleased-nike-zoom-streak-3-f1-vegas" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">리사, F1 라스베이거스 그랑프리에서 나이키 줌 스트릭 3 '블랙/레드' 최초 공개</h2>
+    <p class="item-summary">F1 라스베이거스 그랑프리에서 리사가 착용하고 등장해 화제를 모았던 나이키 줌 스트릭 3가 드디어 베일을 벗었다. 레이싱 플랫 특유의 가벼운 실루엣에 과감한 컬러 조합이 더해져 스니커즈 팬들의 마음을 설레게 만든다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FLISA-Wears-Unreleased-Nike-Zoom-Streak-3-f1-Vegas-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/cactus-plant-flea-market-cpfm-nike-flea-1-cave-purple-iu5238-500-official-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">캑터스 플랜트 플리 마켓 x 나이키 플리 1 '케이브 퍼플' 공식 이미지 공개</h2>
+    <p class="item-summary">캑터스 플랜트 플리 마켓과 나이키가 다시 한번 손을 잡고 독특한 플리 1을 선보였다. 마치 진흙이 묻은 듯한 거친 밑창과 톤온톤 퍼플 스웨이드의 조화가 그야말로 CPFM다운 유니크한 매력을 뿜어낸다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FCactus-Plant-Flea-Market-cpfm-Nike-Flea-1-Cave-Purple-IU5238-500-Official-Images-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/fred-again-monkey-shoulder-nike-cricket-jersey-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">프레드 어게인.., 나이키, 몽키 숄더가 인도의 2007년 및 2011년 우승 키트를 하나의 크리켓 셔츠로 엮어내다</h2>
+    <p class="item-summary">프레드 어게인과 나이키, 그리고 몽키 숄더가 인도의 전설적인 크리켓 우승 키트를 하나로 엮어냈다. 과거 아카이브를 현대적인 감각의 크리켓 셔츠로 재해석한 센스가 음악과 패션의 경계를 자연스럽게 허문다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FFred-again-Monkey-Shoulder-Nike-Cricket-Jersey-Release-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/deborah-ann-woll-joins-god-of-war-tv-series-as-faye" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Deborah Ann Woll, 'God of War' 게임의 Faye 역으로 Prime Video 실사 시리즈 합류</h2>
+    <p class="item-summary">갓 오브 워 실사 시리즈에 게임 원작에서 페이 역할을 맡았던 데보라 안 울이 다시 합류한다는 반가운 소식이다. 팬들이 오랫동안 기다려온 완벽한 캐스팅이라 비디오 게임 원작의 감동을 실사에서도 고스란히 느낄 수 있을 듯하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fdeborah-ann-woll-joins-god-of-war-tv-series-as-faye-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/starbucks-japan-debuts-the-savory-potato-soupaccino" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">스타벅스 재팬, 수프와 카푸치노를 반반 섞은 겨울 음료 '포테이토 수푸치노' 출시</h2>
+    <p class="item-summary">스타벅스 재팬이 겨울 시즌을 맞아 감자와 양파 풍미를 담은 이색적인 포테이토 수푸치노를 출시했다. 수프와 카푸치노를 반반 섞어 따뜻하게 즐기는 하이브리드 음료라 추운 날씨에 가볍게 몸을 녹이기 좋을 것 같다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fstarbucks-japan-debuts-the-savory-potato-soupaccino-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/porter-px-tanker-2026-redesign-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">포터, 100% 식물 유래 나일론으로 익스클루시브 'PX 탱커' 라인 리뉴얼</h2>
+    <p class="item-summary">포터의 상징적인 익스클루시브 라인 PX 탱커가 100% 식물 유래 나일론 소재로 전면 리뉴얼되었다. 브랜드 고유의 세심한 만듦새와 가방 본질의 가치를 지키면서도 친환경적인 소재로 진화한 점이 눈길을 끈다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FPORTER-PX-Tanker-2026-Redesign-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/aime-leon-dore-porsche-2026-capsule-collection-collab-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">에메 레온 도르와 포르쉐, 새로운 홀리데이 캡슐 컬렉션 공개</h2>
+    <p class="item-summary">에메 레온 도르와 포르쉐가 다시 한번 손을 잡고 감각적인 홀리데이 캡슐 컬렉션을 공개했다. 모터스포츠 헤리티지와 클래식한 스트리트 무드가 조화롭게 어우러져 연말 선물용으로 이만한 아이템이 없어 보인다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Faim-leon-dore-porsche-2026-capsule-collection-collab-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/rockstar-games-red-dead-redemption-100-million-usd-usd-live-action-adaptation-update" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">'GTA 6'는 여전히 불가, 하지만 할리우드는 1억 달러에 '레드 데드 리뎀션'을 품을 수 있다</h2>
+    <p class="item-summary">락스타 게임즈가 GTA 대신 레드 데드 리뎀션의 영상화에는 비교적 열린 태도를 취하고 있다는 소식이다. 워낙 탄탄한 스토리와 세계관을 가진 작품인 만큼, 할리우드에서 어떻게 재탄생할지 벌써부터 기대가 앞선다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Frockstar-games-Red-Dead-Redemption-100-million-usd-USD-Live-Action-Adaptation-Update-1.png?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;format=png&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/undercover-fragment-design-drop-2-collaboration-collection-release-infp" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">언더커버 x 프라그먼트 디자인 텍스처를 강조한 두 가지 넥라인의 모헤어 니트 가디건 출시</h2>
+    <p class="item-summary">언더커버와 프라그먼트 디자인이 텍스처를 강조한 모헤어 니트 가디건으로 다시 뭉쳤다. 크루넥과 V넥이라는 심플한 구성 속에서도 두 브랜드 특유의 절제된 디테일과 고급스러운 무드가 진하게 묻어난다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FUNDERCOVER-fragment-design-Drop-2-Collaboration-collection-Release-Infp.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/y-3-and-mercedes-amg-petronas-f1-team-celebrate-constructors-title-with-jeff-hamilton" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Y-3 &amp; 메르세데스-AMG 페트로나스 F1 팀, 제프 해밀턴과 함께 컨스트럭터 챔피언 우승 기념</h2>
+    <p class="item-summary">메르세데스 AMG 페트로나스 F1 팀의 컨스트럭터 우승을 기념하기 위해 Y-3와 제프 해밀턴이 힘을 합쳤다. 라스베이거스에서 처음 공개된 한정판 재킷과 캡은 레이싱 팬들과 패션 피플 모두의 소장욕구를 자극하기에 충분하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fy-3-x-mercedes-amg-petronas-f1-x-jeff-hamilton-collab-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/new-arrivals-from-hbx-wtaps-2" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: WTAPS(더블탭스)</h2>
+    <p class="item-summary">밀리터리와 아웃도어 기반의 멋스러운 실루엣을 꾸준히 선보여 온 더블탭스의 신상품을 이제 HBX에서 만날 수 있다. 오랜 세월 다져진 브랜드만의 탄탄한 아이덴티티가 담긴 아이템들은 언제 봐도 참 매력적이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Wed, 25 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Finsect-ss-ctpl-black-product-1-da035925_1795567741.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
