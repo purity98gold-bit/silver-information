@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-27 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-27</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/gosha-rubchinskiy-interview" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2F26%2Fgosha-rubchinskiy-interview-ft.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">고샤 루브친스키 인터뷰: 오직 지금 이 순간</h2>
+    <p class="featured-summary">유행이라는 게 참 묘하지. 고샤 루브친스키가 오랜만에 돌아오면서 던진 말도 결국 그 얘기였어. 누군가는 트렌드를 좇지만, 그는 오직 지금 이 순간에 집중할 뿐이야. 모스크바와 파리를 거쳐 서울의 크리에이티브 신까지 마주하는 그의 시선이 은근히 흥미롭게 다가오더라고.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/nike-mind-001-palomino-hq4307-201-official-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">나이키 마인드 001, 초콜릿 브라운 노드를 장착한 '팔로미노' 출시</h2>
+    <p class="item-summary">나이키가 또 재미있는 실루엣을 들고 나왔네. 마인드 001 팔로미노인데, 어시한 무드에 초콜릿 브라운 노드가 아웃솔에 박혀 있는 게 아주 독특해. 신발과 지면의 연결을 인지하게 만든다는 철학도 그렇고, 신을 때마다 발끝에 묘한 긴장감을 줄 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FNike-Mind-001-Palomino-HQ4307-201-Official-Images-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/panini-rockstar-games-grand-theft-auto-gta-vi-trading-cards-announcement-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">파니니, 'GTA VI' 인게임 수집품을 실제 스포츠 트레이딩 카드 컬렉션으로 선보인다</h2>
+    <p class="item-summary">게임 속 수집품이 진짜 실물 카드로 나온다면 얘기가 달라지지. 락스타 게임즈와 파니니가 손잡고 GTA VI 트레이딩 카드 컬렉션을 선보인다고 해. 레전드 브론즈부터 세상에 단 하나뿐인 골드 카드까지, 수집가들의 심장을 뛰게 할 요소를 아주 잘 알고 만든 것 같아.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FPanini-Rockstar-Games-grand-theft-auto-gta-vi-Trading-Cards-Announcement-Info-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/lil-uzi-vert-vans-authentic-44-pink-cosmos-vn0010wy3td-official-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">릴 우지 버트, 무지갯빛 실을 엮어낸 반스 어센틱 44 ‘핑크 코스모스’ 공개</h2>
+    <p class="item-summary">릴 우지 버트와 반스의 만남이라니, 이건 좀 못 참겠는데. 어센틱 44 실루엣에 무지갯빛 실을 촘촘히 엮어서 입체적인 질감을 살렸어. 특히 핑크 컬러가 앵클 칼라까지 이어지는 게 아주 과감하면서도 매력적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FLil-Uzi-Vert-Vans-Authentic-44-Pink-Cosmos-VN0010WY3TD-Official-Images-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/apple-prepares-two-phase-rollout-for-macbook-air" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애플, OLED 디자인 변경 앞서 2027년 봄 M6 맥북 에어 리프레시 계획 중이라는 보도</h2>
+    <p class="item-summary">애플 소식은 언제나 사람을 설레게 하지. 2027년 봄에 M6 맥북 에어 리프레시를 시작으로 순차적인 업그레이드가 진행된다고 하더라고. OLED로 넘어가기 전의 과도기라지만, 새로운 맥북 Neo 2와 함께 어떤 모습으로 나올지 은근히 기대가 돼.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fapple-prepares-two-phase-rollout-for-macbook-air-0.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/maison-kitsune-paraboot-collab-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">메종 키츠네 x 파라부트, 2026 가을/겨울 시즌을 위한 클래식 샴보드 재해석</h2>
+    <p class="item-summary">메종 키츠네와 파라부트가 다시 뭉쳤어. 클래식한 샴보드 더비에 유광 브라운 레더, 그리고 선명한 화이트 스티치 조합이라니. 프프레시하면서도 클래식한 무드가 딱 가을겨울에 신기 좋은 밸런스를 보여주네.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmaison-kitsun-x-paraboot-collab-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/y-3-x-jeff-hamilton-kimi-antonelli-championship-jacket-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Y-3와 제프 해밀턴, 키미 안토넬리의 첫 F1 우승을 기념하는 비스포크 재킷 공개</h2>
+    <p class="item-summary">F1 드라이버 키미 안토넬리의 첫 우승을 기념하는 비스포크 재킷이라니, 로망 그 자체야. Y-3와 제프 해밀턴이 손잡고 오직 그만을 위해 만들었다는데 일반 판매가 안 된다는 게 아쉬울 따름이지. 이탈리아 삼색기와 챔피언십 그래픽이 들어간 디테일이 아주 멋스러워.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fy-3-x-jeff-hamilton-kimi-antonelli-championship-jacket-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/moncler-rick-owens-fall-winter-fw-2026-collaboration-collection-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">몽클레르 x 릭 오웬스 2026 가을/겨울 컬렉션, 스터드와 스트랩으로 무장한 퀼팅 아우터웨어</h2>
+    <p class="item-summary">몽클레르와 릭 오웬스의 조합은 언제나 기대를 저버리지 않아. 이번 가을겨울 컬렉션 역시 스터드와 메가 스트랩, 그리고 건축적인 지오 퀼팅으로 무장했더라고. 절제된 컬러 팔레트 안에서 뿜어져 나오는 그 독보적인 아우라가 참 매력적이야.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FMoncler-Rick-Owens-fall-winter-fw-2026-collaboration-collection-Release-Info.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/hbo-max-the-pitt-season-3-premiere-release-date-announcement" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">'더 핏(The Pitt)' 시즌 3 방영일 확정, 다시 시계가 움직인다</h2>
+    <p class="item-summary">응급실 드라마의 명작 더 핏이 벌써 시즌 3 방영을 확정 지었어. 1월 초면 어김없이 찾아오는 이 반가운 일정 덕분에 내년 초 겨울밤도 심심하지 않겠어. 로비노비치 박사와 팀원들이 다시 보여줄 긴장감 넘치는 이야기가 벌써부터 기다려져.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2FHBO-Max-The-Pitt-season-3-premiere-Release-Date-Announcement-1.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/porsche-all-electric-718-boxster-preview-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">포르쉐, 순수 전기 718 박스터로 미드엔진 DNA를 EV 시대에 구현하다</h2>
+    <p class="item-summary">포르쉐가 드디어 순수 전기 718 박스터의 베일을 벗을 준비를 하고 있네. 800V 배터리를 시트 뒤에 배치해서 특유의 미드십 무게 배분을 구현했다고 하니, 전기차 시대에도 포르쉐의 감성은 여전히 유효할 것 같아. 정지 상태에서 3초 만에 튀어나간다니 상상만 해도 짜릿해.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fporsche-all-electric-718-boxster-preview-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/one-good-keychain-that-turns-into-tote-jane-wade-keote/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">One Good Packable Tote That Actually Looks Chic</h2>
+    <p class="item-summary">가방 하나로 일상의 멋과 실용성을 동시에 챙기기는 쉽지 않지. 인디 디자이너 제인 웨이드가 keote와 협력해 만든 이 패커블 토트백은 비상용으로 들고 다니기에도 너무 시크해 보여. 툭 걸쳐도 자연스러운 무드가 살아나는 이런 아이템이 진짜 손이 자주 가더라고.</p>
+    <div class="item-meta">Highsnobiety · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1795529778-one-good-claire.png" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://www.highsnobiety.com/p/adidas-sneaker-releases-november-week-4/" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">The Seven Best adidas Sneakers to Cop This Black Friday</h2>
+    <p class="item-summary">블랙 프라이데이를 맞아 아디다스 스니커즈 중에서도 가장 건질 만한 녀석들만 골라봤어. 이번 시즌에 유독 눈에 띄는 모델들이 쏟아져 나와서 지갑 열리는 소리가 여기까지 들리는 것 같아. 역시 트렌드의 중심에는 언제나 클래식한 한 끗 차이가 있는 법이지.</p>
+    <div class="item-meta">Highsnobiety · Thu, 26 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://www.highsnobiety.com/static-assets/dato/1795608192-01.jpg" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
