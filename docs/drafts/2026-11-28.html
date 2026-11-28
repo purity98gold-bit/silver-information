@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silver Information · 2026-11-28 초안</title>
+<style>
+  @font-face { font-family: "Noto Serif KR"; font-weight: 500; src: url("../assets/fonts/NotoSerifKR-Medium.woff2") format("woff2"); font-display: swap; }
+  @font-face { font-family: "Noto Serif KR"; font-weight: 700; src: url("../assets/fonts/NotoSerifKR-Bold.woff2") format("woff2"); font-display: swap; }
+  :root { --bg:#0a0a0a; --ink:#f2f2f0; --muted:#8a8a85; --line:#232323; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,"Pretendard","Apple SD Gothic Neo",sans-serif; -webkit-font-smoothing:antialiased; }
+  .wrap { max-width:760px; margin:0 auto; padding:32px 20px 80px; }
+  .topbar { display:flex; justify-content:space-between; align-items:center; margin-bottom:24px; }
+  .topbar a { color:var(--muted); font-size:13px; text-decoration:none; }
+  h1.page-title { font-family:Helvetica, Arial, sans-serif; font-size:24px; margin:0 0 4px; font-weight:700; }
+  .date { color:var(--muted); font-size:12px; margin-bottom:20px; }
+  #copy-btn {
+    display:inline-block; background:var(--ink); color:#0a0a0a; border:none;
+    padding:10px 18px; font-size:14px; cursor:pointer; margin-bottom:28px; font-weight:600;
+  }
+  #copy-btn:active { transform: scale(0.98); }
+  #copy-status { font-size:12px; color:var(--muted); margin-left:10px; }
+
+  .featured { display:block; text-decoration:none; color:inherit; padding-bottom:32px; border-bottom:1px solid var(--line); margin-bottom:8px; }
+  .featured-thumb { width:100%; aspect-ratio:16/9; object-fit:cover; display:block; background:#161616; margin-bottom:22px; }
+  .featured-tag { font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:#b8b8b8; margin-bottom:10px; }
+  .featured-title { font-family:"Noto Serif KR", serif; font-weight:700; font-size:24px; line-height:1.35; margin:0 0 12px; color:var(--ink); }
+  .featured-summary { font-size:14px; color:#b0b0ab; line-height:1.7; margin:0 0 14px; }
+
+  .item { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:24px 0; border-bottom:1px solid var(--line); text-decoration:none; color:inherit; }
+  #draft-content .item:last-child { border-bottom:none; }
+  .item-text { flex:1; min-width:0; }
+  .item-title { font-family:"Noto Serif KR", serif; font-weight:500; font-size:17px; margin:0 0 8px; color:var(--ink); }
+  .item-summary { font-size:13px; color:#a8a8a3; line-height:1.5; margin:0 0 10px; display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+  .item-meta { font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:0.05em; }
+  .item-thumb { width:96px; height:96px; flex-shrink:0; object-fit:cover; background:#161616; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a href="../index.html">← 매거진으로</a>
+    <a href="index.html">전체 초안 목록</a>
+  </div>
+  <h1 class="page-title">오늘의 매거진 초안</h1>
+  <div class="date">2026-11-28</div>
+  <button id="copy-btn" onclick="copyDraft()">📋 복사하기 (티스토리에 붙여넣기)</button>
+  <span id="copy-status"></span>
+  <div id="draft-content">
+
+<a class="featured" href="https://hypebeast.kr/2026/11/martine-rose-nike-mr-trax-sp-release-date" target="_blank" rel="noopener">
+  <img class="featured-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fmartine-rose-nike-mr-trax-sp-release-date-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+  <div class="featured-text">
+    <div class="featured-tag">Today's Pick</div>
+    <h2 class="featured-title">마틴 로즈의 최신 나이키 스니커즈: 비즈니스에 트랙 앤 필드를 더하다</h2>
+    <p class="featured-summary">마틴 로즈가 이번에는 나이키와 손을 잡고 완전히 새로운 트랙 슈즈 스타일의 스니커즈를 들고 나왔다. 육상용 스파이크와 정장 차림을 절묘하게 엮어내는 그의 시선은 언제 봐도 신선하고 짜릿하다. 평범한 일상의 풍경을 비틀어버리는 이런 위트 있는 협업이라면 두 손 들고 환영할 만하다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/stone-island-milan-flagship-store-renovation" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Stone Island의 밀라노 플래그십은 그 자체로 하나의 소재 연구소다</h2>
+    <p class="item-summary">스톤아일랜드가 밀라노 플래그십 스토어를 리노베이션하면서 브랜드가 가진 소재에 대한 집착을 건축의 영역으로 확장했다. 의류를 만들 때처럼 인테리어 공간 하나하나에도 깊은 호기심과 고민을 녹여낸 점이 인상적이다. 매장 자체가 거대한 하나의 연구소처럼 느껴지는 이런 공간 감각은 늘 우리를 설레게 한다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fstone-island-milan-flagship-store-renovation-00.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/new-arrivals-from-hbx-hellstar-4" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">HBX 신상품: 헬스타</h2>
+    <p class="item-summary">LA 기반의 헬스타가 선보이는 거칠고 반항적인 무드의 스트리트웨어는 언제나 눈길을 사로잡는다. 우주적인 다크함과 펑크 감성이 묘하게 섞인 오버사이즈 후디는 남들과는 다른 결을 추구하는 이들에게 완벽한 선택지가 된다. 평범함을 거부하는 과감한 그래픽에서 느껴지는 대체 불가능한 에너지가 매력적이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fcoexist-t-shirt-gray-product-1-1fbf438b_1795791241.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/nvidia-halts-ai-chip-shipments-to-four-nations" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">엔비디아, 미국 정부의 원격 칩 접근 규제 강화에 따라 동남아 4개국에 AI 서버 출하 중단</h2>
+    <p class="item-summary">엔비디아가 동남아시아 지역으로 향하는 첨단 AI 서버 출하를 전면 중단하면서 글로벌 기술 공급망에 적지 않은 파장이 일고 있다. 미국의 강화된 수출 규제와 우회로를 차단하기 위한 임시 조치라지만, 관련 산업 전반에 미칠 영향이 상당할 것으로 보인다. 급변하는 국제 정세 속에서 테크 업계의 움직임을 계속해서 예의 주시하게 된다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fnvidia-halts-ai-chip-shipments-to-four-nations-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/palace-skateboards-beijing-flagship-store-opening-info-announcement" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">팔라스 스케이트보드 베이징 플래그십, 만리장성에서 영감을 얻다</h2>
+    <p class="item-summary">팔라스가 베이징에 문을 연 새로운 플래그십 스토어는 만리장성의 역사적인 구조를 아주 위트 있게 풀어냈다. 유리 벽돌과 따뜻한 오닉스 대리석을 활용해 브랜드 특유의 스트리트 감성과 전통적인 아름다움을 멋지게 조화시켰다. 공간에 들어서는 순간부터 감탄을 자아내는 이런 디테일은 언제나 환영이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fpalace-skateboards-beijing-flagship-store-opening-info-announcement-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/innioasis-y2-music-player-debuts-with-touch-scroll-ring" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">이니오아시스, 아이팟 스타일의 스크롤 휠을 부활시킨 79.99달러 뮤직 플레이어 'Y2' 출시</h2>
+    <p class="item-summary">스마트폰의 바다에서 잠시 벗어나 오롯이 음악에만 집중할 수 있는 이니오아시스의 아이팟 스타일 뮤직 플레이어가 등장했다. 2000년대 감성을 자극하는 촉각적인 스크롤 링과 오프라인 전용 설계가 디지털 피로감에 지친 이들의 마음을 정확히 파격적으로 파고든다. 아날로그의 향수를 고스란히 담아낸 이런 소장 가치 높은 하드웨어가 참 반갑다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Finnioasis-y2-music-player-debuts-with-touch-scroll-ring-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/apple-dominates-us-smartphone-market-with-57-share-in-q3" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">애플, 2026년 3분기 미국 스마트폰 출하량의 57% 차지</h2>
+    <p class="item-summary">업계 전반의 불황 속에서도 애플이 미국 스마트폰 시장에서 압도적인 점유율을 기록하며 저력을 증명했다. 부품 비용 상승이라는 악재 속에서도 가격을 안정적으로 유지하며 구조적 우위를 증명해 낸 셈이다. 소비자가 체감하는 부담을 최소화하면서 시장을 장악해 나가는 저력이 새삼 놀랍다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fapple-dominates-us-smartphone-market-with-57-share-in-q3-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/ford-gt41-wec-hypercar-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">포드, 르망 무대로 향하는 하이퍼카 GT41로 다시 한번 질주하다</h2>
+    <p class="item-summary">포드가 르망 24시 무대로의 화려한 복귀를 알리며 완전히 새로운 하이퍼카 GT41을 세상에 공개했다. 역사적인 순간을 기념하기 위해 당대 최고의 감독들과 함께 제작한 시네마틱 영상까지 더해져 브랜드의 유산이 더욱 극적으로 다가온다. 트랙 위를 질주할 이 멋진 머신이 만들어낼 새로운 전설이 벌써부터 기다려진다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fford-gt41-wec-hypercar-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/rockstar-games-grand-theft-auto-gta-vi-developers-reveal-features-didnt-make-game" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">락스타 개발진, 'GTA VI'에서 최종 삭제된 기능 공개</h2>
+    <p class="item-summary">락스타 게임즈가 GTA VI 개발 과정에서 테니스나 집 꾸미기 등 여러 재미있는 기능들을 과감하게 삭제했다는 소식이다. 완성도나 게임의 결에 맞지 않는다는 이유로 아쉽게 탈락한 콘텐츠들이지만, 그만큼 게임의 퀄리티에 얼마나 진심인지 엿볼 수 있는 대목이다. 유저들의 기대를 완벽하게 충족시키기 위해 치열하게 고민했을 개발진의 노고가 고스란히 느껴진다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Frockstar-games-grand-theft-auto-gta-vi-developers-reveal-features-didnt-make-game-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/cactus-plant-flea-market-cpfm-nike-flea-1-barley-iu5238-700-official-images" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">Cactus Plant Flea Market x Nike Flea 1 "Barley" 공식 이미지</h2>
+    <p class="item-summary">한 차례 발매가 무산되었던 CPFM과 나이키의 플리 1 바일리 컬러가 드디어 다시 빛을 보게 되었다. 스니커즈라기보다는 포근한 침낭을 연상시키는 독특한 퀼팅 어퍼와 압도적인 볼륨감이 이 모델만의 독보적인 개성을 완성한다. 평범함을 거부하는 대담한 실루엣을 좋아하는 이들이라면 절대 그냥 지나칠 수 없는 아이템이다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fcactus-plant-flea-market-cpfm-nike-flea-1-barley-iu5238-700-official-images-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/toyota-hilux-hyper-z-prototype-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">실용적인 픽업트럭의 화려한 변신, 토요타 '하이럭스 하이퍼 Z 프로토타입' 공개</h2>
+    <p class="item-summary">토요타 디자인 호주가 태국의 커스텀 트럭 문화에서 영감을 받아 극단적으로 낮은 차체의 하이럭스 프로토타입을 선보였다. 실용적인 픽업트럭의 틀을 완전히 깨부수고 모터스포츠의 감성을 과감하게 입힌 모습이 무척이나 신선하다. 비록 양산 계획은 없다고 하지만 자동차를 가지고 이렇게까지 멋진 상상을 펼칠 수 있다는 점이 즐겁다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Ftoyota-hilux-hyper-z-prototype-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+
+<a class="item" href="https://hypebeast.kr/2026/11/jw-anderson-the-anchor-sneaker-se0036la0431600-release-info" target="_blank" rel="noopener">
+  <div class="item-text">
+    <h2 class="item-title">JW 앤더슨, 빈티지 무드의 브랜드 최초 스니커즈 '앵커' 출시</h2>
+    <p class="item-summary">JW 앤더슨이 브랜드 역사상 최초로 빈티지 러닝화 무드의 앵커 스니커즈를 선보이며 라인업을 넓혔다. 이탈리아의 정교한 제화 기술을 바탕으로 나일론과 스웨이드를 조화롭게 엮어내어 은은하면서도 고급스러운 매력을 뽐낸다. 조나단 앤더슨 특유의 위트와 섬세한 디테일이 스포티한 실루엣 속에 아주 자연스럽게 녹아들었다.</p>
+    <div class="item-meta">Hypebeast.KR | 하입비스트 · Fri, 27 Nov 2026</div>
+  </div>
+  <img class="item-thumb" src="https://image-cdn.hypb.st/https%3A%2F%2Fkr.hypebeast.com%2Ffiles%2F2026%2F11%2Fjw-anderson-the-anchor-sneaker-se0036la0431600-release-info-000.jpg?w=800&amp;amp;cbr=1&amp;amp;q=90&amp;amp;fit=max" alt="" loading="lazy" onerror="this.style.display='none'">
+</a>
+
+  </div>
+</div>
+<script>
+function copyDraft() {
+  const el = document.getElementById('draft-content');
+  const range = document.createRange();
+  range.selectNode(el);
+  const sel = window.getSelection();
+  sel.removeAllRanges();
+  sel.addRange(range);
+  try {
+    document.execCommand('copy');
+    document.getElementById('copy-status').textContent = '복사됨! 티스토리 편집기에 붙여넣기(Ctrl+V) 하세요.';
+  } catch (e) {
+    document.getElementById('copy-status').textContent = '복사 실패 - 수동으로 드래그해서 복사해주세요.';
+  }
+  sel.removeAllRanges();
+}
+</script>
+</body>
+</html>
